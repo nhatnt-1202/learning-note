@@ -52,11 +52,27 @@ Chọn đúng loại index cho đúng bài toán.
 |---|---|
 | [Schema Design](./schema) | Chọn kiểu dữ liệu, ràng buộc, `ALTER TABLE` không downtime |
 
-## Phase 4 & 5 — Scale & Operations
+## Phase 4 — Scale
 
-Chưa viết. Các chủ đề dự kiến: partitioning, bulk loading, time-series
-patterns, sharding, replication, connection pooling (PgBouncer), config tuning,
-zero-downtime migration.
+Khi dữ liệu vượt quá mức một bảng thường xử lý gọn.
+
+| Chủ đề | Nội dung |
+|---|---|
+| [Partitioning](./partitioning) | RANGE/LIST/HASH, pruning, vòng đời partition |
+| [Bulk Loading](./bulk-loading) | `COPY`, bỏ index khi nạp, UPSERT lô lớn |
+| [Time-series Patterns](./time-series) | Partition theo thời gian, BRIN, rollup, retention |
+
+## Phase 5 — Operations
+
+Chạy PostgreSQL trên production.
+
+| Chủ đề | Nội dung |
+|---|---|
+| [Replication](./replication) | Physical vs logical, lag, failover, `pg_rewind` |
+| [Connection Pooling](./connection-pooling) | Vì sao nhiều connection lại chậm, PgBouncer |
+| [Config Tuning](./config-tuning) | Tham số bộ nhớ, I/O cost, config mẫu |
+| [Sharding](./sharding) | Citus, shard key, virtual shard, khi nào KHÔNG nên shard |
+| [Zero-downtime Migration](./zero-downtime-migration) | `NOT VALID`, expand/contract, backfill lô |
 
 ## Lab
 
