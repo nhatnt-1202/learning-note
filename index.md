@@ -18,6 +18,10 @@ features:
     title: Linux
     details: Các lệnh cơ bản, file system, permissions, process management và system administration.
     link: /notes/linux/
+  - icon: 🌐
+    title: Web (HTML, DHTML & JS)
+    details: 9 bài từ giáo trình Aptech — HTML, CSS, JavaScript, kèm editor chạy code ngay trên trang.
+    link: /notes/web/
   - icon: 🗄️
     title: Database
     details: PostgreSQL, MySQL, Redis — từ cơ bản đến nâng cao, query optimization, indexing.
