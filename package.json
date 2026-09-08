@@ -1,0 +1,13 @@
+{
+  "name": "learning-note",
+  "version": "1.0.0",
+  "description": "Personal learning notes",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
