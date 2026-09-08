@@ -101,6 +101,14 @@ export default defineConfig({
             { text: 'EXPLAIN ANALYZE', link: '/notes/database/postgresql-advanced/explain-analyze' },
           ]
         },
+        {
+          text: 'Schema & Labs',
+          collapsed: false,
+          items: [
+            { text: 'Schema Design', link: '/notes/database/postgresql-advanced/schema' },
+            { text: 'Labs', link: '/notes/database/postgresql-advanced/labs' },
+          ]
+        },
       ],
       '/notes/docker/': [
         {

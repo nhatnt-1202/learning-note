@@ -20,22 +20,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           # Cần full history cho lastUpdated (lấy thời gian từ git log)
           fetch-depth: 0
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
+      # Pages đã được bật sẵn (build_type=workflow). Không dùng enablement:true
+      # vì GITHUB_TOKEN không có quyền admin để tạo Pages site.
       - name: Setup Pages
-        uses: actions/configure-pages@v4
-        with:
-          # Tự bật GitHub Pages (source = Actions) ở lần chạy đầu tiên
-          enablement: true
+        uses: actions/configure-pages@v6
 
       - name: Install dependencies
         run: npm ci
@@ -44,7 +43,7 @@ jobs:
         run: npm run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: .vitepress/dist
 
@@ -57,4 +56,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
