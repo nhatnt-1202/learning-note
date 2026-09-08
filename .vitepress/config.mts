@@ -1,12 +1,22 @@
 import {defineConfig} from "vitepress";
 
+// Head links KHÔNG được VitePress tự thêm tiền tố base, nên phải tự ghép.
+// Đổi sang "/" nếu sau này map custom domain.
+const base = "/learning-note/";
+
 export default defineConfig({
-  title: "Learning Notes",
+  title: "NhatNT Notes",
   description:
     "Tài liệu học tập cá nhân — Linux, Database, Docker, JavaScript và nhiều hơn nữa",
 
   // GitHub Pages project site: https://zenny-12feb.github.io/learning-note/
-  base: "/learning-note/",
+  base,
+
+  head: [
+    ["link", {rel: "icon", type: "image/svg+xml", href: `${base}logo.svg`}],
+    ["link", {rel: "apple-touch-icon", href: `${base}logo.svg`}],
+    ["meta", {name: "theme-color", content: "#3c8772"}]
+  ],
 
   themeConfig: {
     // Logo & site name
