@@ -1,8 +1,9 @@
 import {defineConfig} from "vitepress";
 
 // Head links KHÔNG được VitePress tự thêm tiền tố base, nên phải tự ghép.
-// Đổi sang "/" nếu sau này map custom domain.
-const base = "/learning-note/";
+// GitHub Pages là project site nên cần tiền tố "/learning-note/",
+// còn Vercel serve ở root nên dùng "/".
+const base = process.env.VERCEL ? "/" : "/learning-note/";
 
 export default defineConfig({
   title: "NhatNT Notes",
