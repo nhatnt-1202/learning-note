@@ -6,7 +6,7 @@
 //   - "db": đọc từ Supabase, chấm bằng RPC grade_attempt vì client không có đáp án
 // Khi mọi bài đã có quiz trong DB thì bỏ nhánh "static" cùng với transformPageData.
 
-import {renderMd} from "./md";
+import {renderMd, renderMdInline} from "./md";
 import {getSupabase} from "./supabase";
 
 export type QuestionType = "single" | "multi" | "truefalse" | "fill" | "output";
@@ -120,7 +120,7 @@ async function withQuestions(row: any): Promise<Quiz> {
       type: q.type,
       promptHtml: renderMd(q.prompt),
       options: q.options ?? null,
-      optionsHtml: q.options ? q.options.map((o: string) => renderMd(o)) : null,
+      optionsHtml: q.options ? q.options.map((o: string) => renderMdInline(o)) : null,
       caseSensitive: Boolean(q.case_sensitive)
     }))
   };
@@ -289,7 +289,7 @@ export async function loadBank(slugPrefix: string): Promise<QuizQuestion[]> {
       type: q.type,
       promptHtml: renderMd(q.prompt),
       options: q.options ?? null,
-      optionsHtml: q.options ? q.options.map((o: string) => renderMd(o)) : null,
+      optionsHtml: q.options ? q.options.map((o: string) => renderMdInline(o)) : null,
       caseSensitive: Boolean(q.case_sensitive)
     }));
 }
@@ -360,7 +360,7 @@ export async function dueReview(limit = 10): Promise<QuizQuestion[]> {
       type: q.type,
       promptHtml: renderMd(q.prompt),
       options: q.options ?? null,
-      optionsHtml: q.options ? q.options.map((o: string) => renderMd(o)) : null,
+      optionsHtml: q.options ? q.options.map((o: string) => renderMdInline(o)) : null,
       caseSensitive: Boolean(q.case_sensitive)
     }));
 }

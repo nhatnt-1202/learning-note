@@ -45,6 +45,30 @@ function inline(text: string, slots: string[]): string {
   return s.replace(/\n/g, "<br>");
 }
 
+// Khôi phục nhiều lượt vì chỗ giữ chỗ có thể lồng trong chỗ giữ chỗ khác.
+function restore(html: string, slots: string[]): string {
+  const anySlot = new RegExp(MARK + "(\\d+)" + MARK, "g");
+  let out = html;
+  for (let i = 0; i < 3 && out.includes(MARK); i++) {
+    out = out.replace(anySlot, (_m, n: string) => slots[+n] ?? "");
+  }
+  return out;
+}
+
+/**
+ * Như renderMd nhưng KHÔNG bọc <p>. Dùng cho nội dung nằm gọn một dòng như
+ * phương án trả lời.
+ *
+ * Lý do phải có hàm riêng: VitePress đặt `.vp-doc p { line-height: 28px }` —
+ * pixel cứng, nên một <p> lọt vào giữa dòng sẽ mang theo line-height của nó và
+ * lệch khỏi phần chữ xung quanh. Chữ cái A/B/C/D đứng cạnh đáp án là chỗ nhìn
+ * thấy rõ nhất: nó bị đẩy lên vài pixel so với nội dung.
+ */
+export function renderMdInline(src: string): string {
+  const slots: string[] = [];
+  return restore(inline(String(src ?? ""), slots), slots);
+}
+
 export function renderMd(src: string): string {
   const slots: string[] = [];
 
@@ -72,11 +96,5 @@ export function renderMd(src: string): string {
     })
     .join("");
 
-  // Khôi phục nhiều lượt vì chỗ giữ chỗ có thể lồng trong chỗ giữ chỗ khác.
-  const anySlot = new RegExp(MARK + "(\\d+)" + MARK, "g");
-  let out = html;
-  for (let i = 0; i < 3 && out.includes(MARK); i++) {
-    out = out.replace(anySlot, (_m, n: string) => slots[+n] ?? "");
-  }
-  return out;
+  return restore(html, slots);
 }

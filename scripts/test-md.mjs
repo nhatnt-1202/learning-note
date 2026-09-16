@@ -21,7 +21,7 @@ const bundled = await build({
   platform: "neutral"
 });
 
-const {renderMd} = await import(
+const {renderMd, renderMdInline} = await import(
   "data:text/javascript;base64," +
     Buffer.from(bundled.outputFiles[0].text).toString("base64")
 );
@@ -48,7 +48,9 @@ const cases = [
 let failed = 0;
 
 for (const [src, ten] of cases) {
-  const out = renderMd(src);
+  // Chạy cả hai hàm: renderMdInline cũng đi ra DOM bằng v-html nên chịu đúng
+  // một yêu cầu bảo mật như renderMd.
+  const out = renderMd(src) + renderMdInline(src);
   const problems = [];
 
   if (out.replace(ALLOWED, "").includes("<")) problems.push("còn HTML thô");
@@ -83,5 +85,19 @@ ok(
 );
 ok(renderMd("a\n\nb") === "<p>a</p><p>b</p>", "hai đoạn thành hai thẻ p");
 
-console.log(`\n${cases.length + 3} kiểm tra · ${failed} lỗi`);
+// Đáp án trắc nghiệm không được bọc <p>: VitePress đặt .vp-doc p line-height
+// bằng pixel cứng, nên một <p> lọt vào giữa dòng sẽ đẩy lệch chữ cái A/B/C/D
+// đứng cạnh nó. Lỗi này chỉ thấy bằng mắt, nên phải có test giữ.
+ok(renderMdInline("Công nghiệp") === "Công nghiệp", "đáp án thường không bọc thẻ nào");
+ok(!renderMdInline("Công nghiệp").includes("<p>"), "đáp án không có thẻ p");
+ok(
+  renderMdInline("dùng `p = m/v`").includes("<code>p = m/v</code>"),
+  "đáp án vẫn render được code inline"
+);
+ok(
+  renderMdInline("**đậm** và *nghiêng*") === "<strong>đậm</strong> và <em>nghiêng</em>",
+  "đáp án vẫn render được đậm/nghiêng"
+);
+
+console.log(`\n${cases.length + 7} kiểm tra · ${failed} lỗi`);
 process.exit(failed ? 1 : 0);

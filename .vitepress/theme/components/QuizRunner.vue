@@ -620,7 +620,11 @@ defineExpose({restart: () => start(null, mounted.value)});
 .qz-opt.key {border-color: var(--vp-c-green-1); background: var(--vp-c-green-soft);}
 .qz-opt.miss {border-color: var(--vp-c-red-1); background: var(--vp-c-red-soft);}
 .qz-opt :deep(code) {font-size: 13px;}
-.qz-opt :deep(p) {margin: 0;}
+/* Đáp án đi qua renderMdInline nên không còn <p>. Rule này giữ cho đề cũ hoặc
+   đề người dùng tự soạn: VitePress đặt .vp-doc p line-height bằng pixel cứng
+   (28px), nên một <p> lọt vào đây sẽ cao hơn dòng chứa nó và đẩy lệch chữ cái
+   A/B/C/D đứng cạnh. */
+.qz-opt :deep(p) {margin: 0; line-height: inherit; font-size: inherit;}
 .qz-input {
   width: 100%;
   margin-top: 10px;
