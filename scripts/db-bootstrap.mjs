@@ -24,6 +24,11 @@ import {execFileSync} from "node:child_process";
 const ROOT = path.resolve(import.meta.dirname, "..");
 const MIG = path.join(ROOT, "supabase", "migrations");
 
+// --schema-only: bỏ phần đề, chỉ còn migration. Dùng khi dán vào SQL Editor —
+// 300KB INSERT trong một ô textarea là chỗ trình duyệt hay nghẽn nhất, mà phần
+// đề thì đẩy bằng scripts/import-quiz.mjs gọn hơn nhiều.
+const SCHEMA_ONLY = process.argv.includes("--schema-only");
+
 const out = [];
 for (const f of fs.readdirSync(MIG).sort()) {
   if (!f.endsWith(".sql")) continue;
@@ -31,6 +36,7 @@ for (const f of fs.readdirSync(MIG).sort()) {
   console.error(`→ ${f}`);
 }
 
+if (!SCHEMA_ONLY) {
 out.push("-- ══ đề của site (notes/**/*.quiz.yml) ══");
 out.push(
   execFileSync("node", [path.join(ROOT, "scripts", "quiz-to-sql.mjs")], {
@@ -40,5 +46,6 @@ out.push(
     stdio: ["ignore", "pipe", "inherit"]
   })
 );
+}
 
 process.stdout.write(out.join("\n\n"));

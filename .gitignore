@@ -15,3 +15,5 @@ bootstrap.sql
 
 # Cấu hình Claude Code của riêng máy này.
 .claude/settings.local.json
+
+schema.sql

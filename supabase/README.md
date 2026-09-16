@@ -62,21 +62,41 @@ Với magic link, thêm mọi URL mà người dùng có thể bấm liên kết
 **Authentication → URL Configuration → Redirect URLs**, ít nhất là trang
 `/notes/quiz/` và `http://localhost:5173/**` khi chạy máy.
 
-## Nạp đề của site vào DB
+## Dựng DB lần đầu
+
+Chưa có bảng nào thì bắt đầu ở đây. Publishable key không có quyền `CREATE
+TABLE`, nên bước tạo bảng buộc phải qua Dashboard hoặc Supabase CLI.
 
 ```bash
-npm run quiz:import -- --dry-run    # xem sẽ đẩy gì
-SUPABASE_URL=… SUPABASE_SERVICE_ROLE_KEY=… npm run quiz:import
+npm run db:schema > schema.sql     # ~27KB, chỉ migration
 ```
 
-Hoặc không cần service role key, nạp bằng SQL:
+Dán `schema.sql` vào **SQL Editor** → Run. Ra 5 bảng (`profiles`, `quizzes`,
+`questions`, `attempts`, `review_items`) và các hàm chấm bài, ôn tập, xếp hạng.
+
+Rồi nạp đề:
 
 ```bash
-npm run quiz:sql | psql "$DATABASE_URL"
+npm run quiz:import -- --dry-run   # xem sẽ đẩy gì, không cần key
+npm run quiz:import                # cần SUPABASE_SERVICE_ROLE_KEY trong .env.local
+```
+
+`npm run db:sql` gộp cả hai bước thành một file, nhưng phần đề là ~250KB lệnh
+`insert` — dán ngần ấy vào một ô textarea là chỗ trình duyệt hay nghẽn, nên chỉ
+dùng khi nạp bằng `psql`.
+
+## Nạp lại đề sau khi sửa
+
+```bash
+npm run quiz:import                 # cần service role key
+npm run quiz:sql | psql "$DATABASE_URL"   # hoặc không cần key, qua psql
 ```
 
 Cả hai đường đều upsert theo `slug` và thay toàn bộ câu hỏi của đề, nên chạy lại
-bao nhiêu lần cũng được.
+bao nhiêu lần cũng được. Riêng `db:sql`/`schema.sql` thì **chỉ chạy được trên DB
+trống** — migration nền dùng `create table` trần, và để nguyên như vậy là đúng:
+một migration im lặng bỏ qua khi bảng đã tồn tại sẽ giấu mất việc schema trên
+server đã lệch khỏi file.
 
 ## Bảng xếp hạng
 

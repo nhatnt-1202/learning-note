@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // Đẩy các file .quiz.yml lên Supabase làm đề của site (source = 'auto').
 //
-//   SUPABASE_URL=… SUPABASE_SERVICE_ROLE_KEY=… node scripts/import-quiz.mjs
-//   node scripts/import-quiz.mjs --dry-run
+//   npm run quiz:import              # đọc SUPABASE_* từ .env.local
+//   npm run quiz:import -- --dry-run # xem sẽ đẩy gì, không cần key
 //
 // Cần service role key vì đề 'auto' không thuộc về ai (owner_id null) và RLS
 // chặn mọi client tạo loại đề đó. Key này KHÔNG bao giờ được đặt vào biến có
