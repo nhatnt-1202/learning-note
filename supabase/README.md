@@ -69,9 +69,21 @@ npm run db:push -- --dry   # xem sẽ chạy migration nào
 npm run db:push            # chạy migration còn thiếu, rồi nạp đề
 ```
 
-Cần `SUPABASE_DB_URL` trong `.env.local` (Dashboard → Settings → Database →
-Connection string → URI). Đây là thứ **duy nhất** chạy được DDL: service role
-key đi qua PostgREST nên không `create table` hay `alter table` được.
+Cần `SUPABASE_DB_URL` trong `.env.local` (Dashboard → Connect → Connection
+string → URI). Đây là thứ **duy nhất** chạy được DDL: service role key đi qua
+PostgREST nên không `create table` hay `alter table` được.
+
+**Lấy chuỗi Session pooler, không lấy Direct connection.** Host direct
+`db.<ref>.supabase.co` chỉ có bản ghi **IPv6**, nên máy nào không có route IPv6
+ra ngoài sẽ báo `Network is unreachable` — thông báo đó trông như project chết
+chứ không như thiếu IPv6. Session pooler có IPv4:
+
+```
+postgresql://postgres.<ref>:<mật-khẩu>@aws-0-<region>.pooler.supabase.com:5432/postgres
+```
+
+Chọn cổng **5432** (session), không phải 6543 (transaction) — pooler chế độ
+transaction không chạy DDL ổn.
 
 Script ghi lại từng migration đã chạy vào bảng `schema_migrations`, nên chạy lại
 bao nhiêu lần cũng được và chỉ chạy đúng phần còn thiếu. DB dựng tay từ trước
