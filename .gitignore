@@ -17,3 +17,6 @@ bootstrap.sql
 .claude/settings.local.json
 
 schema.sql
+
+# Gộp tạm các migration còn thiếu để dán vào SQL Editor. Không phải nguồn.
+pending.sql

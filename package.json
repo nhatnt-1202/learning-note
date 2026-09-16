@@ -15,7 +15,8 @@
     "ktct:merge": "node scripts/ktct-merge.mjs",
     "ktct:build": "node scripts/ktct-build.mjs",
     "db:sql": "node scripts/db-bootstrap.mjs",
-    "db:schema": "node scripts/db-bootstrap.mjs --schema-only"
+    "db:schema": "node scripts/db-bootstrap.mjs --schema-only",
+    "db:push": "bash scripts/db-push.sh"
   },
   "devDependencies": {
     "js-yaml": "^5.4.1",

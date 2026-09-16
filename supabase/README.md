@@ -62,7 +62,27 @@ Với magic link, thêm mọi URL mà người dùng có thể bấm liên kết
 **Authentication → URL Configuration → Redirect URLs**, ít nhất là trang
 `/notes/quiz/` và `http://localhost:5173/**` khi chạy máy.
 
-## Dựng DB lần đầu
+## Cách gọn nhất: `npm run db:push`
+
+```bash
+npm run db:push -- --dry   # xem sẽ chạy migration nào
+npm run db:push            # chạy migration còn thiếu, rồi nạp đề
+```
+
+Cần `SUPABASE_DB_URL` trong `.env.local` (Dashboard → Settings → Database →
+Connection string → URI). Đây là thứ **duy nhất** chạy được DDL: service role
+key đi qua PostgREST nên không `create table` hay `alter table` được.
+
+Script ghi lại từng migration đã chạy vào bảng `schema_migrations`, nên chạy lại
+bao nhiêu lần cũng được và chỉ chạy đúng phần còn thiếu. DB dựng tay từ trước
+cũng dùng được: nó nhận ra migration nào đã chạy bằng dấu vết của chính chúng
+(bảng `quizzes`, hàm `leaderboard_overall`) rồi đánh dấu, thay vì chạy lại và
+đâm vào `create table` lần hai.
+
+Chạy xong nó `notify pgrst, 'reload schema'`. Thiếu bước này thì PostgREST vẫn
+trả `column ... does not exist` cho cột vừa thêm, cho tới lần reload sau.
+
+## Dựng DB lần đầu (không có connection string)
 
 Chưa có bảng nào thì bắt đầu ở đây. Publishable key không có quyền `CREATE
 TABLE`, nên bước tạo bảng buộc phải qua Dashboard hoặc Supabase CLI.
