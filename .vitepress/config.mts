@@ -1,9 +1,54 @@
-import {defineConfig} from "vitepress";
+import {defineConfig, createMarkdownRenderer} from "vitepress";
+import fs from "node:fs";
+import path from "node:path";
+import {fileURLToPath} from "node:url";
+import {readQuizFile, quizFileFor} from "./quiz/quiz-data.mjs";
 
 // Head links KHÔNG được VitePress tự thêm tiền tố base, nên phải tự ghép.
 // GitHub Pages là project site nên cần tiền tố "/learning-note/",
 // còn Vercel serve ở root nên dùng "/".
 const base = process.env.VERCEL ? "/" : "/learning-note/";
+
+const SRC_DIR = path.resolve(fileURLToPath(new URL(".", import.meta.url)), "..");
+
+const markdown = {
+  lineNumbers: true,
+  theme: {
+    light: "github-light",
+    dark: "github-dark"
+  }
+};
+
+// createMarkdownRenderer trả về đúng instance markdown-it mà VitePress đang
+// dùng cho các trang, nên câu hỏi được render kèm shiki y như code trong bài.
+async function quizFor(relativePath: string) {
+  const file = path.join(SRC_DIR, quizFileFor(relativePath));
+  if (!relativePath.endsWith(".md") || !fs.existsSync(file)) return null;
+
+  const {quiz, errors} = readQuizFile(file, relativePath.replace(/\.md$/, ""));
+
+  // Sai schema thì dừng build. Quiz sinh tự động mà đáp án lệch chỉ số sẽ dạy
+  // sai kiến thức — tệ hơn hẳn so với không có quiz.
+  if (errors.length) {
+    throw new Error(
+      `Quiz không hợp lệ — ${quizFileFor(relativePath)}\n  - ${errors.join("\n  - ")}`
+    );
+  }
+
+  // Quiz `serve: db` cố tình không nhúng: nhúng vào page data là gửi luôn đáp
+  // án xuống trình duyệt, và Quiz.vue sẽ chấm ở client nên không ghi được điểm.
+  if (quiz.serve === "db") return null;
+
+  const md = await createMarkdownRenderer(SRC_DIR, markdown, base);
+  const env = {path: path.join(SRC_DIR, relativePath), relativePath, links: []};
+
+  for (const q of quiz.questions) {
+    q.promptHtml = md.render(q.prompt, env);
+    q.explanationHtml = q.explanation ? md.render(q.explanation, env) : "";
+    if (q.options) q.optionsHtml = q.options.map((o) => md.renderInline(o, env));
+  }
+  return quiz;
+}
 
 export default defineConfig({
   title: "NhatNT Notes",
@@ -12,6 +57,10 @@ export default defineConfig({
 
   // GitHub Pages project site: https://zenny-12feb.github.io/learning-note/
   base,
+
+  // Markdown ngoài notes/ không phải nội dung site — không có dòng này thì
+  // supabase/README.md thành một trang và lọt cả vào ô tìm kiếm.
+  srcExclude: ["supabase/**", ".claude/**", "scripts/**"],
 
   head: [
     ["link", {rel: "icon", type: "image/svg+xml", href: `${base}logo.svg`}],
@@ -37,7 +86,8 @@ export default defineConfig({
       {text: "Database", link: "/notes/database/"},
       {text: "Docker", link: "/notes/docker/"},
       {text: "JavaScript", link: "/notes/javascript/"},
-      {text: "Cloud", link: "/notes/cloud/"}
+      {text: "Cloud", link: "/notes/cloud/"},
+      {text: "Quiz", link: "/notes/quiz/"}
     ],
 
     // Sidebar
@@ -360,6 +410,12 @@ export default defineConfig({
           ]
         }
       ],
+      "/notes/quiz/": [
+        {
+          text: "Quiz",
+          items: [{text: "Tổng hợp & ôn tập", link: "/notes/quiz/"}]
+        }
+      ],
       "/notes/javascript/": [
         {
           text: "JavaScript",
@@ -400,13 +456,33 @@ export default defineConfig({
     }
   },
 
-  // Markdown options
-  markdown: {
-    lineNumbers: true,
-    theme: {
-      light: "github-light",
-      dark: "github-dark"
-    }
+  markdown,
+
+  // Quiz của một bài nằm ở file .quiz.yml cạnh bài đó và được nhúng vào page
+  // data của đúng trang ấy — trang không có quiz thì không tải thêm byte nào.
+  async transformPageData(pageData) {
+    const quiz = await quizFor(pageData.relativePath);
+    if (quiz) pageData.frontmatter.quiz = quiz;
+  },
+
+  vite: {
+    plugins: [
+      {
+        // Sửa .quiz.yml lúc dev không chạm vào file .md nên VitePress không
+        // biết phải sinh lại page data — phải tự vô hiệu hoá module bài học.
+        name: "quiz-yml-reload",
+        configureServer(server) {
+          server.watcher.on("all", (_event, file) => {
+            if (!file.endsWith(".quiz.yml")) return;
+            const mod = server.moduleGraph.getModuleById(
+              file.replace(/\.quiz\.yml$/, ".md")
+            );
+            if (mod) server.moduleGraph.invalidateModule(mod);
+            (server.hot ?? server.ws).send({type: "full-reload"});
+          });
+        }
+      }
+    ]
   },
 
   // Last updated

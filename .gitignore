@@ -3,3 +3,15 @@ node_modules/
 .vitepress/cache/
 .DS_Store
 *.log
+.env
+.env.local
+.env.*.local
+
+# Sinh bằng `npm run db:sql`, dán vào Supabase SQL Editor. Không phải nguồn.
+bootstrap.sql
+
+# Ghi chú tạm ở thư mục gốc — có chuỗi trông như credential, không đưa lên remote.
+/note
+
+# Cấu hình Claude Code của riêng máy này.
+.claude/settings.local.json

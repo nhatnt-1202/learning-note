@@ -5,9 +5,19 @@
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "quiz:check": "node scripts/validate-quiz.mjs",
+    "db:test": "bash scripts/test-db.sh",
+    "test:md": "node scripts/test-md.mjs",
+    "quiz:import": "node scripts/import-quiz.mjs",
+    "quiz:sql": "node scripts/quiz-to-sql.mjs",
+    "db:sql": "node scripts/db-bootstrap.mjs"
   },
   "devDependencies": {
+    "js-yaml": "^5.4.1",
     "vitepress": "^1.6.4"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.116.0"
   }
 }

@@ -1,0 +1,137 @@
+title: Kiểm tra bài 6 — Nền tảng cú pháp
+pass: 70
+generated: claude-opus-5
+reviewed: false
+source_hash: d79655d4cd130ff2
+questions:
+  - id: var-leak
+    type: output
+    q: |
+      Đoạn này in ra gì?
+
+      ```js
+      for (var i = 0; i < 3; i++) {}
+      console.log(i);
+      ```
+    answer: ["3"]
+    why: |
+      `var` có phạm vi **hàm**, không phải phạm vi khối, nên `i` vẫn sống sau khi
+      vòng lặp kết thúc và giữ giá trị làm điều kiện dừng là `3`.
+
+      Đổi sang `let i` thì dòng `console.log` sẽ báo lỗi `i is not defined` —
+      đó chính là lý do nên dùng `let`.
+    tags: [scope, var-let]
+
+  - id: cong-chuoi
+    type: single
+    q: |
+      `var A = "12" + 7.5;` — giá trị của `A` là gì?
+    options:
+      - "19.5"
+      - '"127.5"'
+      - "NaN"
+      - "Lỗi cú pháp"
+    answer: 1
+    why: |
+      `+` gặp một toán hạng là chuỗi thì chuyển sang **nối chuỗi** thay vì cộng
+      số, nên kết quả là chuỗi `"127.5"`.
+
+      Đây là nguồn lỗi phổ biến nhất khi đọc dữ liệu từ form: mọi giá trị lấy từ
+      `input.value` đều là chuỗi, kể cả ô `type="number"`. Ép kiểu tường minh
+      bằng `Number(x)` hoặc `parseInt(x, 10)` trước khi tính.
+    tags: [kieu-du-lieu, ep-kieu]
+
+  - id: so-sanh
+    type: multi
+    q: Những biểu thức nào cho `true`?
+    options:
+      - '`"" == 0`'
+      - '`"" == "0"`'
+      - '`1 === "1"`'
+      - "`null == undefined`"
+    answer: [0, 3]
+    why: |
+      `==` ép kiểu trước khi so sánh: `""` chuyển thành `0` nên `"" == 0` là
+      `true`, còn `"" == "0"` so hai chuỗi khác nhau nên `false`. `===` không ép
+      gì cả nên `1 === "1"` là `false`.
+
+      `null == undefined` là `true` — và đây là ngoại lệ duy nhất của `==` được
+      chấp nhận rộng rãi: viết `x == null` để kiểm tra cùng lúc cả hai.
+    tags: [toan-tu, so-sanh]
+
+  - id: sort-chuoi
+    type: single
+    q: "`[10, 9, 100, 1].sort()` trả về gì?"
+    options:
+      - "`[1, 9, 10, 100]`"
+      - "`[1, 10, 100, 9]`"
+      - "`[10, 9, 100, 1]`"
+      - "`[100, 10, 9, 1]`"
+    answer: 1
+    why: |
+      `sort()` không tham số sẽ chuyển mọi phần tử thành chuỗi rồi sắp theo thứ
+      tự từ điển — `"10"` đứng trước `"9"` vì ký tự `1` nhỏ hơn `9`.
+
+      Sắp số phải truyền hàm so sánh: `arr.sort((a, b) => a - b)`.
+    tags: [mang, sort]
+
+  - id: switch-break
+    type: truefalse
+    q: |
+      Trong `switch`, một `case` thiếu `break` sẽ rơi xuống thực hiện luôn `case`
+      kế tiếp.
+    answer: true
+    why: |
+      Đúng — gọi là *fall-through*. Đôi khi ta cố ý dùng để gộp nhiều `case`
+      cùng xử lý, nhưng quên `break` thì sinh lỗi rất khó thấy vì code vẫn chạy,
+      chỉ ra kết quả sai.
+    tags: [dieu-kien, switch]
+
+  - id: or-tra-ve
+    type: single
+    q: |
+      ```js
+      console.log("" || "Khách");
+      ```
+    options:
+      - "`true`"
+      - "chuỗi rỗng"
+      - "`Khách`"
+      - "`undefined`"
+    answer: 2
+    why: |
+      `&&` và `||` **không trả về boolean** mà trả về chính một trong hai toán
+      hạng. `""` là falsy nên `||` trả về toán hạng bên phải.
+
+      Nhờ đó có mẹo đặt giá trị mặc định: `const ten = nhapVao || "Khách"`. Chú
+      ý mẹo này coi cả `0` và `""` là "không có"; muốn chỉ thay khi `null` hoặc
+      `undefined` thì dùng `??`.
+    tags: [toan-tu, logic, truthy]
+
+  - id: nullish
+    type: fill
+    q: |
+      Toán tử nào chỉ thay giá trị khi bên trái là `null` hoặc `undefined`
+      (nên `0` và `""` vẫn được giữ)? Gõ ký hiệu của nó.
+    answer: ["??", "a ?? b"]
+    why: |
+      `??` (nullish coalescing). `const so = nhapVao ?? 0` giữ nguyên `0` do
+      người dùng nhập, còn `nhapVao || 0` thì không — vì `0` là falsy.
+    tags: [toan-tu, nullish]
+
+  - id: duyet-mang
+    type: single
+    q: Duyệt **giá trị** của một mảng thì nên dùng cấu trúc nào?
+    options:
+      - "`for…in`"
+      - "`for…of`"
+      - "`with`"
+      - "`eval`"
+    answer: 1
+    why: |
+      `for…of` duyệt giá trị của mảng. `for…in` duyệt **khoá** và còn duyệt cả
+      thuộc tính kế thừa từ prototype — dùng cho mảng là sai.
+
+      `with` bị cấm trong strict mode (mọi ES module đều strict) và `eval` thì
+      vừa chậm, vừa hở bảo mật, vừa không debug được.
+    tags: [vong-lap, mang]

@@ -833,6 +833,8 @@ Lưu ý thực tế: đây là kiểm tra **phía client**, chỉ để báo cho
 sớm. Server vẫn phải kiểm tra lại.
 :::
 
+<Quiz />
+
 ---
 
 [← Bài 5](./05-dhtml-va-style-sheets) · Bài tiếp: [Các đối tượng cơ bản →](./07-doi-tuong-co-ban)
