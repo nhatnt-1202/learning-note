@@ -1,0 +1,624 @@
+title: KTCT — Cạnh tranh và độc quyền trong kinh tế thị trường
+serve: db
+pass: 70
+generated: fable + haiku + opus + sonnet (giải độc lập rồi đối chiếu chéo)
+reviewed: false
+source_hash: 771f695a77994b49
+questions:
+  - id: ktct-005
+    type: single
+    q: Ai là người phát triển lý luận kinh tế chính trị trong giai đoạn cuối thế kỷ XIX – đầu thế kỷ XX?
+    options:
+      - François Quesnay
+      - V.I. Lênin
+      - A. Montchrétien
+      - Thomas Mun
+    answer: 1
+    why: V.I. Lênin là người phát triển lý luận kinh tế chính trị Mác-xít trong giai đoạn cuối thế kỷ XIX – đầu thế kỷ XX. Các nhân vật khác sống ở giai đoạn trước (Quesnay, Montchrétien, Mun).
+    tags:
+      - phan-i
+      - goc-cau-5
+      - nhat-tri
+  - id: ktct-008
+    type: single
+    q: Chủ nghĩa tư bản ngày nay có những đặc điểm mới nào so với thời Lênin?
+    options:
+      - Sản xuất nông nghiệp là chủ yếu
+      - Vai trò của nhà nước giảm đi
+      - Không còn độc quyền
+      - Xuất hiện các công ty xuyên quốc gia
+    answer: 3
+    why: 'Chủ nghĩa tư bản ngày nay có đặc điểm mới là xuất hiện các công ty xuyên quốc gia, một hình thức độc quyền mới so với thời Lênin. Các phương án khác không đúng: nông nghiệp không phải chủ yếu, vai trò nhà nước tăng, độc quyền vẫn tồn tại.'
+    tags:
+      - phan-i
+      - goc-cau-8
+      - nhat-tri
+  - id: ktct-009
+    type: single
+    q: Xuất khẩu tư bản hiện nay chủ yếu dưới hình thức nào?
+    options:
+      - Viện trợ không hoàn lại
+      - Đầu tư trực tiếp nước ngoài
+      - Hỗ trợ kỹ thuật
+      - Chỉ cho vay
+    answer: 1
+    why: Xuất khẩu tư bản hiện nay chủ yếu dưới hình thức đầu tư trực tiếp nước ngoài (FDI). Viện trợ (A), hỗ trợ kỹ thuật (C), cho vay (D) là các hình thức khác hoặc thứ yếu.
+    tags:
+      - phan-i
+      - goc-cau-9
+      - nhat-tri
+  - id: ktct-021
+    type: single
+    q: Nguyên nhân ra đời của độc quyền nhà nước trong chủ nghĩa tư bản là do
+    options:
+      - Xu thế quốc tế hóa đời sống kinh tế, sự gia tăng mâu thuẫn xã hội, nhu cầu ổn định kinh tế vĩ mô
+      - Mong muốn của giai cấp công nhân
+      - Nhu cầu phát triển độc lập
+      - Sự phát triển của nông nghiệp
+    answer: 0
+    why: Nguyên nhân ra đời độc quyền nhà nước là xu thế quốc tế hoá kinh tế, gia tăng mâu thuẫn xã hội, nhu cầu ổn định kinh tế vĩ mô. B, C, D không phải nguyên nhân cơ bản.
+    tags:
+      - phan-i
+      - goc-cau-21
+      - nhat-tri
+  - id: ktct-028
+    type: single
+    q: Sở hữu nhà nước trong độc quyền nhà nước tư bản chủ nghĩa có vai trò gì?
+    options:
+      - Chỉ phục vụ an sinh xã hội
+      - Tạo cơ sở vật chất kỹ thuật cho độc quyền tư nhân, giải quyết vấn đề cung cấp tư liệu sản xuất lớn
+      - Loại bỏ sở hữu tư nhân
+      - Hạn chế cạnh tranh
+    answer: 1
+    why: Sở hữu nhà nước trong độc quyền nhà nước tư bản chủ nghĩa tạo cơ sở vật chất kỹ thuật cho độc quyền tư nhân. A quá hẹp, C sai, D chỉ là hiệu ứng phụ.
+    tags:
+      - phan-i
+      - goc-cau-28
+      - nhat-tri
+  - id: ktct-030
+    type: single
+    q: Sự can thiệp của nhà nước tư sản vào kinh tế trong nền kinh tế thị trường tư bản chủ nghĩa nhằm mục đích gì?
+    options:
+      - Giảm lợi nhuận của các tập đoàn
+      - Thực hiện chủ nghĩa xã hội
+      - Xóa bỏ hoàn toàn độc quyền
+      - Điều tiết kinh tế vĩ mô, khắc phục khủng hoảng, bảo vệ lợi ích của tư bản độc quyền
+    answer: 3
+    why: Can thiệp của nhà nước tư sản vào kinh tế nhằm mục đích điều tiết kinh tế vĩ mô, khắc phục khủng hoảng kinh tế, bảo vệ lợi ích của tư bản độc quyền. A, B, C không đúng.
+    tags:
+      - phan-i
+      - goc-cau-30
+      - nhat-tri
+  - id: ktct-038
+    type: single
+    q: Hạn chế của độc quyền nhà nước trong chủ nghĩa tư bản là?
+    options:
+      - Thúc đẩy tăng trưởng quá nhanh
+      - Làm sâu sắc thêm mâu thuẫn giữa tư bản độc quyền và toàn xã hội
+      - Giảm thất nghiệp
+      - Làm giảm lợi nhuận của các tập đoàn
+    answer: 1
+    why: Hạn chế của độc quyền nhà nước là nó làm sâu sắc thêm mâu thuẫn giữa tư bản độc quyền và toàn xã hội. A, C, D không phải hạn chế.
+    tags:
+      - phan-i
+      - goc-cau-38
+      - nhat-tri
+  - id: ktct-048
+    type: single
+    q: Độc quyền nhà nước trong chủ nghĩa tư bản là sự kết hợp giữa?
+    options:
+      - Nhà nước và các công ty tư nhân nhỏ lẻ
+      - Sức mạnh của các tổ chức độc quyền tư nhân với sức mạnh của nhà nước tư sản
+      - Kinh tế thị trường và kinh tế kế hoạch
+      - Tư bản trong nước và tư bản nước ngoài
+    answer: 1
+    why: Độc quyền nhà nước là sự kết hợp giữa sức mạnh của các tổ chức độc quyền tư nhân với sức mạnh của nhà nước tư sản. A, C, D không chính xác.
+    tags:
+      - phan-i
+      - goc-cau-48
+      - nhat-tri
+  - id: ktct-051
+    type: single
+    q: Sự điều tiết của nhà nước tư sản thể hiện qua các chính sách nào?
+    options:
+      - Chỉ chính sách tiền tệ
+      - Chỉ chính sách xã hội
+      - Chỉ chính sách giáo dục
+      - Chính sách tài khóa, tiền tệ, giá cả, thu nhập, đầu tư, xuất nhập khẩu
+    answer: 3
+    why: 'Sự điều tiết của nhà nước tư sản thể hiện qua nhiều chính sách: tài khóa, tiền tệ, giá cả, thu nhập, đầu tư, xuất nhập khẩu v.v. A, B, C chỉ là một khía cạnh.'
+    tags:
+      - phan-i
+      - goc-cau-51
+      - nhat-tri
+  - id: ktct-061
+    type: single
+    q: Các hình thức chủ yếu của độc quyền nhà nước trong chủ nghĩa tư bản là?
+    options:
+      - Chỉ có sở hữu nhà nước
+      - Chỉ có tư hữu hóa
+      - Sở hữu nhà nước, sự điều tiết của nhà nước, kết hợp độc quyền nhà nước và độc quyền tư nhân
+      - Chỉ có kế hoạch hóa tập trung
+    answer: 2
+    why: 'Độc quyền nhà nước trong chủ nghĩa tư bản có ba hình thức chủ yếu: sở hữu nhà nước, điều tiết của nhà nước, và sự kết hợp giữa độc quyền nhà nước và tư nhân. C chính xác nhất.'
+    tags:
+      - phan-i
+      - goc-cau-61
+      - nhat-tri
+  - id: ktct-064
+    type: single
+    q: Kết hợp độc quyền nhà nước tư sản với độc quyền tư nhân biểu hiện ở?
+    options:
+      - Chỉ trong các công ty quốc phòng
+      - Chỉ khi có khủng hoảng kinh tế
+      - Các liên minh độc quyền nhà nước - tư nhân, sự tham gia của đại diện độc quyền vào bộ máy nhà nước
+      - Chỉ trong lĩnh vực dịch vụ công
+    answer: 2
+    why: Kết hợp độc quyền nhà nước với tư nhân biểu hiện ở các liên minh độc quyền nhà nước-tư nhân và sự tham gia của đại diện độc quyền vào bộ máy nhà nước. C chính xác.
+    tags:
+      - phan-i
+      - goc-cau-64
+      - nhat-tri
+  - id: ktct-067
+    type: single
+    q: Các công ty xuyên quốc gia (TNCs) có vai trò gì trong chủ nghĩa tư bản hiện đại?
+    options:
+      - Hạn chế cạnh tranh
+      - Chỉ hoạt động trong nước
+      - Đóng vai trò ngày càng quan trọng trong sản xuất, thương mại, đầu tư toàn cầu, thúc đẩy quốc tế hóa
+      - Chỉ sản xuất các mặt hàng tiêu dùng
+    answer: 2
+    why: Công ty xuyên quốc gia đóng vai trò ngày càng quan trọng trong sản xuất, thương mại, đầu tư toàn cầu và thúc đẩy quốc tế hóa kinh tế. C chính xác.
+    tags:
+      - phan-i
+      - goc-cau-67
+      - nhat-tri
+  - id: ktct-068
+    type: single
+    q: Ưu điểm của độc quyền nhà nước trong chủ nghĩa tư bản là?
+    options:
+      - Loại bỏ khủng hoảng kinh tế
+      - Không có cạnh tranh
+      - Có khả năng ổn định kinh tế vĩ mô, tập trung nguồn lực phát triển các ngành trọng yếu
+      - Xóa bỏ hoàn toàn phân hóa giàu nghèo
+    answer: 2
+    why: Ưu điểm của độc quyền nhà nước là khả năng ổn định kinh tế vĩ mô và tập trung nguồn lực cho các ngành trọng yếu. A, B, D là những kỳ vọng quá cao hoặc không thực tế.
+    tags:
+      - phan-i
+      - goc-cau-68
+      - nhat-tri
+  - id: ktct-099
+    type: single
+    q: Nhà nước tư sản đảm nhận đầu tư vào ngành nào?
+    options:
+      - Đầu tư nhỏ, thu hồi vốn nhanh, lợi nhuận cao
+      - Đầu tư lớn, thu hồi vốn chậm, lợi nhuận thấp
+      - Đầu tư lớn, thu hồi vốn chậm, lợi nhuận cao
+      - Đầu tư lớn, thu hồi vốn nhanh, lợi nhuận ít
+    answer: 1
+    why: Nhà nước tư sản gánh những ngành đòi hỏi vốn đầu tư lớn, thu hồi vốn chậm, lợi nhuận thấp như kết cấu hạ tầng, năng lượng, nghiên cứu cơ bản - những lĩnh vực tư bản tư nhân không muốn làm nhưng lại cần cho các tổ chức độc quyền. Bản chất là nhà nước tạo điều kiện sinh lợi cho tư bản độc quyền tư nhân.
+    tags:
+      - phan-i
+      - goc-cau-99
+      - nhat-tri
+  - id: ktct-104
+    type: single
+    q: 'Hình thức đầu tiên của tổ chức độc quyền là:'
+    options:
+      - Xanh-đi-ca
+      - Các-ten
+      - Công-xoóc-xi-om
+      - Tờ-rớt
+    answer: 1
+    why: Hình thức đầu tiên của tổ chức độc quyền là các-ten (cartel), hình thức lỏng lẻo nhất, các doanh nghiệp vẫn giữ tính độc lập pháp nhân.
+    tags:
+      - phan-ii
+      - goc-cau-3
+      - nhat-tri
+  - id: ktct-105
+    type: single
+    q: 'Sự phân chia lãnh thổ giữa các cường quốc tư bản độc quyền nhằm:'
+    options:
+      - Để giành giật thị trường, nguồn nguyên liệu, nơi đầu tư
+      - Để hợp tác kinh tế
+      - Để bảo vệ môi trường
+      - Để tránh chiến tranh
+    answer: 0
+    why: Sự phân chia lãnh thổ giữa các cường quốc độc quyền nhằm giành giật thị trường, nguồn nguyên liệu thô và nơi đầu tư vốn. Đây là biểu hiện của cuộc đua nước ngoài của chủ nghĩa tư bản độc quyền.
+    tags:
+      - phan-ii
+      - goc-cau-4
+      - nhat-tri
+  - id: ktct-118
+    type: single
+    q: 'Tờ-tớt là hình thức tổ chức độc quyền có đặc điểm:'
+    options:
+      - Tự nguyện
+      - Không chính thức
+      - Sáp nhập doanh nghiệp, mất tư cách pháp nhân riêng
+      - Mềm dẻo
+    answer: 2
+    why: 'Tờ-rớt (trust) là hình thức độc quyền thống nhất cả sản xuất lẫn lưu thông: các doanh nghiệp thành viên bị sáp nhập, mất độc lập cả về sản xuất lẫn thương mại và mất tư cách pháp nhân riêng, chỉ còn là cổ đông hưởng lợi tức của một ban quản trị chung. Các đặc điểm tự nguyện, không chính thức, lỏng lẻo, mềm dẻo là của Các-ten (liên minh theo thỏa thuận về giá cả, sản lượng, thị trường) chứ không phải Tờ-rớt.'
+    tags:
+      - phan-ii
+      - goc-cau-17
+      - phan-xu
+  - id: ktct-121
+    type: single
+    q: 'Giá cả độc quyền là giá cả:'
+    options:
+      - Luôn bằng giá trị
+      - Luôn thấp hơn giá trị
+      - Luôn cao hơn giá trị
+      - Được hình thành do độc quyền và thường cao hơn giá trị
+    answer: 3
+    why: Giá cả độc quyền được hình thành do tình trạng độc quyền và thường cao hơn giá trị. Những khoản lợi nhuận vượt bình quân do độc quyền gọi là lợi nhuận độc quyền.
+    tags:
+      - phan-ii
+      - goc-cau-20
+      - nhat-tri
+  - id: ktct-131
+    type: single
+    q: Lợi nhuận độc quyền là lợi nhuận thu được?
+    options:
+      - Do cạnh tranh tự do
+      - Từ hoạt động xuất khẩu
+      - Cao hơn lợi nhuận bình quân do vị thế độc quyền
+      - Chỉ từ sản xuất nông nghiệp
+    answer: 2
+    why: Lợi nhuận độc quyền là lợi nhuận cao hơn lợi nhuận bình quân do vị thế độc quyền của các nhà tư bản độc quyền. Nó là kết quả của quyền lực độc quyền.
+    tags:
+      - phan-ii
+      - goc-cau-30
+      - nhat-tri
+  - id: ktct-134
+    type: single
+    q: 'Độc quyền tư bản chủ nghĩa là:'
+    options:
+      - Kinh tế nông nghiệp là chủ yếu
+      - Giai đoạn tư bản tập trung cao độ, hình thành các tổ chức độc quyền chi phối kinh tế
+      - Kinh tế nhà nước quản lý toàn phần
+      - Kinh tế tự do cạnh tranh hoàn toàn
+    answer: 1
+    why: Độc quyền tư bản chủ nghĩa là giai đoạn tư bản tập trung cao độ, hình thành các tổ chức độc quyền chi phối kinh tế. Đây là định nghĩa chính xác của Lenin về chủ nghĩa đế quốc.
+    tags:
+      - phan-ii
+      - goc-cau-33
+      - nhat-tri
+  - id: ktct-147
+    type: single
+    q: 'Độc quyền xuất hiện trong nền kinh tế thị trường tư bản chủ nghĩa vào khoảng:'
+    options:
+      - Giữa thế kỷ 20
+      - Cuối thế kỷ 19 – đầu thế kỷ 20
+      - Thế kỷ 16
+      - Đầu thế kỷ 18
+    answer: 1
+    why: Độc quyền xuất hiện trong nền kinh tế thị trường tư bản chủ nghĩa vào cuối thế kỷ 19 - đầu thế kỷ 20, khi quá trình tập trung vốn đạt đến mức độ cao.
+    tags:
+      - phan-ii
+      - goc-cau-46
+      - nhat-tri
+  - id: ktct-149
+    type: single
+    q: 'Xuất khẩu tư bản trở thành tất yếu vào cuối thể kỷ XIX đầu thế kỷ XX nhằm mục đích:'
+    options:
+      - Giúp các nước nghèo phát triển
+      - Nâng cao trình độ khoa học
+      - Tăng cường giao lưu văn hóa
+      - Giải quyết vấn đề thừa tư bản và tìm kiếm lợi nhuận siêu ngạch
+    answer: 3
+    why: Xuất khẩu tư bản trở thành tất yếu cuối thế kỷ XIX để giải quyết vấn đề thừa tư bản trong các nước tư bản phát triển và tìm kiếm lợi nhuận siêu ngạch ở các nước lạc hậu.
+    tags:
+      - phan-ii
+      - goc-cau-48
+      - nhat-tri
+  - id: ktct-156
+    type: single
+    q: Hình thức xuất khẩu tư bản chủ yếu hiện nay là gì?
+    options:
+      - Viện trợ phát triển
+      - Xuất khẩu lao động
+      - Xuất khẩu hàng hóa
+      - Đầu tư trực tiếp nước ngoài
+    answer: 3
+    why: Hiện nay, hình thức xuất khẩu tư bản chủ yếu là đầu tư trực tiếp nước ngoài (FDI), không phải viện trợ hay xuất khẩu lao động. Đây phản ánh bản chất của tư bản tài chính trong giai đoạn độc quyền.
+    tags:
+      - phan-ii
+      - goc-cau-55
+      - nhat-tri
+  - id: ktct-160
+    type: single
+    q: 'Tư bản tài chính là sự hợp nhất giữa:'
+    options:
+      - Tư bản quốc gia và tư bản nước ngoài
+      - Tư bản cố định và tư bản lưu động
+      - Tư bản ngân hàng và tư bản công nghiệp
+      - Tư bản công nghiệp và tư bản thương nghiệp
+    answer: 2
+    why: Tư bản tài chính là sự hợp nhất giữa tư bản ngân hàng và tư bản công nghiệp. Đây là một trong những đặc điểm quan trọng của chủ nghĩa tư bản độc quyền.
+    tags:
+      - phan-ii
+      - goc-cau-59
+      - nhat-tri
+  - id: ktct-169
+    type: single
+    q: 'Tập đoàn độc quyền Con-sơn là tổ chức:'
+    options:
+      - Nhóm các nhà khoa học
+      - Kết hợp nhiều công ty khác lĩnh vực thành một khối dưới sự chi phối tài chính chung
+      - Tập thể nhà nước
+      - Các hợp tác xã liên kết
+    answer: 1
+    why: Tập đoàn độc quyền Conglomerate kết hợp nhiều công ty khác lĩnh vực thành một khối dưới sự chi phối tài chính chung, đây là một hình thức độc quyền quan trọng.
+    tags:
+      - phan-ii
+      - goc-cau-68
+      - nhat-tri
+  - id: ktct-170
+    type: single
+    q: Đặc điểm nổi bật nhất của độc quyền tư bản chủ nghĩa là gì?
+    options:
+      - Mở rộng quyền sở hữu công nhân đối với tư liệu sản xuất
+      - Tự do cạnh tranh giữa các doanh nghiệp vừa và nhỏ
+      - Sản xuất hàng hóa nhỏ lẻ theo đơn đặt hàng
+      - Tập trung sản xuất và tư bản ở quy mô lớn dẫn đến hình thành các tổ chức độc quyền
+    answer: 3
+    why: Đặc điểm nổi bật nhất của độc quyền tư bản chủ nghĩa là sự tập trung sản xuất và tư bản ở quy mô lớn dẫn đến hình thành các tổ chức độc quyền.
+    tags:
+      - phan-ii
+      - goc-cau-69
+      - nhat-tri
+  - id: ktct-181
+    type: single
+    q: 'Trong hình thức độc quyền Các-ten, các doanh nghiệp:'
+    options:
+      - Sáp nhập toàn bộ
+      - Không có ràng buộc
+      - Liên kết thỏa thuận về giá cả, thị trường nhưng vẫn độc lập
+      - Cạnh tranh hoàn toàn
+    answer: 2
+    why: Trong cartel (các-ten), các doanh nghiệp liên kết thỏa thuận về giá cả, thị trường nhưng vẫn duy trì tính độc lập về sở hữu và quản lý.
+    tags:
+      - phan-ii
+      - goc-cau-80
+      - nhat-tri
+  - id: ktct-191
+    type: single
+    q: Nguồn gốc chủ yếu của lợi nhuận độc quyền cao trong chủ nghĩa tư bản là gì?
+    options:
+      - Lợi nhuận do đổi mới công nghệ tạo ra trong nội bộ các tập đoàn độc quyền
+      - Lợi tức do đầu tư tài chính xuyên biên giới
+      - Tranh lệch tỷ giá và chi phí đầu vào
+      - Chiếm đoạt giá trị thặng dư từ các doanh nghiệp tư bản vừa và nhỏ nằm ngoài độc quyền
+    answer: 3
+    why: Nguồn gốc chủ yếu của lợi nhuận độc quyền cao là chiếm đoạt giá trị thặng dư từ các doanh nghiệp tư bản vừa và nhỏ nằm ngoài độc quyền, bằng cách áp dụng giá cao.
+    tags:
+      - phan-ii
+      - goc-cau-90
+      - nhat-tri
+  - id: ktct-192
+    type: single
+    q: 'Nguyên nhân trực tiếp dẫn đến hình thành tổ chức độc quyền là do:'
+    options:
+      - Nhu cầu tiêu dùng tăng
+      - Chính sách hỗ trợ của nhà nước
+      - Khủng hoảng kinh tế
+      - Sự phát triển của lực lượng sản xuất và cạnh tranh gay gắt
+    answer: 3
+    why: Nguyên nhân trực tiếp dẫn đến hình thành độc quyền là sự phát triển mạnh mẽ của lực lượng sản xuất và cạnh tranh gay gắt giữa các doanh nghiệp.
+    tags:
+      - phan-ii
+      - goc-cau-91
+      - nhat-tri
+  - id: ktct-204
+    type: single
+    q: 'Chọn đáp án sai: Chức năng của sở hữu độc quyền nhà nước:'
+    options:
+      - Mở rộng sản xuất tư bản chủ nghĩa, bảo đảm địa bàn rộng lớn cho sự phát triển của độc quyền.
+      - Làm chỗ dựa cho điều tiết kinh tế của nhà nước theo các chương trình nhất định.
+      - Nhà nước nắm giữ những ngành kinh tế trọng yếu để điều tiết, chi phối nền kinh tế.
+      - Tạo điều kiện thuận lợi cho việc di chuyển tư bản của các tổ chức độc quyền từ các ngành lợi nhuận thấp sang ngành lợi nhuận cao.
+    answer: 2
+    why: 'Đề hỏi đáp án SAI. Giáo trình nêu ba chức năng của sở hữu độc quyền nhà nước: mở rộng sản xuất tư bản chủ nghĩa, bảo đảm địa bàn rộng lớn cho sự phát triển của chủ nghĩa tư bản (A); tạo điều kiện thuận lợi cho việc di chuyển tư bản của các tổ chức độc quyền từ ngành ít lãi sang ngành lãi cao (D); làm chỗ dựa cho sự điều tiết kinh tế của nhà nước theo những chương trình nhất định (B). Phương án C - nhà nước nắm ngành trọng yếu để điều tiết, chi phối nền kinh tế - là mô tả vai trò chủ đạo của kinh tế nhà nước ở nước ta, không nằm trong ba chức năng đó, nên đây là ý phải chọn. Bẫy là A nghe ''phản cảm'' về mặt chính trị nên dễ bị chọn nhầm, nhưng nó lại đúng là chức năng số một trong giáo trình.'
+    tags:
+      - phan-iii
+      - goc-cau-2
+      - phan-xu
+  - id: ktct-210
+    type: single
+    q: Nguyên nhân chủ yếu dẫn đến hình thành lợi nhuận độc quyền là gì?
+    options:
+      - Cạnh tranh gay gắt giữa các doanh nghiệp vừa và nhỏ
+      - Chính sách thuế ưu đãi của nhà nước
+      - Địa vị thống trị thị trường của các tổ chức tư bản độc quyền
+      - Tăng trưởng năng suất lao động trong khu vực công
+    answer: 2
+    why: C đúng vì lợi nhuận độc quyền cao bắt nguồn từ việc tổ chức độc quyền chiếm địa vị thống trị thị trường để áp đặt giá cả có lợi cho mình, không phải do cạnh tranh gay gắt hay chính sách thuế ưu đãi.
+    tags:
+      - phan-iii
+      - goc-cau-8
+      - nhat-tri
+  - id: ktct-215
+    type: single
+    q: Công nghiệp hóa và tập trung sản xuất dẫn đến?
+    options:
+      - Giảm nhu cầu lao động
+      - Quy mô sản xuất lớn, cạnh tranh gay gắt, hình thành độc quyền
+      - Nâng cao chất lượng sản phẩm
+      - Phân tán sản xuất
+    answer: 1
+    why: B đúng vì công nghiệp hóa làm quy mô sản xuất tăng nhanh, tích tụ tập trung tư bản dẫn đến cạnh tranh gay gắt rồi hình thành các tổ chức độc quyền, đúng theo lý luận về nguồn gốc ra đời của độc quyền.
+    tags:
+      - phan-iii
+      - goc-cau-13
+      - nhat-tri
+  - id: ktct-222
+    type: single
+    q: Mục đích của xuất khẩu tư bản là?
+    options:
+      - Bù đắp sự thiếu hụt tư bản ở các nước khác
+      - Tăng cường hợp tác quốc tế
+      - Tìm kiếm lợi nhuận độc quyền cao và giải quyết vấn đề thừa tư bản
+      - Giúp đỡ các nước kém phát triển
+    answer: 2
+    why: C đúng vì xuất khẩu tư bản ra đời khi CNTB độc quyền xuất hiện tình trạng 'thừa tư bản' tương đối trong nước, cần tìm nơi đầu tư mang lại lợi nhuận độc quyền cao hơn ở nước ngoài; các phương án còn lại chỉ là lớp vỏ tuyên truyền, không phải bản chất.
+    tags:
+      - phan-iii
+      - goc-cau-20
+      - nhat-tri
+  - id: ktct-227
+    type: single
+    q: Trong giai đoạn độc quyền, nhà nước tư sản có vai trò?
+    options:
+      - Phục vụ lợi ích của giai cấp tư sản độc quyền
+      - Trung lập
+      - Chỉ bảo vệ người lao động
+      - Không can thiệp vào kinh tế
+    answer: 0
+    why: A đúng vì trong giai đoạn độc quyền, nhà nước tư sản trở thành công cụ phục vụ và bảo vệ lợi ích của các tổ chức độc quyền, không còn trung lập hay đứng ngoài kinh tế như thời tự do cạnh tranh.
+    tags:
+      - phan-iii
+      - goc-cau-25
+      - nhat-tri
+  - id: ktct-232
+    type: single
+    q: Độc quyền nhà nước trong chủ nghĩa tư bản ra đời là sự kết hợp?
+    options:
+      - Lợi ích của nhà nước và nhân dân
+      - Các quy luật khách quan và ý chí chủ quan
+      - Lợi ích của công nhân và nhà tư bản
+      - Lợi ích của toàn xã hội
+    answer: 1
+    why: 'Theo giáo trình, độc quyền nhà nước ra đời là sự kết hợp sức mạnh của các tổ chức độc quyền tư nhân với sức mạnh của nhà nước tư sản - phương án chuẩn này lại không có trong đề. Trong bốn lựa chọn, B là gần nhất và vẫn đúng về bản chất: độc quyền nhà nước vừa là kết quả tất yếu khách quan của tích tụ, tập trung sản xuất và tư bản, vừa thể hiện sự can thiệp có ý thức (ý chí chủ quan) của giai cấp tư sản độc quyền thông qua bộ máy nhà nước. A, C, D đều sai bản chất vì độc quyền nhà nước phục vụ lợi ích của tư bản độc quyền chứ không phải lợi ích của nhân dân, công nhân hay toàn xã hội.'
+    tags:
+      - phan-iii
+      - goc-cau-30
+      - phan-xu
+      - de-co-van-de
+  - id: ktct-239
+    type: single
+    q: Lợi nhuận độc quyền cao là do?
+    options:
+      - Khả năng định giá, chi phối thị trường của các tổ chức độc quyền
+      - Nhà nước kiểm soát giá
+      - Năng suất lao động cao
+      - Cạnh tranh lành mạnh
+    answer: 0
+    why: A đúng vì lợi nhuận độc quyền cao có được nhờ tổ chức độc quyền dùng vị thế thị trường để định giá độc quyền cao khi bán và giá độc quyền thấp khi mua, không phải do cạnh tranh lành mạnh hay năng suất lao động thông thường.
+    tags:
+      - phan-iii
+      - goc-cau-37
+      - nhat-tri
+  - id: ktct-246
+    type: single
+    q: Sự xuất hiện của độc quyền trong nền kinh tế thị trường tư bản chủ nghĩa là một quá trình?
+    options:
+      - Tự giác và có kế hoạch
+      - Do ý chí chủ quan của nhà nước
+      - Khách quan, tuân theo quy luật tập trung sản xuất và tư bản
+      - Tự phát và không có quy luật
+    answer: 2
+    why: C đúng vì độc quyền xuất hiện là kết quả tất yếu khách quan của quá trình tích tụ, tập trung sản xuất và tư bản đạt đến trình độ nhất định, không phải do ý chí chủ quan của nhà nước hay hoàn toàn tự phát vô quy luật.
+    tags:
+      - phan-iii
+      - goc-cau-44
+      - nhat-tri
+  - id: ktct-261
+    type: single
+    q: Đặc điểm nổi bật của chủ nghĩa tư bản hiện nay về mặt sở hữu là?
+    options:
+      - Đa dạng hóa sở hữu (công ty cổ phần, sở hữu nhà nước, tư nhân)
+      - Chỉ có sở hữu nhà nước
+      - Chỉ có sở hữu tư nhân nhỏ
+      - Chỉ có sở hữu tập thể
+    answer: 0
+    why: Chủ nghĩa tư bản hiện đại có xu hướng đa dạng hoá sở hữu, đan xen sở hữu tư nhân, sở hữu nhà nước và sở hữu tập thể (qua công ty cổ phần), không còn thuần một hình thức sở hữu duy nhất.
+    tags:
+      - phan-iii
+      - goc-cau-59
+      - nhat-tri
+  - id: ktct-274
+    type: single
+    q: Hình thức tổ chức độc quyền tờ-rớt khác với các-ten ở chỗ?
+    options:
+      - Tờ-rớt sáp nhập các doanh nghiệp, mất quyền tự chủ sản xuất và kinh doanh
+      - Tờ-rớt là thỏa thuận không chính thức
+      - Tờ-rớt chỉ hoạt động trong một ngành duy nhất
+      - Tờ-rớt chỉ kiểm soát giá cả
+    answer: 0
+    why: 'Tờ-rớt là hình thức độc quyền cao hơn các-ten: các xí nghiệp tham gia hoàn toàn mất tính độc lập cả sản xuất lẫn thương mại, sáp nhập thành một công ty lớn do một ban quản trị chung điều hành, trong khi các-ten chỉ thỏa thuận về giá cả, sản lượng, thị trường nhưng vẫn giữ độc lập sản xuất kinh doanh.'
+    tags:
+      - phan-iii
+      - goc-cau-72
+      - nhat-tri
+  - id: ktct-276
+    type: single
+    q: Đâu không phải là đặc điểm kinh tế của độc quyền trong chủ nghĩa tư bản?
+    options:
+      - Tư bản tài chính hình thành
+      - Sự tập trung sản xuất và các tổ chức độc quyền đóng vai trò quyết định
+      - Xuất khẩu tư bản
+      - Cạnh tranh tự do hoàn toàn
+    answer: 3
+    why: Đặc điểm của giai đoạn độc quyền là cạnh tranh tự do bị hạn chế, thay vào đó là sự thống trị của các tổ chức độc quyền, nên 'cạnh tranh tự do hoàn toàn' hoàn toàn trái ngược với bản chất của độc quyền.
+    tags:
+      - phan-iii
+      - goc-cau-74
+      - nhat-tri
+  - id: ktct-278
+    type: single
+    q: Các-ten là hình thức tổ chức độc quyền mà ở đó có sự thỏa thuận giữa các doanh nghiệp về?
+    options:
+      - Tiền lương công nhân
+      - Công nghệ sản xuất
+      - Giá cả, sản lượng, thị trường tiêu thụ
+      - Sáp nhập toàn bộ
+    answer: 2
+    why: Các-ten là hình thức tổ chức độc quyền dựa trên sự thỏa thuận về giá cả, sản lượng, thị trường tiêu thụ, sản phẩm giữa các doanh nghiệp tham gia trong khi vẫn giữ độc lập về sản xuất và thương mại.
+    tags:
+      - phan-iii
+      - goc-cau-76
+      - nhat-tri
+  - id: ktct-283
+    type: single
+    q: Sự hình thành tư bản tài chính trong chủ nghĩa tư bản làm cho?
+    options:
+      - Ngân hàng và công nghiệp hoàn toàn độc lập
+      - Nền kinh tế trở nên phân tán
+      - Các tập đoàn công nghiệp và ngân hàng gắn bó chặt chẽ, tạo ra quyền lực tài chính
+      - Các doanh nghiệp nhỏ chiếm ưu thế
+    answer: 2
+    why: Tư bản tài chính hình thành từ sự dung hợp giữa tư bản ngân hàng độc quyền và tư bản công nghiệp độc quyền, tạo ra sự gắn bó chặt chẽ và quyền lực chi phối nền kinh tế của các tập đoàn lớn, trái ngược hoàn toàn với các phương án nói về sự độc lập hay phân tán.
+    tags:
+      - phan-iii
+      - goc-cau-81
+      - nhat-tri
+  - id: ktct-285
+    type: single
+    q: Các ngân hàng trong giai đoạn độc quyền?
+    options:
+      - Không có vai trò quan trọng
+      - Chỉ thực hiện chức năng thanh toán
+      - Chỉ cho vay tiêu dùng
+      - Trở thành những người khổng lồ, chi phối tư bản công nghiệp
+    answer: 3
+    why: Trong giai đoạn độc quyền, các ngân hàng lớn từ vai trò trung gian trở thành những người khổng lồ nắm quyền chi phối hoạt động của tư bản công nghiệp, hình thành tư bản tài chính.
+    tags:
+      - phan-iii
+      - goc-cau-83
+      - nhat-tri
+  - id: ktct-293
+    type: single
+    q: Địa vị độc quyền cho phép các tổ chức độc quyền trong chủ nghĩa tư bản có khả năng?
+    options:
+      - Hỗ trợ doanh nghiệp nhỏ
+      - Chi phối giá cả, thị trường, thu lợi nhuận độc quyền cao
+      - Hạn chế cạnh tranh
+      - Đảm bảo công bằng xã hội
+    answer: 1
+    why: Địa vị độc quyền giúp các tổ chức độc quyền chi phối giá cả, thị trường và thu được lợi nhuận độc quyền cao, trái ngược với các phương án nói về hỗ trợ doanh nghiệp nhỏ hay đảm bảo công bằng xã hội.
+    tags:
+      - phan-iii
+      - goc-cau-91
+      - nhat-tri

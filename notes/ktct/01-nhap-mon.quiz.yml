@@ -1,0 +1,77 @@
+title: KTCT — Nhập môn Kinh tế chính trị Mác - Lênin
+serve: db
+pass: 70
+generated: haiku + opus + sonnet (giải độc lập rồi đối chiếu chéo)
+reviewed: false
+source_hash: 655f2b19171d0688
+questions:
+  - id: ktct-095
+    type: single
+    q: 'Đối tượng nghiên cứu của Kinh tế chính trị Mác – Lênin là:'
+    options:
+      - Giá cả và tiền tệ
+      - Hoạt động doanh nghiệp
+      - Quy luật cung – cầu trong thị trường
+      - Quan hệ xã hội của sản xuất và trao đổi
+    answer: 3
+    why: Đối tượng nghiên cứu của Kinh tế chính trị Mác-Lênin là quan hệ xã hội của sản xuất và trao đổi. D chính xác, A, B, C là đối tượng của các trường phái khác.
+    tags:
+      - phan-i
+      - goc-cau-95
+      - nhat-tri
+  - id: ktct-114
+    type: single
+    q: Học thuyết Kinh tế chính trị tư sản cổ điển Anh được mở đầu bằng các quan điểm lý luận của ai?
+    options:
+      - David Ricardo
+      - Thomas Mun
+      - Adam Smith
+      - William Petty
+    answer: 3
+    why: Giáo trình nêu rõ kinh tế chính trị tư sản cổ điển Anh mở đầu bằng các quan điểm lý luận của William Petty, phát triển qua Adam Smith và kết thúc/đạt đỉnh cao ở David Ricardo. Bẫy là Adam Smith vì ông nổi tiếng hơn và tác phẩm 1776 được coi là kinh điển, nhưng ông thuộc giai đoạn phát triển chứ không phải người mở đầu; Thomas Mun thuộc chủ nghĩa trọng thương, ngoài trường phái cổ điển.
+    tags:
+      - phan-ii
+      - goc-cau-13
+      - phan-xu
+  - id: ktct-117
+    type: single
+    q: Thuật ngữ "kinh tế chính trị" xuất hiện lần đầu vào năm nào?
+    options:
+      - '1715'
+      - '1815'
+      - '1615'
+      - '1515'
+    answer: 2
+    why: Thuật ngữ 'kinh tế chính trị' (économie politique) xuất hiện lần đầu năm 1615 trong tác phẩm 'Chuyên luận về kinh tế chính trị' của nhà trọng thương Pháp Antoine de Montchrétien. Mốc 1615 thuộc giai đoạn chủ nghĩa trọng thương; các mốc 1715 hay 1815 chỉ là số gần giống dùng để đánh lạc hướng, không gắn với sự kiện nào trong giáo trình.
+    tags:
+      - phan-ii
+      - goc-cau-16
+      - phan-xu
+  - id: ktct-126
+    type: single
+    q: Chủ nghĩa trọng nông cho rằng lĩnh vực nào tạo ra giá trị mới?
+    options:
+      - Công nghiệp
+      - Tài chính
+      - Thương nghiệp
+      - Nông nghiệp
+    answer: 3
+    why: Chủ nghĩa trọng nông (Physiocrats) cho rằng lĩnh vực nông nghiệp là lĩnh vực duy nhất tạo ra giá trị mới. Đây là quan điểm sai lạc trước lý thuyết giá trị của Mác.
+    tags:
+      - phan-ii
+      - goc-cau-25
+      - nhat-tri
+  - id: ktct-135
+    type: single
+    q: Trọng tâm nghiên cứu của Chủ nghĩa trọng thương là lĩnh vực nào?
+    options:
+      - Nông nghiệp
+      - Tài chính
+      - Công nghiệp
+      - Lưu thông – thương nghiệp
+    answer: 3
+    why: Trọng tâm nghiên cứu của chủ nghĩa trọng thương (Mercantilism) là lĩnh vực lưu thông - thương nghiệp. Họ cho rằng lợi ích quốc gia nằm ở thương mại quốc tế.
+    tags:
+      - phan-ii
+      - goc-cau-34
+      - nhat-tri

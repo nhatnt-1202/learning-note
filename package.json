@@ -11,6 +11,9 @@
     "test:md": "node scripts/test-md.mjs",
     "quiz:import": "node scripts/import-quiz.mjs",
     "quiz:sql": "node scripts/quiz-to-sql.mjs",
+    "ktct:parse": "node scripts/ktct-parse.mjs",
+    "ktct:merge": "node scripts/ktct-merge.mjs",
+    "ktct:build": "node scripts/ktct-build.mjs",
     "db:sql": "node scripts/db-bootstrap.mjs"
   },
   "devDependencies": {

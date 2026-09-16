@@ -87,6 +87,7 @@ export default defineConfig({
       {text: "Docker", link: "/notes/docker/"},
       {text: "JavaScript", link: "/notes/javascript/"},
       {text: "Cloud", link: "/notes/cloud/"},
+      {text: "KTCT", link: "/notes/ktct/"},
       {text: "Quiz", link: "/notes/quiz/"}
     ],
 
@@ -407,6 +408,44 @@ export default defineConfig({
             {text: "Dockerfile", link: "/notes/docker/dockerfile"},
             {text: "Docker Compose", link: "/notes/docker/docker-compose"},
             {text: "Networking", link: "/notes/docker/networking"}
+          ]
+        }
+      ],
+      "/notes/ktct/": [
+        {
+          text: "Kinh tế chính trị Mác - Lênin",
+          items: [{text: "Mục lục", link: "/notes/ktct/"}]
+        },
+        {
+          text: "Ngân hàng câu hỏi",
+          collapsed: false,
+          items: [
+            {text: "1. Nhập môn", link: "/notes/ktct/01-nhap-mon"},
+            {
+              text: "2. Hàng hoá, thị trường, tiền tệ",
+              link: "/notes/ktct/02-hang-hoa-thi-truong-tien-te"
+            },
+            {text: "3. Giá trị thặng dư", link: "/notes/ktct/03-gia-tri-thang-du"},
+            {
+              text: "4. Cạnh tranh & độc quyền",
+              link: "/notes/ktct/04-canh-tranh-va-doc-quyen"
+            },
+            {
+              text: "5. KTTT định hướng XHCN",
+              link: "/notes/ktct/05-kinh-te-thi-truong-dinh-huong-xhcn"
+            },
+            {
+              text: "6. Quan hệ lợi ích kinh tế",
+              link: "/notes/ktct/06-quan-he-loi-ich-kinh-te"
+            },
+            {
+              text: "7. Công nghiệp hoá, hiện đại hoá",
+              link: "/notes/ktct/07-cong-nghiep-hoa-hien-dai-hoa"
+            },
+            {
+              text: "8. Hội nhập kinh tế quốc tế",
+              link: "/notes/ktct/08-hoi-nhap-kinh-te-quoc-te"
+            }
           ]
         }
       ],

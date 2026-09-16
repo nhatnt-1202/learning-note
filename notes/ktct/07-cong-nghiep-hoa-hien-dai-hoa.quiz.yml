@@ -1,0 +1,511 @@
+title: KTCT — Công nghiệp hoá, hiện đại hoá ở Việt Nam
+serve: db
+pass: 70
+generated: fable + haiku + opus + sonnet (giải độc lập rồi đối chiếu chéo)
+reviewed: false
+source_hash: a8ccae289b890de0
+questions:
+  - id: ktct-001
+    type: single
+    q: 'Vai trò của cách mạng công nghiệp đối với phát triển là:'
+    options:
+      - Thúc đẩy phát triển lực lượng sản xuất
+      - Bảo tồn văn hóa
+      - Ổn định dân số
+      - Giảm cạnh tranh
+    answer: 0
+    why: Vai trò chính của cách mạng công nghiệp là thúc đẩy phát triển lực lượng sản xuất thông qua cơ khí hoá, tự động hoá, làm tăng năng suất lao động. Các phương án khác (văn hoá, dân số, cạnh tranh) không phải là vai trò kinh tế trực tiếp.
+    tags:
+      - phan-i
+      - goc-cau-1
+      - nhat-tri
+  - id: ktct-003
+    type: single
+    q: 'Chọn đáp án đúng: Cho đến nay có mấy mô hình công nghiệp hoá đã được triển khai thực hiện?'
+    options:
+      - '3'
+      - '4'
+      - '2'
+      - '1'
+    answer: 0
+    why: 'Đề hỏi số MÔ HÌNH CÔNG NGHIỆP HOÁ, không phải số cuộc cách mạng công nghiệp. Giáo trình nêu 3 mô hình tiêu biểu: mô hình công nghiệp hoá cổ điển (Anh, Tây Âu), mô hình kiểu Liên Xô (cũ) và mô hình của Nhật Bản cùng các nước công nghiệp mới NICs. Bẫy là phương án B (4) vì người học nhớ nhầm sang bốn cuộc cách mạng công nghiệp 1.0 đến 4.0.'
+    tags:
+      - phan-i
+      - goc-cau-3
+      - phan-xu
+  - id: ktct-017
+    type: single
+    q: Các quốc gia có dịch vụ chiếm tỷ trọng lớn trong GDP thường thuộc nhóm nào ?
+    options:
+      - Nhóm các quốc gia phát triển
+      - Nhóm các quốc gia công nghiệp mới
+      - Nhóm các quốc gia có trình độ phát triển kinh tế khá
+      - Nhóm các quốc gia có trình độ phát triển kinh tế thấp
+    answer: 0
+    why: Các quốc gia phát triển có dịch vụ chiếm tỷ trọng lớn trong GDP (60-80%), vì nền kinh tế các nước này chuyển dịch sang dịch vụ. Các nước đang phát triển còn có tỷ trọng cao từ nông nghiệp và công nghiệp.
+    tags:
+      - phan-i
+      - goc-cau-17
+      - nhat-tri
+  - id: ktct-018
+    type: single
+    q: Cách mạng khoa học và công nghệ hiện đại ảnh hưởng đến chủ nghĩa tư bản như thế nào?
+    options:
+      - Thúc đẩy phát triển lực lượng sản xuất, hình thành nền kinh tế tri thức, thay đổi cơ cấu ngành
+      - Làm suy thoái nền kinh tế
+      - Giảm nhu cầu về lao động trí óc
+      - Gây ra lạm phát
+    answer: 0
+    why: Cách mạng khoa học công nghệ hiện đại thúc đẩy phát triển lực lượng sản xuất, hình thành nền kinh tế tri thức, thay đổi cơ cấu ngành kinh tế. B, C, D là những tác động tiêu cực hoặc không chính xác.
+    tags:
+      - phan-i
+      - goc-cau-18
+      - nhat-tri
+  - id: ktct-025
+    type: single
+    q: 'Chọn đáp án đúng: Cách mạng công nghiệp lần thứ nhất diễn ra bắt đầu từ ngành sản xuất nào?'
+    options:
+      - Ngành công nghiệp đường sắt
+      - Ngành công nghiệp cơ khí chế tạo
+      - Ngành công nghiệp khai khoáng (than, quặng sắt)
+      - Ngành công nghiệp dệt
+    answer: 3
+    why: Cách mạng công nghiệp lần thứ nhất bắt đầu từ ngành dệt ở Anh (vào cuối thế kỷ XVIII), với các phát minh như máy kéo sợi (spinning frame). Các ngành khác phát triển sau.
+    tags:
+      - phan-i
+      - goc-cau-25
+      - nhat-tri
+  - id: ktct-065
+    type: single
+    q: 'Cuộc cách mạng công nghiệp lần thứ ba gắn với sự phát triển của:'
+    options:
+      - Giao thông vận tải
+      - Viễn thông
+      - Công nghệ thông tin và máy tính
+      - Truyền hình
+    answer: 2
+    why: Cách mạng công nghiệp lần thứ ba (cuối thế kỷ 20) gắn với sự phát triển của công nghệ thông tin và máy tính, không phải giao thông hay viễn thông.
+    tags:
+      - phan-i
+      - goc-cau-65
+      - nhat-tri
+  - id: ktct-075
+    type: single
+    q: Cách mạng công nghiệp lần thứ tư bắt đầu tại nước nào, năm nào?
+    options:
+      - Đức, năm 2011
+      - Hàn Quốc, năm 2012
+      - Mỹ, năm 2005
+      - Anh, năm 2000
+    answer: 0
+    why: Cách mạng công nghiệp lần 4 bắt đầu tại Đức khoảng năm 2011 với khái niệm 'Industry 4.0'. A chính xác.
+    tags:
+      - phan-i
+      - goc-cau-75
+      - nhat-tri
+  - id: ktct-082
+    type: single
+    q: 'Chọn đáp án đúng: Cách mạng công nghiệp lần thứ nhất bắt đầu diễn ra vào thế kỷ nào?'
+    options:
+      - Thế kỷ XVI
+      - Thế kỷ XVII
+      - Thế kỷ XIX
+      - Thế kỷ XVIII
+    answer: 3
+    why: Cách mạng công nghiệp lần thứ nhất bắt đầu vào thế kỷ 18 (khoảng 1760-1840 tại Anh). D chính xác.
+    tags:
+      - phan-i
+      - goc-cau-82
+      - nhat-tri
+  - id: ktct-084
+    type: single
+    q: 'Chọn đáp án đúng: Các nước chậm phát triển hiện nay có thể thực hiện công nghiệp hoá bằng con đường nào sau đây?'
+    options:
+      - Tiếp nhận chuyển giao hoàn toàn công nghệ hiện đại từ các nước phát triển.
+      - Tập trung phát triển nông nghiệp thuần tuý, không chú trọng công nghiệp và công nghệ.
+      - Thông qua tự nghiên cứu, chế tạo để phát triển công nghệ từ trình độ thấp tới trình độ cao.
+      - Xây dựng chiến lược phát triển khoa học công nghệ nhiều tầng, kết hợp cả công nghệ truyền thống với công nghệ hiện đại
+    answer: 3
+    why: Các nước chậm phát triển cần chiến lược đa tầng kết hợp công nghệ truyền thống và hiện đại. D là con đường thực tế nhất, A là quá lý tưởng.
+    tags:
+      - phan-i
+      - goc-cau-84
+      - nhat-tri
+  - id: ktct-086
+    type: single
+    q: 'Chọn đáp án đúng: Chiến lược thực hiện công nghiệp hoá của Nhật Bản và các nước NIC được gọi là gì?'
+    options:
+      - Chiến lược công nghiệp hoá hướng ngoại.
+      - Chiến lược công nghiệp hoá rút ngắn dựa trên mục tiêu hướng về xuất khẩu, phát triển sản xuất trong nước thay thế nhập khẩu.
+      - Chiến lược công nghiệp hoá kiểu mới thích ứng với những biến đổi của cách mạng công nghiệp lần thứ tư.
+      - Chiến lược công nghiệp hoá phát triển sản xuất trong nước thay thế nhập khẩu.
+    answer: 1
+    why: Giáo trình gọi con đường của Nhật Bản và các nước công nghiệp mới là chiến lược công nghiệp hoá rút ngắn, đẩy mạnh xuất khẩu đồng thời phát triển sản xuất trong nước thay thế hàng nhập khẩu, nhờ tận dụng thành tựu khoa học - công nghệ của các nước đi trước nên chỉ mất vài chục năm. Phương án A ('hướng ngoại') và D ('thay thế nhập khẩu') mỗi cái chỉ nêu một vế của chiến lược kết hợp, và 'hướng ngoại' cũng không phải thuật ngữ giáo trình dùng cho mô hình này.
+    tags:
+      - phan-i
+      - goc-cau-86
+      - phan-xu
+  - id: ktct-090
+    type: single
+    q: Đâu là một trong những thành công nổi bật của công nghiệp hóa, hiện đại hóa ở Việt Nam?
+    options:
+      - Nông nghiệp lạc hậu
+      - Chuyển dịch cơ cấu kinh tế theo hướng công nghiệp, dịch vụ, tăng trưởng kinh tế cao
+      - Giảm vai trò của kinh tế thị trường
+      - Gia tăng bao cấp
+    answer: 1
+    why: Thành công nổi bật là chuyển dịch cơ cấu kinh tế từ nông nghiệp sang công nghiệp, dịch vụ, với tăng trưởng kinh tế cao. B chính xác.
+    tags:
+      - phan-i
+      - goc-cau-90
+      - nhat-tri
+  - id: ktct-091
+    type: single
+    q: Một thách thức lớn về nguồn nhân lực khi công nghiệp hóa, hiện đại hóa là?
+    options:
+      - Thừa lao động
+      - Thiếu hụt lao động chất lượng cao và cơ cấu lao động chưa phù hợp
+      - Dân số già hóa
+      - Lao động giá rẻ
+    answer: 1
+    why: Thách thức lớn là thiếu hụt lao động chất lượng cao và cơ cấu lao động chưa phù hợp, không phải thừa lao động hoặc dân số già.
+    tags:
+      - phan-i
+      - goc-cau-91
+      - nhat-tri
+  - id: ktct-102
+    type: single
+    q: 'Chọn đáp án sai về nội dung: “Sẵn sàng thích ứng với tác động của bối cảnh cuộc Cách mạng công nghiệp lần thứ tư”?'
+    options:
+      - Nắm bắt và đẩy mạnh việc ứng dụng những thành tựu của cách mạng công nghiệp lần thứ tư.
+      - Hoàn thiện thể chế, xây dựng nền kinh tế dựa trên nền tảng đổi mới, sáng tạo.
+      - Cho phép ứng dụng những thành tựu khoa học - công nghệ mới, hiện đại vào các ngành, các vùng và các lĩnh vực của nền kinh tế.
+      - Chuẩn bị các điều kiện cần thiết để ứng phó với những tác động tiêu cực của Cách mạng công nghiệp lần thứ tư.
+    answer: 2
+    why: 'Đề hỏi đáp án SAI. Mục ''sẵn sàng thích ứng với tác động của bối cảnh cách mạng công nghiệp lần thứ tư'' có đúng ba nội dung: hoàn thiện thể chế, xây dựng nền kinh tế dựa trên nền tảng đổi mới sáng tạo (B); nắm bắt và đẩy mạnh việc ứng dụng thành tựu của cách mạng công nghiệp lần thứ tư (A); chuẩn bị các điều kiện cần thiết để ứng phó với tác động tiêu cực của nó (D). Phương án C bị lấy từ mục nội dung công nghiệp hoá, hiện đại hoá nói chung và còn bị sửa thành ''cho phép ứng dụng'', một cách diễn đạt xin - cho, thụ động, trái tinh thần chủ động thích ứng. Bẫy là D: nghe có vẻ bị động nên dễ bị chọn nhầm, nhưng đó là nội dung nguyên văn.'
+    tags:
+      - phan-ii
+      - goc-cau-1
+      - phan-xu
+  - id: ktct-107
+    type: single
+    q: Chọn đáp án sai về vai trò của cách mạng công nghiệp lần thứ nhất đối với sự phát triển của Chủ nghĩa tư bản?
+    options:
+      - Củng cố, hoàn thiện quan hệ sản xuất tư bản chủ nghĩa.
+      - Quyết định sự thống trị của chủ nghĩa tư bản.
+      - Chuyển biến từ sản xuất nhỏ, thủ công, phân tán lên sản xuất lớn, tập trung, hiện đại.
+      - Nâng cao năng suất lao động xã hội.
+    answer: 1
+    why: Câu hỏi yêu cầu chọn đáp án SAI. Các phương án A, C, D đều đúng về vai trò của cách mạng công nghiệp lần 1. Phương án B về 'quyết định sự thống trị' cũng về cơ bản đúng nhưng cách diễn đạt hơi tuyệt đối.
+    tags:
+      - phan-ii
+      - goc-cau-6
+      - nhat-tri
+  - id: ktct-109
+    type: single
+    q: Đường lối công nghiệp hóa ở nước ta lần đầu tiên được đề ra ở Đại hội nào của Đảng?
+    options:
+      - Đại hội III
+      - Đại hội VI
+      - Đại hội IV
+      - Đại hội V
+    answer: 0
+    why: 'Đường lối công nghiệp hóa xã hội chủ nghĩa được Đảng đề ra lần đầu tại Đại hội III (tháng 9/1960), xác định công nghiệp hóa là nhiệm vụ trung tâm của thời kỳ quá độ ở miền Bắc. Bẫy là chữ ''lần đầu tiên'': Đại hội IV (1976) chỉ tiếp tục đường lối đó trên phạm vi cả nước sau thống nhất, còn Đại hội VI (1986) là mốc đổi mới tư duy về công nghiệp hóa chứ không phải nơi khai sinh đường lối.'
+    tags:
+      - phan-ii
+      - goc-cau-8
+      - phan-xu
+  - id: ktct-116
+    type: single
+    q: 'Chọn đáp án đúng nhất về vai trò của cách mạng công nghiệp đối với thúc đẩy đổi mới phương thức quản trị phát triển của doanh nghiệp:'
+    options:
+      - Các doanh nghiệp cần phải xây dựng chiến lược kinh doanh từ nguồn lực công nghệ, trí tuệ, đổi mới, sáng tạo.
+      - Các doanh nghiệp cần phải xây dựng chiến lược kinh doanh xuất phát từ nguồn lực, trong đó, nguồn lực chủ yếu là công nghệ, trí tuệ, đổi mới, sáng tạo.
+      - Các doanh nghiệp cần phải xây dựng chiến lược trong đó, nguồn lực chủ yếu là công nghệ, trí tuệ, đổi mới, sáng tạo.
+      - Các doanh nghiệp cần phải xuất phát từ nguồn lực, trong đó, nguồn lực chủ yếu là công nghệ, trí tuệ, đổi mới, sáng tạo.
+    answer: 1
+    why: 'Đáp án B đầy đủ nhất: doanh nghiệp phải xây dựng chiến lược dựa trên nguồn lực, với nguồn lực chủ yếu là công nghệ, trí tuệ, đổi mới, sáng tạo. Các phương án khác hoặc chưa đầy đủ hoặc thiếu rõ ràng.'
+    tags:
+      - phan-ii
+      - goc-cau-15
+      - nhat-tri
+  - id: ktct-125
+    type: single
+    q: 'Chọn đáp án đúng về vai trò của cách mạng công nghiệp đối với thúc đẩy đổi mới phương thức quản trị phát triển của chính phủ:'
+    options:
+      - Việc quản lý quá trình sản xuất của các doanh nghiệp trở lên dễ dàng hơn thông qua ứng dụng các công nghệ như internet.
+      - Phương thức quản trị, điều hành của chính phủ cũng có sự thay đổi nhanh chóng để thích ứng với sự phát triển của công nghệ mới, hình thành hệ thống tin học hóa trong quản lý và “chính phủ điện tử”.
+      - Tạo cơ hội cho các nước phát triển nhiều ngành kinh tế và những ngành mới thông qua ứng dụng những thành tựu về công nghệ thông tin.
+      - Chuyển biến từ sản xuất nhỏ, thủ công, phân tán lên sản xuất lớn, tập trung, hiện đại.
+    answer: 1
+    why: Vai trò của cách mạng công nghiệp với phương thức quản trị chính phủ là làm thay đổi nhanh chóng phương thức quản lý để thích ứng với công nghệ mới, hình thành chính phủ điện tử.
+    tags:
+      - phan-ii
+      - goc-cau-24
+      - nhat-tri
+  - id: ktct-130
+    type: single
+    q: Đâu là động lực của công nghiệp hoá, hiện đại hoá?
+    options:
+      - Khoa học - công nghệ
+      - Con người
+      - Mở rộng quan hệ kinh tế quốc tế
+      - Hiệu quả kinh tế - xã hội
+    answer: 0
+    why: Động lực của công nghiệp hoá, hiện đại hoá là khoa học - công nghệ. Đây là yếu tố then chốt thúc đẩy sự phát triển lực lượng sản xuất.
+    tags:
+      - phan-ii
+      - goc-cau-29
+      - nhat-tri
+  - id: ktct-137
+    type: single
+    q: 'Chọn đáp án đúng nhất: Lý do khách quan Việt Nam phải thực hiện công nghiệp hoá, hiện đại hoá:'
+    options:
+      - Lý luận và thực tiễn cho thấy, công nghiệp hoá là quy luật phổ biến của sự phát triển lực lượng sản xuất xã hội
+      - Công nghiệp hoá là quy luật của sự phát triển lực lượng sản xuất xã hội mà mọi quốc gia đều trải qua dù ở các quốc gia phát triển sớm hay các quốc gia đi sau
+      - Lý luận và thực tiễn cho thấy, công nghiệp hoá là quy luật mà mọi quốc gia đều trải qua dù ở các quốc gia phát triển sớm hay các quốc gia đi sau
+      - Lý luận và thực tiễn cho thấy, công nghiệp hoá là quy luật phổ biến của sự phát triển lực lượng sản xuất xã hội mà mọi quốc gia đều trải qua dù ở các quốc gia phát triển sớm hay các quốc gia đi sau
+    answer: 3
+    why: 'Phương án D đầy đủ nhất: công nghiệp hoá là quy luật phổ biến của phát triển lực lượng sản xuất, mà mọi quốc gia đều trải qua dù phát triển sớm hay muộn. Đây là lý do khách quan.'
+    tags:
+      - phan-ii
+      - goc-cau-36
+      - nhat-tri
+  - id: ktct-138
+    type: single
+    q: 'Chọn đáp án sai về vai trò của cách mạng công nghiệp đối với thúc đẩy lực lượng sản xuất:'
+    options:
+      - Việc quản lý quá trình sản xuất của các doanh nghiệp trở lên dễ dàng hơn thông qua ứng dụng các công nghệ như internet.
+      - Về đối tượng lao động, đưa sản xuất của con người vượt quá giới hạn về tài nguyên thiên nhiên cũng như sự phụ thuộc của sản xuất và nguồn năng lượng truyền thống.
+      - Về tư liệu lao động, máy móc ra đời thay thế cho lao động thủ công.
+      - Về người lao động, tạo điều kiện thúc đẩy phát triển nguồn nhân lực.
+    answer: 0
+    why: 'Vai trò thúc đẩy lực lượng sản xuất thể hiện ở ba yếu tố: tư liệu lao động (máy móc thay lao động thủ công), đối tượng lao động (vượt giới hạn tài nguyên và năng lượng truyền thống) và người lao động (phát triển nguồn nhân lực). Phương án A nói về quản lý sản xuất nên thuộc vai trò đổi mới phương thức quản trị, đặt vào đây là sai.'
+    tags:
+      - phan-ii
+      - goc-cau-37
+      - nhat-tri
+  - id: ktct-148
+    type: single
+    q: 'Chọn đáp án sai trong số các đáp án về thực hiện các nhiệm vụ để chuyển đổi nền sản xuất – xã hội lạc hậu sang nền sản xuất – xã hội hiện đại:'
+    options:
+      - Đẩy mạnh ứng dụng những thành tựu của khoa học - công nghệ mới, hiện đại.
+      - Công nghiệp hoá, hiện đại hoá gắn với phát triển kinh tế tri thức.
+      - Từng bước hoàn thiện quan hệ sản xuất phù hợp với trình độ phát triển của lực lượng sản xuất.
+      - Chuyển dịch cơ cấu kinh tế theo hướng hiện đại, hợp lý và hiệu quả.
+    answer: 1
+    why: 'Đề hỏi ý SAI. Nhóm ''thực hiện các nhiệm vụ để chuyển đổi nền sản xuất - xã hội lạc hậu sang hiện đại'' trong giáo trình gồm đúng ba việc: đẩy mạnh ứng dụng thành tựu khoa học - công nghệ mới, hiện đại (A); chuyển dịch cơ cấu kinh tế theo hướng hiện đại, hợp lý, hiệu quả (D); từng bước hoàn thiện quan hệ sản xuất phù hợp trình độ lực lượng sản xuất (C). ''Công nghiệp hóa, hiện đại hóa gắn với phát triển kinh tế tri thức'' là một quan điểm/đặc điểm của công nghiệp hóa ở Việt Nam, không nằm trong danh mục ba nhiệm vụ này nên B là đáp án phải chọn.'
+    tags:
+      - phan-ii
+      - goc-cau-47
+      - phan-xu
+  - id: ktct-151
+    type: single
+    q: Chọn đáp án sai về đặc điểm của công nghiệp hoá, hiện đại hoá ở Việt Nam?
+    options:
+      - Công nghiệp hoá, hiện đại hoá theo định hướng xã hội chủ nghĩa, thực hiện mục tiêu dân giàu, nước mạnh, dân chủ, công bằng, văn minh.
+      - Đẩy mạnh ứng dụng những thành tựu của khoa học – công nghệ mới, hiện đại.
+      - Công nghiệp hoá, hiện đại hoá trong điều kiện nền kinh tế thị trường định hướng xã hội chủ nghĩa.
+      - Công nghiệp hoá, hiện đại hoá gắn với phát triển kinh tế tri thức.
+    answer: 1
+    why: Câu hỏi yêu cầu chọn ý SAI về đặc điểm công nghiệp hoá Việt Nam. Các phương án A, C, D đều đúng. Phương án B là một nhiệm vụ nhưng có thể không phải đặc điểm riêng biệt của Việt Nam.
+    tags:
+      - phan-ii
+      - goc-cau-50
+      - nhat-tri
+  - id: ktct-152
+    type: single
+    q: Đáp án nào là định nghĩa đúng về nền kinh tế tri thức?
+    options:
+      - Nền kinh tế tri thức là nền kinh tế trong đó sự sản sinh ra, phổ cập và sử dụng tri thức giữ vai trò quyết định nhất đối với sự phát triển kinh tế, tạo ra của cải, nâng cao chất lượng cuộc sống.
+      - Nền kinh tế tri thức là nền kinh tế trong đó tri thức giữ vai trò quyết định nhất đối với sự phát triển kinh tế, tạo ra của cải, nâng cao chất lượng cuộc sống.
+      - Nền kinh tế tri thức là nền kinh tế trong đó sự phổ cập và sử dụng tri thức giữ vai trò quyết định nhất đối với sự phát triển kinh tế, tạo ra của cải, nâng cao chất lượng cuộc sống.
+      - Nền kinh tế tri thức là nền kinh tế trong đó sự sản sinh và sử dụng tri thức giữ vai trò quyết định đối với sự phát triển kinh tế, tạo ra của cải, nâng cao chất lượng cuộc sống.
+    answer: 0
+    why: Nền kinh tế tri thức là nền kinh tế trong đó sự sản sinh, phổ cập và sử dụng tri thức giữ vai trò quyết định đối với phát triển kinh tế, tạo ra của cải và nâng cao chất lượng cuộc sống. Phương án A đầy đủ nhất.
+    tags:
+      - phan-ii
+      - goc-cau-51
+      - nhat-tri
+  - id: ktct-166
+    type: single
+    q: Đâu là tiêu chuẩn cơ bản để xác định phương án phát triển, lựa chọn dự án đầu tư và công nghệ trong quá trình công nghiệp hoá, hiện đại hoá?
+    options:
+      - Tăng năng suất lao động
+      - Hiệu quả kinh tế - xã hội
+      - Nâng cao đời sống nhân dân.
+      - Kết hợp kinh tế với an ninh, quốc phòng
+    answer: 1
+    why: Tiêu chuẩn cơ bản là hiệu quả kinh tế - xã hội, bao gồm cả tăng năng suất lao động, nâng cao đời sống, và kết hợp với an ninh quốc phòng.
+    tags:
+      - phan-ii
+      - goc-cau-65
+      - nhat-tri
+  - id: ktct-175
+    type: single
+    q: 'Chọn đáp án đúng: Cho đến nay lịch sử loài người đã và đang trải qua mấy cuộc cách mạng công nghiệp?'
+    options:
+      - '4'
+      - '3'
+      - '1'
+      - '2'
+    answer: 0
+    why: 'Lịch sử loài người đã và đang trải qua 4 cuộc cách mạng công nghiệp: cơ khí hoá, điện - cơ khí, điện tử - tin học, và trí tuệ nhân tạo - tự động hoá thông minh.'
+    tags:
+      - phan-ii
+      - goc-cau-74
+      - nhat-tri
+  - id: ktct-177
+    type: single
+    q: 'Chọn đáp án sai về đặc điểm của kinh tế tri thức:'
+    options:
+      - Các ngành kinh tế đựa vào tri thức, dựa vào các thành tựu mới nhất của khoa học – công nghệ ngày càng chiếm đa số.
+      - Cơ cấu kinh tế cho phép khai thác, phân bổ và phát huy hiệu quả các nguồn lực trong nước, thu hút có hiệu quả các nguồn lực bên ngoài
+      - Tri thức trở thành lực lượng sản xuất trực tiếp, là vốn quý nhất, là nguốn lực quan trọng hàng đầu.
+      - Công nghệ thông tin được ứng dụng rộng rãi trong mọi lĩnh vực và thiết lập mạng thông tin đa phương tiện phủ khắp cả nước.
+    answer: 1
+    why: Câu này yêu cầu chọn đáp án SAI. Phương án B (hiệu quả trong phân bổ nguồn lực) không phải là đặc điểm định nghĩa kinh tế tri thức, mà là hệ quả của các đặc điểm khác.
+    tags:
+      - phan-ii
+      - goc-cau-76
+      - nhat-tri
+  - id: ktct-179
+    type: single
+    q: Mục tiêu chiến lược của Việt Nam đến giữa thế kỷ XXI là gì?
+    options:
+      - Trở thành nước phát triển, theo định hướng XHCN
+      - Trở thành nước phát triển, theo định hướng TBCN
+      - Trở thành nước phát triển có thu nhập trung bình cao
+      - Trở thành cường quốc công nghiệp
+    answer: 0
+    why: Mục tiêu chiến lược của Việt Nam đến giữa thế kỷ XXI là trở thành nước phát triển theo định hướng XHCN. Đây là mục tiêu chính thức được đề ra.
+    tags:
+      - phan-ii
+      - goc-cau-78
+      - nhat-tri
+  - id: ktct-180
+    type: single
+    q: Chọn đáp án sai về vai trò của cách mạng công nghiệp lần thứ hai đối với sự phát triển của Chủ nghĩa tư bản?
+    options:
+      - Nâng cao năng suất lao động xã hội.
+      - Chuyển nền sản xuất cơ khí sang nền sản xuất điện – cơ khí và sang giai đoạn tự động hoá cục bộ trong sản xuất.
+      - Phân công lao động, chuyên môn hoá sản xuất được ứng dụng rộng dãi trong các doanh nghiệp.
+      - Chuyển nền sản xuất cơ khí sang nền sản xuất tự động hoá toàn diện các khâu của sản xuất.
+    answer: 3
+    why: Câu này yêu cầu chọn đáp án SAI. Phương án D sai vì cách mạng công nghiệp lần thứ hai (từ cuối 1800s) chỉ dẫn đến tự động hoá cục bộ, không phải toàn diện.
+    tags:
+      - phan-ii
+      - goc-cau-79
+      - nhat-tri
+  - id: ktct-182
+    type: single
+    q: 'Chọn đáp án đúng về chuẩn bị các điều kiện cần thiết để ứng phó với những tác động tiêu cực của Cách mạng công nghiệp lần thứ tư:'
+    options:
+      - Các ngành kinh tế đựa vào tri thức, dựa vào các thành tựu mới nhất của khoa học – công nghệ ngày càng chiếm đa số.
+      - Hoàn thiện thể chế, xây dựng nền kinh tế dựa trên nền tảng đổi mới, sáng tạo.
+      - Công nghiệp hoá, hiện đại hoá gắn với phát triển kinh tế tri thức.
+      - Đẩy mạnh công nghiệp hoá, hiện đại hoá nông nghiệp, nông thôn
+    answer: 3
+    why: 'Trong giáo trình, ''chuẩn bị các điều kiện cần thiết để ứng phó với những tác động tiêu cực của cách mạng công nghiệp lần thứ tư'' là đầu mục thứ ba, bên dưới liệt kê các nhiệm vụ cụ thể, trong đó có ''đẩy mạnh công nghiệp hóa, hiện đại hóa nông nghiệp, nông thôn'' cùng với xây dựng hạ tầng công nghệ thông tin, phát triển công nghiệp mũi nhọn, phát triển nguồn nhân lực. Bẫy nằm ở B: ''hoàn thiện thể chế, xây dựng nền kinh tế dựa trên nền tảng đổi mới, sáng tạo'' nghe rất hợp lý nhưng nó là đầu mục thứ nhất ngang hàng, không phải nội dung của đầu mục thứ ba mà đề hỏi; A chỉ mô tả đặc điểm kinh tế tri thức, C là quan điểm chung về công nghiệp hóa.'
+    tags:
+      - phan-ii
+      - goc-cau-81
+      - phan-xu
+  - id: ktct-183
+    type: single
+    q: Nước nào tiến hành công nghiệp hóa đầu tiên trên thế giới?
+    options:
+      - Anh
+      - Pháp
+      - Đức
+      - Mỹ
+    answer: 0
+    why: Anh là nước tiên phong tiến hành công nghiệp hoá đầu tiên trên thế giới, bắt đầu từ cuối thế kỷ 18. Cách mạng công nghiệp lần thứ nhất bắt đầu ở Anh.
+    tags:
+      - phan-ii
+      - goc-cau-82
+      - nhat-tri
+  - id: ktct-184
+    type: single
+    q: Chủ trương "đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước" được đề ra ở Đại hội nào của Đảng ta?
+    options:
+      - Đại hội IX
+      - Đại hội VIII
+      - Đại hội VI
+      - Đại hội VII
+    answer: 1
+    why: Chủ trương 'đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước' được chính thức đề ra tại Đại hội VIII (1996), khi Đảng xác định nước ta đã kết thúc chặng đường đầu của thời kỳ quá độ và chuyển sang thời kỳ đẩy mạnh công nghiệp hóa, hiện đại hóa. Bẫy là Đại hội VI (1986) - đó là mốc khởi xướng đường lối đổi mới nói chung, chưa phải mốc 'đẩy mạnh công nghiệp hóa, hiện đại hóa'.
+    tags:
+      - phan-ii
+      - goc-cau-83
+      - phan-xu
+  - id: ktct-196
+    type: single
+    q: Chọn đáp án sai về vai trò của cách mạng công nghiệp đối với việc thúc đẩy quan hệ sản xuất?
+    options:
+      - Buộc các nước phải điều chỉnh chế độ sở hữu, thực hiện đa dạng hoá các hình thức sở hữu, lấy sở hữu tư nhân làm nòng cốt, phát huy tối đa sức mạnh và ưu thế của sở hữu nhà nước
+      - Tạo cơ hội cho các nước phát triển nhiều ngành kinh tế và những ngành mới thông qua ứng dụng những thành tựu về công nghệ thông tin
+      - Việc quản lý quá trình sản xuất của các doanh nghiệp trở lên dễ dàng hơn thông qua ứng dụng các công nghệ như internet
+      - Giúp cho việc phân phối và tiêu dùng trở nên dễ dàng và nhanh chóng, thay đổi đời sống của con người
+    answer: 0
+    why: Câu này yêu cầu chọn đáp án SAI. Phương án A sai vì cách mạng công nghiệp không buộc phải xóa bỏ hoàn toàn tư hữu; các nước tuỳ theo điều kiện điều chỉnh khác nhau.
+    tags:
+      - phan-ii
+      - goc-cau-95
+      - nhat-tri
+  - id: ktct-197
+    type: single
+    q: Việc phát triển kinh tế gắn với bảo vệ môi trường là một yêu cầu của?
+    options:
+      - Tăng trưởng kinh tế nóng
+      - Phát triển ngắn hạn
+      - Phát triển bền vững
+      - Tăng trưởng kinh tế theo chiều rộng
+    answer: 2
+    why: Việc phát triển kinh tế gắn với bảo vệ môi trường là một yêu cầu của phát triển bền vững, nằm trong lộ trình phát triển của thế giới hiện đại.
+    tags:
+      - phan-ii
+      - goc-cau-96
+      - nhat-tri
+  - id: ktct-198
+    type: single
+    q: 'Chọn đáp án đúng nhất: Nội dung tạo lập điều kiện để có thể chuyển đổi từ nền sản xuất - xã hội lạc hậu sang nền sản xuất - xã hội tiến bộ:'
+    options:
+      - 'Các điều kiện chủ yếu cần có như: tư duy phát triển; môi trường quốc tế thuận lợi và trình độ văn minh của xã hội'
+      - 'Các điều kiện chủ yếu cần có như: thể chế và nguồn lực; môi trường quốc tế thuận lợi, ý thức xây dựng xã hội văn minh của người dân'
+      - 'Các điều kiện chủ yếu cần có như: tư duy phát triển; thể chế và nguồn lực; môi trường quốc tế thuận lợi và trình độ văn minh của xã hội, ý thức xây dựng xã hội văn minh của người dân'
+      - 'Các điều kiện chủ yếu cần có như: tư duy phát triển; môi trường quốc tế thuận lợi và trình độ văn minh của xã hội, ý thức xây dựng xã hội văn minh của người dân'
+    answer: 2
+    why: 'Các điều kiện cần thiết bao gồm: tư duy phát triển; thể chế và nguồn lực; môi trường quốc tế; trình độ văn minh và ý thức xây dựng xã hội văn minh của người dân.'
+    tags:
+      - phan-ii
+      - goc-cau-97
+      - nhat-tri
+  - id: ktct-218
+    type: single
+    q: Trong bối cảnh cách mạng công nghiệp 4.0, giải pháp hoàn thiện thể chế nào sau đây cần được đặc biệt ưu tiên để thúc đẩy phát triển kinh tế số?
+    options:
+      - Hoàn thiện thể chế về thị trường khoa học, công nghệ, thông tin và quyền sở hữu trí tuệ.
+      - Hoàn thiện thể chế về đất đai và bất động sản.
+      - Hoàn thiện thể chế thị trường về hội nhập kinh tế quốc tế
+      - Hoàn thiện thể chế về quản lý thuế thu nhập cá nhân.
+    answer: 0
+    why: A đúng vì phát triển kinh tế số trong CMCN 4.0 phụ thuộc trước hết vào thị trường khoa học công nghệ, thông tin và bảo hộ quyền sở hữu trí tuệ - nền tảng cho đổi mới sáng tạo; các phương án còn lại thuộc lĩnh vực khác, không gắn trực tiếp với kinh tế số.
+    tags:
+      - phan-iii
+      - goc-cau-16
+      - nhat-tri
+  - id: ktct-300
+    type: single
+    q: Nhiệm vụ nào dưới đây được coi là nhiệm vụ trọng tâm nhằm xây dựng nền kinh tế độc lập, tự chủ, xây dựng cơ sở vật chất cho chủ nghĩa xã hội, giúp Việt Nam đi tắt, đón đầu, tránh nguy cơ tụt hậu xa hơn về kinh tế so với các nước khác?
+    options:
+      - Đẩy mạnh quan hệ kinh tế đối ngoại và chủ động hội nhập kinh tế quốc tế
+      - Kết hợp chặt chẽ kinh tế với quốc phòng, an ninh và đối ngoại trong hội nhập quốc tế
+      - Đổi mới, hoàn thiện thể chế kinh tế, hành chính để tăng cường năng lực cạnh tranh của nền kinh tế
+      - Đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước
+    answer: 3
+    why: Công nghiệp hoá, hiện đại hoá là nhiệm vụ trung tâm trong suốt thời kỳ quá độ, giúp xây dựng cơ sở vật chất - kỹ thuật cho chủ nghĩa xã hội, tạo điều kiện để Việt Nam đi tắt, đón đầu và rút ngắn khoảng cách phát triển; các phương án khác chỉ là giải pháp hỗ trợ đi kèm.
+    tags:
+      - phan-iii
+      - goc-cau-98
+      - nhat-tri

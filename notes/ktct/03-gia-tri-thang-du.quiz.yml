@@ -1,0 +1,917 @@
+title: KTCT — Giá trị thặng dư trong nền kinh tế thị trường
+serve: db
+pass: 70
+generated: fable + haiku + opus + sonnet (giải độc lập rồi đối chiếu chéo)
+reviewed: false
+source_hash: 71964a6086e830b5
+questions:
+  - id: ktct-004
+    type: single
+    q: Thời gian sản xuất là?
+    options:
+      - Thời gian mà tư bản nằm trong giai đoạn sản xuất
+      - Thời gian lao động để tạo ra sản phẩm
+      - Thời gian tiêu thụ sản phẩm
+      - Thời gian luân chuyển vốn
+    answer: 0
+    why: Thời gian sản xuất là thời gian mà tư bản nằm trong giai đoạn sản xuất, từ khi vốn tư liệu và sức lao động kết hợp cho đến khi sản phẩm hoàn thành. Thời gian lao động (B) và luân chuyển vốn (D) là những khái niệm khác.
+    tags:
+      - phan-i
+      - goc-cau-4
+      - nhat-tri
+  - id: ktct-006
+    type: single
+    q: Hao mòn vô hình của tư bản cố định là do?
+    options:
+      - Cường độ sử dụng quá cao
+      - Sự tiến bộ của khoa học công nghệ làm cho tư bản cố định cũ bị mất giá
+      - Người sử dụng không thực hiện bảo dưỡng định kỳ theo yêu cầu của nhà sản xuất
+      - Quan hệ cung - cầu về tài sản trên thị trường
+    answer: 1
+    why: Hao mòn vô hình (hao mòn ngoài vật chất) là do sự tiến bộ của khoa học công nghệ làm cho tư bản cố định cũ bị mất giá. Các phương án khác liên quan đến hao mòn hữu hình (vật lý).
+    tags:
+      - phan-i
+      - goc-cau-6
+      - nhat-tri
+  - id: ktct-015
+    type: single
+    q: Tư bản thương nghiệp có chức năng gì?
+    options:
+      - Thúc đẩy phát triển hệ thống hạ tầng giao thông vận tài và thị trường tài chính
+      - Biến hàng hóa thành tiền và tiền thành hàng hóa, thúc đẩy lưu thông hàng hóa
+      - Cho vay vốn
+      - Trực tiếp sản xuất ra hàng hóa
+    answer: 1
+    why: Chức năng cơ bản của tư bản thương nghiệp là biến hàng hóa thành tiền và tiền thành hàng hóa, tức là thúc đẩy lưu thông hàng hóa. C là tư bản cho vay, D là tư bản công nghiệp.
+    tags:
+      - phan-i
+      - goc-cau-15
+      - nhat-tri
+  - id: ktct-019
+    type: single
+    q: 'Mệnh giá 1 cổ phiếu trên thị trường chứng khoán Việt Nam hiện nay là :'
+    options:
+      - 20.000 đồng
+      - 25.000 đồng
+      - 15.000 đông
+      - 10.000 đồng
+    answer: 3
+    why: Mệnh giá cổ phiếu chuẩn trên thị trường chứng khoán Việt Nam là 10.000 đồng. Đây là quy định chuẩn của các công ty cổ phần khi phát hành cổ phiếu.
+    tags:
+      - phan-i
+      - goc-cau-19
+      - nhat-tri
+  - id: ktct-026
+    type: single
+    q: Cấu tạo hữu cơ của tư bản (c/v) là gì?
+    options:
+      - Tỷ lệ giữa giá trị thặng dư và tư bản khả biến
+      - Tỷ lệ giữa giá trị tư bản bất biến và giá trị tư bản khả biến
+      - Tỷ lệ giữa tư bản cố định và tư bản lưu động
+      - Tỷ lệ giữa tư liệu sản xuất và sức lao động
+    answer: 1
+    why: Cấu tạo hữu cơ của tư bản c/v là tỷ lệ giữa giá trị tư bản bất biến (c) và giá trị tư bản khả biến (v). A là tỷ lệ lợi nhuận, C liên quan chu chuyển, D là tỷ lệ vật chất.
+    tags:
+      - phan-i
+      - goc-cau-26
+      - nhat-tri
+  - id: ktct-032
+    type: single
+    q: Khi tốc độ chu chuyển của tư bản tăng lên, điều gì sẽ xảy ra?
+    options:
+      - Giá trị của tư bản bất biến tăng
+      - Khối lượng giá trị thặng dư tạo ra trong một thời kỳ tăng
+      - Giá trị của tư bản khả biến giảm
+      - Khối lượng giá trị thặng dư tạo ra trong một thời kỳ giảm
+    answer: 1
+    why: Khi tốc độ chu chuyển tư bản tăng lên, khối lượng giá trị thặng dư tạo ra trong một thời kỳ tăng vì vốn hoàn thành được nhiều vòng quay hơn. A, C, D không đúng hoặc ngược lại.
+    tags:
+      - phan-i
+      - goc-cau-32
+      - nhat-tri
+  - id: ktct-033
+    type: single
+    q: Tư bản cố định là bộ phận tư bản bất biến mà giá trị của nó?
+    options:
+      - Không chuyển vào sản phẩm
+      - Biến đổi theo từng chu kỳ sản xuất
+      - Chuyển từng phần vào giá trị sản phẩm theo mức độ hao mòn
+      - Chuyển toàn bộ vào giá trị sản phẩm trong một chu kỳ sản xuất
+    answer: 2
+    why: Tư bản cố định là tư bản bất biến mà giá trị của nó chuyển từng phần vào giá trị sản phẩm theo mức độ hao mòn. A sai (nó chuyển vào), B không chính xác, D sai (cố định không chuyển toàn bộ).
+    tags:
+      - phan-i
+      - goc-cau-33
+      - nhat-tri
+  - id: ktct-039
+    type: single
+    q: 'Chọn ý đúng về mối quan hệ giữa tỷ suất lợi nhuận (p'') và tỷ suất giá trị thặng dư (m''):'
+    options:
+      - p' lớn hơn m'
+      - p' phản ánh trực tiếp trình độ bóc lột của nhà tư bản
+      - p' nhỏ hơn m'
+      - m' chỉ ra nơi đầu tư có lợi cho nhà tư bản
+    answer: 2
+    why: Tỷ suất lợi nhuận p' luôn nhỏ hơn tỷ suất giá trị thặng dư m' vì p' = m'/(c+v) trong khi m' = m/v, và c > 0. A sai, B, D không đúng.
+    tags:
+      - phan-i
+      - goc-cau-39
+      - nhat-tri
+  - id: ktct-040
+    type: single
+    q: Lợi nhuận bình quân là?
+    options:
+      - Lợi nhuận mà mọi doanh nghiệp đều có thể đạt được khi đầu tư tư bản vào các ngành
+      - Số lợi nhuận bằng nhau của những tư bản như nhau đầu tư vào những ngành khác nhau
+      - Lợi nhuận bình quân giữa nông nghiệp, công nghiệp, lâm nghiệp, thương mại
+      - Số lợi nhuận bằng nhau của những tư bản như nhau đầu tư vào cùng một ngành
+    answer: 1
+    why: Lợi nhuận bình quân là số lợi nhuận bằng nhau của những tư bản như nhau đầu tư vào những ngành khác nhau. Đây là kết quả của quá trình hành thị qua trung gian lợi nhuận.
+    tags:
+      - phan-i
+      - goc-cau-40
+      - nhat-tri
+  - id: ktct-045
+    type: single
+    q: 'Chọn ý không đúng về mối quan hệ giữa lợi nhuận và giá trị thặng dư:'
+    options:
+      - Lợi nhuận là hình thức biểu hiện biến tướng của giá trị thặng dư
+      - Giá trị thặng dư được hình thành trong sản xuất, còn lợi nhuận thể hiện trên thị trường
+      - Lợi nhuận và giá trị thặng dư xét về lượng bằng nhau trong mọi trường hợp
+      - Bản chất của lợi nhuận là giá trị thặng dư được “che giấu”
+    answer: 2
+    why: 'Phương án C là ý SAI: lợi nhuận và giá trị thặng dư KHÔNG bằng nhau trong mọi trường hợp—chúng bằng nhau chỉ ở mức xã hội tổng thể, không phải ở từng doanh nghiệp.'
+    tags:
+      - phan-i
+      - goc-cau-45
+      - nhat-tri
+  - id: ktct-046
+    type: single
+    q: Lợi nhuận thương nghiệp là gì?
+    options:
+      - Phần giá trị thặng dư mà nhà tư bản công nghiệp nhượng lại cho nhà tư bản thương nghiệp
+      - Phần chênh lệch giữa giá mua và giá bán của nhà tư bản thương nghiệp
+      - Lợi nhuận từ sản xuất
+      - Lợi nhuận từ hoạt động đầu tư tài chính của doanh nghiệp
+    answer: 0
+    why: Lợi nhuận thương nghiệp là phần giá trị thặng dư mà nhà tư bản công nghiệp nhượng lại cho nhà tư bản thương nghiệp. B là khái niệm đơn giản hóa, C là lợi nhuận công nghiệp, D là lợi nhuận tài chính.
+    tags:
+      - phan-i
+      - goc-cau-46
+      - nhat-tri
+  - id: ktct-050
+    type: single
+    q: Cấu tạo hữu cơ của tư bản tăng lên phản ánh?
+    options:
+      - Tư bản khả biến tăng nhanh hơn tư bản bất biến
+      - Năng suất lao động giảm
+      - Tư bản bất biến tăng nhanh hơn tư bản khả biến
+      - Tư bản bất biến giảm
+    answer: 2
+    why: Khi cấu tạo hữu cơ c/v tăng lên, điều đó phản ánh tư bản bất biến tăng nhanh hơn tư bản khả biến, kết quả của sự tích luỹ và tiến bộ kỹ thuật. A sai, B sai, D sai.
+    tags:
+      - phan-i
+      - goc-cau-50
+      - nhat-tri
+  - id: ktct-055
+    type: single
+    q: Tốc độ chu chuyển của tư bản được đo bằng gì?
+    options:
+      - Tổng lượng tư bản sử dụng trong 1 năm
+      - Thời gian sản xuất cộng thời gian lưu thông của tư bản
+      - Số vòng tuần hoàn của tư bản trong 1 năm
+      - Tổng thời gian của một vòng tuần hoàn tư bản
+    answer: 2
+    why: Tốc độ chu chuyển được đo bằng số lần tư bản hoàn thành một vòng tuần hoàn trong 1 năm. C chính xác, B là thành phần cấu thành một vòng chu chuyển, không phải đo tốc độ.
+    tags:
+      - phan-i
+      - goc-cau-55
+      - nhat-tri
+  - id: ktct-056
+    type: single
+    q: Loại chứng khoán nào sau đây không có thời điểm đáo hạn ?
+    options:
+      - Trái phiếu
+      - Cổ phiếu
+      - Chứng quyền
+      - Hợp đồng tương lai
+    answer: 1
+    why: Cổ phiếu không có thời điểm đáo hạn vì nó đại diện quyền sở hữu vĩnh viễn. Trái phiếu, chứng quyền, hợp đồng tương lai đều có ngày hết hạn xác định.
+    tags:
+      - phan-i
+      - goc-cau-56
+      - nhat-tri
+  - id: ktct-057
+    type: single
+    q: Vòng tuần hoàn của tư bản là?
+    options:
+      - Vòng đời của một sản phẩm
+      - Sự trao đổi hàng hóa trên thị trường
+      - Quá trình luân chuyển tiền tệ trong ngân hàng
+      - Tư bản tiền tệ, tư bản sản xuất, tư bản hàng hóa
+    answer: 3
+    why: 'Vòng tuần hoàn của tư bản là quá trình: tiền tệ → sản xuất → hàng hóa → tiền tệ. D mô tả đúng ba hình thái của tư bản trong một chu kỳ.'
+    tags:
+      - phan-i
+      - goc-cau-57
+      - nhat-tri
+  - id: ktct-069
+    type: single
+    q: Tỷ suất lợi nhuận (p’) là tỷ lệ tính theo phần trăm giữa?
+    options:
+      - Lợi nhuận và tư bản khả biến
+      - Lợi nhuận và tổng tư bản ứng trước
+      - Lợi nhuận và doanh thu
+      - Lợi nhuận và tư bản bất biến
+    answer: 1
+    why: Tỷ suất lợi nhuận p' = lợi nhuận / tổng tư bản ứng trước (bất biến + khả biến). A chỉ là mẫu số không đầy đủ.
+    tags:
+      - phan-i
+      - goc-cau-69
+      - nhat-tri
+  - id: ktct-073
+    type: single
+    q: Hao mòn hữu hình của tư bản cố định là do?
+    options:
+      - Sự lạc hậu về kỹ thuật
+      - Quan hệ cung - cầu về tài sản trên thị trường
+      - Quá trình sử dụng và tác động của tự nhiên
+      - Thay đổi nhu cầu tiêu dùng
+    answer: 2
+    why: Hao mòn hữu hình của tư bản cố định là do quá trình sử dụng (tiêu hao) và tác động của tự nhiên (thời tiết, môi trường), không phải do kỹ thuật hay thay đổi nhu cầu.
+    tags:
+      - phan-i
+      - goc-cau-73
+      - nhat-tri
+  - id: ktct-077
+    type: single
+    q: Thời gian lưu thông là?
+    options:
+      - Thời gian mà tư bản nằm trong quá trình sản xuất
+      - Thời gian để sản xuất ra hàng hóa
+      - Thời gian vận chuyển hàng hóa từ nơi sản xuất đến nơi tiêu thụ
+      - Thời gian mà tư bản chỉ tồn tại dưới hình thái tiền tệ và hàng hóa
+    answer: 3
+    why: Thời gian lưu thông là thời gian tư bản tồn tại dưới hình thái tiền tệ và hàng hóa (ngoài quá trình sản xuất). D chính xác.
+    tags:
+      - phan-i
+      - goc-cau-77
+      - nhat-tri
+  - id: ktct-089
+    type: single
+    q: 'Vai trò chủ yếu của tư bản thương nghiệp trong nền kinh tế thị trường là:'
+    options:
+      - Giảm giá cả hàng hóa
+      - Tăng hiệu quả chu chuyển tư bản
+      - Làm giảm cầu hàng hóa
+      - Thúc đẩy tiến bộ khoa học kỹ thuật
+    answer: 1
+    why: Vai trò chủ yếu của tư bản thương nghiệp là tăng hiệu quả chu chuyển tư bản bằng cách rút ngắn thời gian lưu thông. B chính xác.
+    tags:
+      - phan-i
+      - goc-cau-89
+      - nhat-tri
+  - id: ktct-093
+    type: single
+    q: Sự hình thành lợi nhuận bình quân và giá cả sản xuất là kết quả của?
+    options:
+      - Cạnh tranh trong nội bộ ngành
+      - Quy luật cung cầu
+      - Độc quyền sản xuất
+      - Cạnh tranh giữa các ngành
+    answer: 3
+    why: Sự hình thành lợi nhuận bình quân và giá cả sản xuất là kết quả của cạnh tranh giữa các ngành (khác nhau về cơ cấu tư bản hữu cơ). D chính xác.
+    tags:
+      - phan-i
+      - goc-cau-93
+      - nhat-tri
+  - id: ktct-096
+    type: single
+    q: Giá trị quyền sử dụng đất phụ thuộc chủ yếu vào?
+    options:
+      - Quy định của nhà nước
+      - Mục đích sử dụng đất
+      - Độ màu mỡ của đất
+      - Vị trí của đất đai
+    answer: 3
+    why: Giá trị quyền sử dụng đất phụ thuộc chủ yếu vào vị trí (tiện lợi, tiếp cận), điều này ảnh hưởng trực tiếp đến giá thị trường. D chính xác.
+    tags:
+      - phan-i
+      - goc-cau-96
+      - nhat-tri
+  - id: ktct-098
+    type: single
+    q: Tư bản lưu động chuyển giá trị của nó thế nào?
+    options:
+      - Không chuyển vào sản phẩm
+      - Chuyển từng phần vào giá trị sản phẩm theo mức độ hao mòn
+      - Chuyển toàn bộ vào sản phẩm trong một chu kỳ sản xuất
+      - Biến đổi liên tục
+    answer: 2
+    why: Tư bản lưu động chuyển toàn bộ giá trị vào sản phẩm trong một chu kỳ sản xuất, vì nó hoàn toàn tiêu hao. C chính xác.
+    tags:
+      - phan-i
+      - goc-cau-98
+      - nhat-tri
+  - id: ktct-100
+    type: single
+    q: Giá cả sản xuất bằng?
+    options:
+      - Giá bán trên thị trường
+      - Chi phí nguyên vật liệu
+      - Giá trị hàng hóa cộng với lợi nhuận bình quân
+      - Chi phí sản xuất cộng với lợi nhuận bình quân
+    answer: 3
+    why: Giá cả sản xuất = chi phí sản xuất (C) + lợi nhuận bình quân. D chính xác theo định nghĩa Mác-xít.
+    tags:
+      - phan-i
+      - goc-cau-100
+      - nhat-tri
+  - id: ktct-110
+    type: single
+    q: 'Hai điều kiện để sức lao động trở thành hàng hóa:'
+    options:
+      - Có kỹ năng và kinh nghiệm
+      - Người lao động tự do và không sở hữu tư liệu sản xuất
+      - Có bằng cấp và sức khỏe
+      - Có giấy phép và hợp đồng
+    answer: 1
+    why: 'Hai điều kiện để sức lao động trở thành hàng hóa là: người lao động tự do (không phải nô lệ) và không sở hữu tư liệu sản xuất. Chỉ khi hai điều kiện này cùng có mặt thì sức lao động mới trở thành hàng hóa.'
+    tags:
+      - phan-ii
+      - goc-cau-9
+      - nhat-tri
+  - id: ktct-111
+    type: single
+    q: Ý nào sau đây không đúng?
+    options:
+      - Lượng giá trị hàng hóa = hao phí lao động quá khứ + hao phí lao động mới kết tinh thêm
+      - Lượng giá trị hàng hóa = c+v+m
+      - Lượng giá trị hàng hóa = chi phí sản xuất + giá trị thặng dư
+      - Lượng giá trị hàng hóa = chi phí sản xuất + lợi nhuận
+    answer: 3
+    why: Câu hỏi yêu cầu chọn ý SAI. Lượng giá trị = c+v+m = chi phí sản xuất + giá trị thặng dư. Phương án D nói 'chi phí sản xuất + lợi nhuận' là không chính xác vì lợi nhuận khác với giá trị thặng dư (lợi nhuận = m - lãi suất - tiền tô).
+    tags:
+      - phan-ii
+      - goc-cau-10
+      - nhat-tri
+  - id: ktct-115
+    type: single
+    q: Tỷ suất giá trị thặng dư (m’) cho ta biết điều gì?
+    options:
+      - Tính toán chi phí sản xuất
+      - Xác định giá bán sản phẩm
+      - Đo lường trình độ bóc lột sức lao động
+      - Cho biết tổng lợi nhuận
+    answer: 2
+    why: Tỷ suất giá trị thặng dư m' = m/v cho ta biết trình độ bóc lột sức lao động, tức là tỷ lệ phần lao động sản xuất cho nhà tư bản so với phần lao động sản xuất cho chính bản thân công nhân.
+    tags:
+      - phan-ii
+      - goc-cau-14
+      - nhat-tri
+  - id: ktct-119
+    type: single
+    q: Hàng hóa sức lao động có giá trị và giá trị sử dụng đặc biệt vì?
+    options:
+      - Gắn với lao động trí óc
+      - Là tài sản vô hình
+      - Có thể tạo ra giá trị mới lớn hơn bản thân nó
+      - Không có giá cả
+    answer: 2
+    why: Hàng hóa sức lao động đặc biệt vì nó có thể tạo ra giá trị mới lớn hơn bản thân nó. Đây là cơ sở của bóc lột giá trị thặng dư trong sản xuất tư bản chủ nghĩa.
+    tags:
+      - phan-ii
+      - goc-cau-18
+      - nhat-tri
+  - id: ktct-122
+    type: single
+    q: Giá trị thặng dư siêu ngạch là?
+    options:
+      - Giá trị thặng dư thu được nhờ tăng năng suất lao động xã hội
+      - Giá trị thặng dư thu được nhờ tăng giá bán
+      - Giá trị thặng dư thu được nhờ kéo dài ngày lao động
+      - Phần giá trị thặng dư dôi ra ngoài giá trị thặng dư bình quân, do áp dụng kỹ thuật tiên tiến nhất
+    answer: 3
+    why: Giá trị thặng dư siêu ngạch là phần thặng dư vượt quá bình quân, do áp dụng kỹ thuật tiên tiến nhất làm tăng năng suất lao động riêng lẻ trên mức xã hội.
+    tags:
+      - phan-ii
+      - goc-cau-21
+      - nhat-tri
+  - id: ktct-123
+    type: single
+    q: Ngày lao động là 8h, m' = 100%, nhà tư bản tăng ngày lao động lên 1h và giá trị sức lao động giảm 25%. Vậy tỷ suất giá trị thặng dư mới là bao nhiêu?
+    options:
+      - 200%
+      - 250%
+      - 300%
+      - 150%
+    answer: 0
+    why: 'Tính toán: ban đầu 8h, m''=100% nên v=4h, m=4h. Sau tăng lên 9h và v giảm 25% thành 3h, vậy m=9-3=6h. Do đó m''=6/3=200%.'
+    tags:
+      - phan-ii
+      - goc-cau-22
+      - nhat-tri
+  - id: ktct-124
+    type: single
+    q: Việc giảm thời gian lao động tất yếu bằng cách tăng năng suất lao động xã hội sẽ làm tăng loại giá trị thặng dư nào?
+    options:
+      - Giá trị thặng dư siêu ngạch
+      - Giá trị thặng dư tuyệt đối
+      - Giá trị thặng dư bình quân
+      - Giá trị thặng dư tương đối
+    answer: 3
+    why: Giảm thời gian lao động tất yếu bằng cách tăng năng suất lao động xã hội sẽ làm tăng giá trị thặng dư tương đối. Lao động tất yếu giảm đi trong ngày, nên thặng dư tương đối tăng.
+    tags:
+      - phan-ii
+      - goc-cau-23
+      - nhat-tri
+  - id: ktct-128
+    type: single
+    q: Giá trị thặng dư được tạo ra từ quá trình nào?
+    options:
+      - Phân phối tài sản
+      - Sản xuất sử dụng hàng hóa sức lao động
+      - Thương mại quốc tế
+      - Lưu thông hàng hóa
+    answer: 1
+    why: Giá trị thặng dư được tạo ra từ quá trình sản xuất sử dụng hàng hóa sức lao động. Nhà tư bản mua lao động, sử dụng nó để sản xuất, và chiếm lấy phần thặng dư.
+    tags:
+      - phan-ii
+      - goc-cau-27
+      - nhat-tri
+  - id: ktct-140
+    type: single
+    q: Tái sản xuất giản đơn là gì?
+    options:
+      - Toàn bộ giá trị thặng dư được tích lũy
+      - Một phần giá trị thặng dư được tiêu dùng, một phần tích lũy
+      - Tái sản xuất với quy mô không thay đổi, giá trị thặng dư sử dụng hết cho tiêu dùng
+      - Toàn bộ giá trị thặng dư được tiêu dùng cho cá nhân nhà tư bản
+    answer: 2
+    why: Tái sản xuất giản đơn là tái sản xuất với quy mô không thay đổi, trong đó toàn bộ giá trị thặng dư được tiêu dùng hết (không tích lũy), để giữ quy mô sản xuất như cũ.
+    tags:
+      - phan-ii
+      - goc-cau-39
+      - nhat-tri
+  - id: ktct-144
+    type: single
+    q: Nguồn gốc trực tiếp và chủ yếu của tích luỹ tư bản trong chủ nghĩa tư bản là gì?
+    options:
+      - Các khoản vay từ ngân hàng và tổ chức tài chính
+      - Tài sản kế thừa của các nhà tư bản
+      - Giá trị thặng dư do công nhân tạo ra
+      - Của cải tiết kiệm từ tiêu dùng cá nhân
+    answer: 2
+    why: Nguồn gốc trực tiếp và chủ yếu của tích lũy tư bản là giá trị thặng dư do công nhân tạo ra. Nhà tư bán chiếm lấy thặng dư và chuyển một phần thành tư bản mới.
+    tags:
+      - phan-ii
+      - goc-cau-43
+      - nhat-tri
+  - id: ktct-150
+    type: single
+    q: Bản chất của tích lũy tư bản là gì?
+    options:
+      - Bán sản phẩm với giá cao
+      - Tái sản xuất giản đơn
+      - Biến một phần giá trị thặng dư thành tư bản phụ thêm
+      - Tiêu dùng giá trị thặng dư
+    answer: 2
+    why: Bản chất của tích lũy tư bản là biến một phần giá trị thặng dư thành tư bản phụ thêm. Phần còn lại tiêu dùng, phần này tích lũy để mở rộng sản xuất.
+    tags:
+      - phan-ii
+      - goc-cau-49
+      - nhat-tri
+  - id: ktct-154
+    type: single
+    q: Tái sản xuất mở rộng là gì?
+    options:
+      - Toàn bộ giá trị thặng dư được tiêu dùng
+      - Quy mô sản xuất giảm dần
+      - Giá trị thặng dư được biến thành tư bản phụ thêm để mở rộng sản xuất
+      - Sản xuất chỉ đáp ứng nhu cầu cơ bản
+    answer: 2
+    why: Tái sản xuất mở rộng xảy ra khi giá trị thặng dư được chuyển hoá thành tư bản phụ thêm để mở rộng quy mô sản xuất. Đây là một yếu tố cốt lõi của sự tích luỹ tư bản trong chế độ tư bản chủ nghĩa.
+    tags:
+      - phan-ii
+      - goc-cau-53
+      - nhat-tri
+  - id: ktct-155
+    type: single
+    q: Khối lượng giá trị thặng dư (M) được tính bằng công thức?
+    options:
+      - M = (c+v) x m’
+      - M = m’ / (c+v)
+      - M = m’ x C
+      - M = m’ x V
+    answer: 3
+    why: Khối lượng giá trị thặng dư M = m' x V, trong đó m' là tỷ suất giá trị thặng dư và V là tư bản khả biến. Công thức này thể hiện mối quan hệ giữa tỷ suất và khối lượng.
+    tags:
+      - phan-ii
+      - goc-cau-54
+      - nhat-tri
+  - id: ktct-158
+    type: single
+    q: Giá trị thặng dư tương đối thu được từ?
+    options:
+      - Giảm chi phí vận chuyển
+      - Tăng năng suất lao động xã hội
+      - Tăng giờ làm việc
+      - Tăng giá bán
+    answer: 1
+    why: Giá trị thặng dư tương đối đạt được bằng cách tăng năng suất lao động xã hội, làm giảm giá trị của hàng hóa tiêu dùng do công nhân và do đó giảm chi phí của sức lao động.
+    tags:
+      - phan-ii
+      - goc-cau-57
+      - nhat-tri
+  - id: ktct-159
+    type: single
+    q: Công thức chung của tư bản theo C. Mác là?
+    options:
+      - H – H – T
+      - H – T – H
+      - T – H – T’
+      - T – H – T
+    answer: 2
+    why: Công thức chung của tư bản theo Marx là T - H - T' (Tiền - Hàng hóa - Tiền'). Đây thể hiện quá trình tư bản làm giàu nhờ chênh lệch giá trị.
+    tags:
+      - phan-ii
+      - goc-cau-58
+      - nhat-tri
+  - id: ktct-162
+    type: single
+    q: Tỷ suất giá trị thặng dư (m’) được tính bằng công thức?
+    options:
+      - m’ = m/v x 100%
+      - m’ = c/v x 100%
+      - m’ = (c+v)/m x 100%
+      - m’ = m/c x 100%
+    answer: 0
+    why: Tỷ suất giá trị thặng dư m' = m/v x 100%, là tỷ lệ giữa giá trị thặng dư và tư bản khả biến. Công thức này là cơ sở để tính toán mức độ bóc lột lao động.
+    tags:
+      - phan-ii
+      - goc-cau-61
+      - nhat-tri
+  - id: ktct-172
+    type: single
+    q: Tiền công thực tế là gì?
+    options:
+      - Là số lượng hàng hoá và dịch vụ mua được bằng tiền công danh nghĩa
+      - Là giá cả của sức lao động
+      - Là số tiền trong sổ lương + thưởng + thu nhập khác
+      - Là tổng số tiền nhận được thực tế trong 1 tháng
+    answer: 0
+    why: Tiền công thực tế là số lượng hàng hoá và dịch vụ mua được bằng tiền công danh nghĩa. Nó phản ánh sức mua thực của lao động công nhân.
+    tags:
+      - phan-ii
+      - goc-cau-71
+      - nhat-tri
+  - id: ktct-173
+    type: single
+    q: 'Chọn ý đúng trong các nhận xét dưới đây:'
+    options:
+      - Tư bản bất biến là một bộ phận của tư bản cố định
+      - Tư bản lưu động là một bộ phận của tư bản khả biến
+      - Tư bản khả biến là một bộ phận của tư bản lưu động
+      - Tư bản bất biến luôn thay đổi về lượng trong quá trình sản xuất
+    answer: 2
+    why: Tư bản khả biến là một bộ phận của tư bản lưu động, vì nó phải được thay thế trong mỗi chu kỳ sản xuất. Tư bản bất biến có thể là cố định hoặc lưu động.
+    tags:
+      - phan-ii
+      - goc-cau-72
+      - nhat-tri
+  - id: ktct-188
+    type: single
+    q: Tư bản khả biến là phần tư bản dùng để?
+    options:
+      - Mua máy móc
+      - Đầu tư bất động sản
+      - Mua sức lao động
+      - Chi cho thuế
+    answer: 2
+    why: Tư bản khả biến là phần tư bản được nhà tư bản sử dụng để mua sức lao động của công nhân. Nó là nguồn tạo ra giá trị thặng dư.
+    tags:
+      - phan-ii
+      - goc-cau-87
+      - nhat-tri
+  - id: ktct-189
+    type: single
+    q: 'Chọn ý đúng trong các nhận xét dưới đây về các phạm trù tư bản:'
+    options:
+      - Phạm trù tư bản bất biến rộng hơn phạm trù tư bản cố định
+      - Tư bản khả biến không thay đổi về lượng trong quá trình sản xuất
+      - Phạm trù tư bản khả biến rộng hơn phạm trù tư bản lưu động
+      - Tư bản bất biến luôn thay đổi về lượng trong quá trình sản xuất
+    answer: 0
+    why: 'Tư bản bất biến (c) gồm cả tư bản cố định (máy móc, thiết bị, nhà xưởng) lẫn phần nguyên, nhiên, vật liệu vốn thuộc tư bản lưu động, nên phạm trù tư bản bất biến rộng hơn tư bản cố định - A đúng. C nói ngược: tư bản khả biến (sức lao động) chỉ là một bộ phận của tư bản lưu động nên tư bản lưu động mới là phạm trù rộng hơn. B sai vì chính tư bản khả biến mới biến đổi về lượng (tạo ra giá trị mới lớn hơn bản thân nó), còn D sai vì tư bản bất biến chỉ chuyển nguyên giá trị, không đổi về lượng.'
+    tags:
+      - phan-ii
+      - goc-cau-88
+      - phan-xu
+  - id: ktct-194
+    type: single
+    q: Nhận xét nào sau đây phản ánh đúng nhất về sản xuất giá trị thặng dư trong chủ nghĩa tư bản ngày nay?
+    options:
+      - Giá trị thặng dư không còn đóng vai trò trung tâm trong sản xuất hiện đại
+      - Máy móc hiện đại làm giảm vai trò của lao động sống và khiến giá trị thặng dư giảm dần
+      - Tỷ suất giá trị thặng dư ngày càng tăng lên nhờ áp dụng công nghệ cao
+      - Giá trị thặng dư chỉ còn tồn tại trong lĩnh vực sản xuất vật chất
+    answer: 2
+    why: Tỷ suất giá trị thặng dư ngày càng tăng lên nhờ áp dụng công nghệ cao, thể hiện mức độ bóc lột tăng. Điều này phản ánh chính xác thực trạng hiện đại.
+    tags:
+      - phan-ii
+      - goc-cau-93
+      - nhat-tri
+  - id: ktct-203
+    type: single
+    q: Địa tô chênh lệch I là loại địa tô thu được trên?
+    options:
+      - Đất đai có độ màu mỡ trung bình và xấu
+      - Đất đai không có điều kiện sản xuất tốt
+      - Đất đai có vị trí thuận lợi, gần thị trường tiêu thụ
+      - Đất đai có độ màu mỡ cao và vị trí thuận lợi hơn
+    answer: 3
+    why: Địa tô chênh lệch I thu được trên đất đai có độ màu mỡ cao và vị trí thuận lợi hơn so với đất biên lợi. Đây là sự chênh lệch do điều kiện tự nhiên.
+    tags:
+      - phan-iii
+      - goc-cau-1
+      - nhat-tri
+  - id: ktct-208
+    type: single
+    q: Lợi tức là gì?
+    options:
+      - Lợi nhuận thu được trong cho thuê bất động sản
+      - Phần giá trị thặng dư mà nhà tư bản đi vay trả cho nhà tư bản cho vay
+      - Lợi nhuận thu được trong đầu tư sản xuất công nghiệp
+      - Phần chênh lệch giữa giá mua và giá bán của nhà tư bản thương nghiệp
+    answer: 1
+    why: B đúng vì lợi tức là một phần giá trị thặng dư mà nhà tư bản đi vay phải trích trả cho nhà tư bản cho vay vì đã sử dụng vốn của họ; A, C, D nhầm với lợi nhuận sản xuất hoặc lợi nhuận thương nghiệp.
+    tags:
+      - phan-iii
+      - goc-cau-6
+      - nhat-tri
+  - id: ktct-214
+    type: single
+    q: Trong tác phẩm “Tư bản” của C. Mác, lý luận nào là cốt lõi?
+    options:
+      - Cung – cầu
+      - Cạnh tranh
+      - Giá trị thặng dư
+      - Giá trị lao động
+    answer: 2
+    why: C đúng vì học thuyết giá trị thặng dư là nội dung cốt lõi, hòn đá tảng xuyên suốt bộ Tư bản; cung - cầu, cạnh tranh, giá trị lao động chỉ là các phạm trù nền tảng phục vụ học thuyết này.
+    tags:
+      - phan-iii
+      - goc-cau-12
+      - nhat-tri
+  - id: ktct-223
+    type: single
+    q: 'Khi hàng hoá bán đúng giá trị thì:'
+    options:
+      - p = 0
+      - p = m
+      - p > m
+      - p < m
+    answer: 1
+    why: B đúng vì khi hàng hóa bán đúng giá trị (giá cả bằng giá trị) thì lợi nhuận p bằng đúng giá trị thặng dư m; p chỉ khác m khi giá cả lệch khỏi giá trị do cạnh tranh.
+    tags:
+      - phan-iii
+      - goc-cau-21
+      - nhat-tri
+  - id: ktct-230
+    type: single
+    q: Tư bản giả là gì?
+    options:
+      - Tư bản được sử dụng trong hoạt động kinh doanh phi sản xuất
+      - Các loại chứng khoán (cổ phiếu, trái phiếu, … )
+      - Tư bản không có giá trị thật
+      - Tư bản được tạo ra từ lừa đảo
+    answer: 1
+    why: B đúng vì tư bản giả tồn tại dưới hình thức chứng khoán (cổ phiếu, trái phiếu) mang lại thu nhập cho người sở hữu nhưng bản thân nó không trực tiếp tham gia sản xuất; A, C, D diễn đạt sai bản chất khái niệm.
+    tags:
+      - phan-iii
+      - goc-cau-28
+      - nhat-tri
+  - id: ktct-231
+    type: single
+    q: Nguyên nhân tồn tại địa tô tuyệt đối là do?
+    options:
+      - Chính sách bảo hộ sản xuất nông nghiệp
+      - Độc quyền sở hữu ruộng đất
+      - Đất đai khan hiếm
+      - Nhu cầu lương thực tăng cao
+    answer: 1
+    why: B đúng vì địa tô tuyệt đối tồn tại do chế độ độc quyền sở hữu ruộng đất, buộc nhà tư bản kinh doanh nông nghiệp dù trên đất xấu nhất vẫn phải trả tô cho địa chủ; đây khác với địa tô chênh lệch dựa trên độ màu mỡ hay vị trí.
+    tags:
+      - phan-iii
+      - goc-cau-29
+      - nhat-tri
+  - id: ktct-235
+    type: single
+    q: Những yếu tố dưới đây, yếu tố nào không thuộc tư bản cố định?
+    options:
+      - Nguyên vật liệu, điện, nước dùng cho sản xuất
+      - Nhà xưởng
+      - Thiết bị, máy móc
+      - Các phương tiện vận tải
+    answer: 0
+    why: A đúng vì nguyên vật liệu, điện, nước là đối tượng lao động, giá trị chuyển hết vào sản phẩm sau một chu kỳ sản xuất nên thuộc tư bản lưu động, không phải tư bản cố định như nhà xưởng, máy móc, phương tiện vận tải.
+    tags:
+      - phan-iii
+      - goc-cau-33
+      - nhat-tri
+  - id: ktct-241
+    type: single
+    q: Trái phiếu là gì?
+    options:
+      - Giấy tờ xác nhận một khoản vay nợ của công ty hoặc chính phủ, cam kết trả lãi cố định
+      - Giấy tờ xác nhận một tài sản bảo đảm của công ty
+      - Giấy tờ xác nhận quyền sở hữu một phần tư bản của công ty
+      - Hợp đồng mua bán tài sản
+    answer: 0
+    why: A đúng vì trái phiếu là chứng nhận khoản nợ, người phát hành cam kết trả lãi cố định và hoàn vốn gốc, khác với cổ phiếu (C) là chứng nhận quyền sở hữu vốn không có lãi cố định.
+    tags:
+      - phan-iii
+      - goc-cau-39
+      - nhat-tri
+  - id: ktct-249
+    type: single
+    q: Giá cả ruộng đất là gì?
+    options:
+      - Địa tô thu được trên đất đai có điều kiện sản xuất tốt nhất
+      - Địa tô thu được trên đất đai có điều kiện sản xuất xấu nhất
+      - Địa tô thu được trên đất đai có điều kiện sản xuất trung bình
+      - Địa tô quy về một lần, được xác định trên cơ sở địa tô và lãi suất ngân hàng
+    answer: 3
+    why: D đúng vì giá cả ruộng đất về bản chất là địa tô tư bản hóa, được tính bằng cách quy địa tô hàng năm về một khoản vốn gửi ngân hàng sinh lãi bằng đúng mức địa tô đó, không phải bản thân giá trị đất.
+    tags:
+      - phan-iii
+      - goc-cau-47
+      - nhat-tri
+  - id: ktct-250
+    type: single
+    q: Địa tô độc quyền là loại địa tô thu được đối với?
+    options:
+      - Đất đai có vị trí đặc biệt
+      - Đất đai do nhà nước quản lý
+      - Đất đai có tính chất đặc biệt
+      - Đất đai được cải tạo
+    answer: 2
+    why: C đúng vì địa tô độc quyền hình thành trên những đất đai có tính chất đặc biệt (điều kiện tự nhiên hiếm có, cho sản phẩm quý hiếm) cho phép bán sản phẩm với giá độc quyền, khác với địa tô chênh lệch dựa trên độ màu mỡ hay vị trí thông thường.
+    tags:
+      - phan-iii
+      - goc-cau-48
+      - nhat-tri
+  - id: ktct-251
+    type: single
+    q: Chi phí thực tế của xã hội để sản xuất ra hàng hoá là gì?
+    options:
+      - Chi phí mua tư liệu sản xuất
+      - Chi phí do nhà tư bản ứng ra để mua nguyên vật liệu
+      - Chi phí sử dụng lao động sống và chi phí lao động quá khứ
+      - Chi phí nhượng quyền thương hiệu
+    answer: 2
+    why: C đúng vì chi phí thực tế của xã hội để sản xuất hàng hóa là toàn bộ hao phí lao động xã hội, gồm lao động quá khứ (kết tinh trong c) và lao động sống (v+m), lớn hơn chi phí sản xuất tư bản chủ nghĩa (chỉ tính c+v) mà nhà tư bản ứng ra.
+    tags:
+      - phan-iii
+      - goc-cau-49
+      - nhat-tri
+  - id: ktct-257
+    type: single
+    q: 'Nguồn gốc của tư bản cho vay là:'
+    options:
+      - Tư bản sử dụng trong lĩnh vực thương mại
+      - Tư bản sử dụng trong đầu tư tài chính
+      - Tư bản sử dụng trong lĩnh vực sản xuất
+      - Tư bản tiền tệ tạm thời nhàn rỗi
+    answer: 3
+    why: Tư bản cho vay hình thành từ tư bản tiền tệ tạm thời nhàn rỗi trong quá trình tuần hoàn và chu chuyển của tư bản công nghiệp và tiền nhàn rỗi trong dân cư, chứ không phải tư bản đang trực tiếp hoạt động trong sản xuất hay thương mại.
+    tags:
+      - phan-iii
+      - goc-cau-55
+      - nhat-tri
+  - id: ktct-262
+    type: single
+    q: Trong các hình thức tư bản dưới đây, tư bản cho vay không bắt nguồn từ hình thức nào?
+    options:
+      - Tiền gửi tiết kiệm của người lao động
+      - Tư bản công nghiệp tham gia sản xuất trực tiếp
+      - Tư bản tạm thời nhàn rỗi của các công ty
+      - Vốn tích luỹ từ ngân sách nhà nước
+    answer: 1
+    why: Nguồn của tư bản cho vay là những khoản tiền nhàn rỗi tạm thời (tiền khấu hao chưa dùng, tiền tiết kiệm, vốn ngân sách nhàn rỗi...), còn tư bản công nghiệp đang trực tiếp tham gia sản xuất thì đang hoạt động, không phải nguồn nhàn rỗi để cho vay.
+    tags:
+      - phan-iii
+      - goc-cau-60
+      - nhat-tri
+  - id: ktct-264
+    type: single
+    q: Tỷ suất lợi tức phụ thuộc vào yếu tố nào?
+    options:
+      - Mức lợi nhuận bình quân và quan hệ cung cầu về tư bản cho vay
+      - Tỷ suất lợi nhuận trung bình trong lĩnh vực thương nghiệp
+      - Năng suất lao động
+      - Giá cả thị trường
+    answer: 0
+    why: Tỷ suất lợi tức phụ thuộc vào tỷ suất lợi nhuận bình quân (giới hạn tối đa) và quan hệ cung - cầu về tư bản cho vay trên thị trường, không phụ thuộc trực tiếp vào năng suất lao động hay giá cả thị trường nói chung.
+    tags:
+      - phan-iii
+      - goc-cau-62
+      - nhat-tri
+  - id: ktct-267
+    type: single
+    q: Địa tô tư bản chủ nghĩa là gì?
+    options:
+      - Lợi nhuận mà người nông dân thu được
+      - Giá trị của đất đai
+      - Phần giá trị thặng dư dôi ra ngoài lợi nhuận bình quân, do nhà tư bản nông nghiệp nộp cho địa chủ
+      - Thuế mà nhà nước thu từ đất đai
+    answer: 2
+    why: Địa tô tư bản chủ nghĩa là phần giá trị thặng dư còn lại sau khi nhà tư bản kinh doanh nông nghiệp đã giữ lại lợi nhuận bình quân, phần dôi ra đó phải nộp cho địa chủ với tư cách người sở hữu ruộng đất.
+    tags:
+      - phan-iii
+      - goc-cau-65
+      - nhat-tri
+  - id: ktct-268
+    type: single
+    q: Thị trường chứng khoán là nơi diễn ra hoạt động gì?
+    options:
+      - Mua bán hàng hóa tiêu dùng
+      - Mua bán bất động sản
+      - Mua bán, trao đổi các giấy tờ có giá (cổ phiếu, trái phiếu, ...)
+      - Mua bán ngoại tệ
+    answer: 2
+    why: Thị trường chứng khoán là nơi mua bán, trao đổi các loại giấy tờ có giá như cổ phiếu, trái phiếu - hình thức vận động của tư bản giả gắn với tư bản cho vay và công ty cổ phần.
+    tags:
+      - phan-iii
+      - goc-cau-66
+      - nhat-tri
+  - id: ktct-269
+    type: single
+    q: Cổ phiếu là gì?
+    options:
+      - Giấy tờ mua bán hàng hóa
+      - Giấy tờ xác nhận quyền sở hữu một phần tư bản của công ty và quyền hưởng cổ tức
+      - Giấy tờ xác nhận một khoản vay nợ của công ty
+      - Chứng chỉ vay nợ của công ty
+    answer: 1
+    why: Cổ phiếu là chứng thư xác nhận quyền sở hữu một phần vốn cổ phần của công ty và quyền được hưởng cổ tức tương ứng, khác với trái phiếu là chứng chỉ vay nợ (phương án C, D).
+    tags:
+      - phan-iii
+      - goc-cau-67
+      - nhat-tri
+  - id: ktct-275
+    type: single
+    q: Dựa vào căn cứ nào để chia tư bản thành tư bản bất biến và tư bản khả biến?
+    options:
+      - Vai trò các bộ phận tư bản trong quá trình sản xuất giá trị thặng dư
+      - Tốc độ chu chuyển của tư bản
+      - Phương thức chuyển giá trị các bộ phận tư bản vào giá trị sản phẩm
+      - Mức độ hao mòn của tư bản cố định
+    answer: 0
+    why: 'Căn cứ để chia tư bản thành tư bản bất biến và tư bản khả biến là vai trò khác nhau của từng bộ phận tư bản trong quá trình sản xuất ra giá trị thặng dư: bộ phận c chỉ chuyển nguyên giá trị sang sản phẩm, còn bộ phận v (sức lao động) tạo ra giá trị mới lớn hơn bản thân nó. Bẫy chính là C: ''phương thức chuyển giá trị vào sản phẩm'' (cùng với tốc độ chu chuyển ở B) là căn cứ để chia tư bản cố định và tư bản lưu động - hai cách phân chia khác nhau trên cùng một khối tư bản sản xuất, rất dễ đánh tráo.'
+    tags:
+      - phan-iii
+      - goc-cau-73
+      - phan-xu
+  - id: ktct-281
+    type: single
+    q: Địa tô tuyệt đối là loại địa tô thu được trên?
+    options:
+      - Đất có độ màu mỡ và vị trí tốt nhất
+      - Đất đai thuộc sở hữu nhà nước
+      - Tất cả mọi loại đất đai
+      - Đất đai có độ màu mỡ kém nhất
+    answer: 2
+    why: Địa tô tuyệt đối là loại địa tô mà mọi nhà tư bản kinh doanh nông nghiệp đều phải nộp cho địa chủ dù thuê loại đất nào (tốt, xấu hay trung bình), do độc quyền tư hữu ruộng đất tạo ra, khác với địa tô chênh lệch chỉ gắn với đất tốt, vị trí thuận lợi (phương án A là bẫy).
+    tags:
+      - phan-iii
+      - goc-cau-79
+      - nhat-tri
+  - id: ktct-289
+    type: single
+    q: Ý nào dưới đây là đúng nhất theo lý luận Mác về địa tô?
+    options:
+      - Địa tô xuất hiện nhờ cải cách ruộng đất
+      - Địa tô chênh lệch hình thành do giá cả thị trường
+      - Địa tô tuyệt đối gắn liền với độc quyền tư hữu ruộng đất
+      - Địa tô là sản phẩm của nền kinh tế kế hoạch
+    answer: 2
+    why: Theo lý luận địa tô của Mác, địa tô tuyệt đối tồn tại do độc quyền tư hữu ruộng đất (chứ không phải do độ màu mỡ hay vị trí), còn địa tô chênh lệch mới gắn với sự khác biệt về điều kiện sản xuất, nên C là phát biểu chuẩn xác nhất.
+    tags:
+      - phan-iii
+      - goc-cau-87
+      - nhat-tri
+  - id: ktct-301
+    type: single
+    q: Công ty cổ phần là hình thức tổ chức kinh doanh nào?
+    options:
+      - Công ty trách nhiệm hữu hạn hai thành viên trở lên
+      - Công ty tư nhân
+      - Công ty hợp danh
+      - Công ty mà tư bản của nó được chia thành nhiều phần bằng nhau gọi là cổ phần
+    answer: 3
+    why: Công ty cổ phần là loại hình doanh nghiệp mà vốn điều lệ được chia thành nhiều phần bằng nhau gọi là cổ phần, khác với công ty TNHH hay công ty hợp danh không chia vốn thành cổ phần.
+    tags:
+      - phan-iii
+      - goc-cau-99
+      - nhat-tri

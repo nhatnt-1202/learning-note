@@ -1,0 +1,793 @@
+title: KTCT — Hàng hoá, thị trường và tiền tệ
+serve: db
+pass: 70
+generated: fable + haiku + opus + sonnet (giải độc lập rồi đối chiếu chéo)
+reviewed: false
+source_hash: a25038f4282f5eeb
+questions:
+  - id: ktct-002
+    type: single
+    q: Chức năng thước đo giá trị của tiền tệ có nghĩa là?
+    options:
+      - Tiền dùng để mua hàng hoặc trả nợ
+      - Tiền được rút khỏi quá trình lưu thông và được cất giữ nhằm cất trữ của cải
+      - Tiền dùng làm trung gian trong trao đổi hàng hóa
+      - Tiền dùng để đo lường giá trị của các hàng hóa khác
+    answer: 3
+    why: Chức năng thước đo giá trị là tiền được sử dụng để đo lường giá trị của các hàng hóa khác. Đáp án A, C là chức năng phương tiện lưu thông; B là chức năng cất trữ của cải.
+    tags:
+      - phan-i
+      - goc-cau-2
+      - nhat-tri
+  - id: ktct-034
+    type: single
+    q: Chức năng phương tiện lưu thông của tiền tệ có nghĩa là?
+    options:
+      - Tiền dùng làm phương tiện thúc đẩy lưu thông hàng hóa
+      - Tiền dùng để mua hàng hoặc trả nợ
+      - Tiền dùng để đo lường giá trị của các hàng hóa khác
+      - Tiền được rút khỏi quá trình lưu thông và được cất giữ nhằm cất trữ của cải
+    answer: 0
+    why: 'Phương tiện lưu thông là chức năng tiền làm môi giới trong trao đổi theo công thức H-T-H, nhờ đó thúc đẩy lưu thông hàng hoá. Bẫy rất nặng ở phương án B: ''mua hàng hoặc trả nợ'' chính là chức năng phương tiện thanh toán, và điều này được xác nhận ngay trong bộ đề vì câu 76 hỏi về chức năng phương tiện thanh toán cũng dùng đúng cụm từ đó làm đáp án. C là thước đo giá trị, D là phương tiện cất trữ.'
+    tags:
+      - phan-i
+      - goc-cau-34
+      - phan-xu
+  - id: ktct-035
+    type: single
+    q: 'Quy luật giá trị yêu cầu việc sản xuất và trao đổi hàng hóa phải được tiến hành dựa trên:'
+    options:
+      - Hao phí lao động xã hội
+      - Các quy định của nhà nước về đấu thầu
+      - Các quy định của nhà nước về đấu giá
+      - Hao phí lao động cá biệt
+    answer: 0
+    why: Quy luật giá trị yêu cầu sản xuất và trao đổi dựa trên hao phí lao động xã hội (socially necessary labor time), không phải quy định nhà nước hay lao động cá biệt.
+    tags:
+      - phan-i
+      - goc-cau-35
+      - nhat-tri
+  - id: ktct-041
+    type: single
+    q: Ưu thế của nền kinh tế thị trường là?
+    options:
+      - Luôn đảm bảo công bằng xã hội tuyệt đối
+      - Loại trừ nguy cơ khủng hoảng kinh tế
+      - Tạo động lực cho sự sáng tạo của các chủ thể kinh tế
+      - Loại trừ được cạnh tranh không lành mạnh
+    answer: 2
+    why: Ưu thế của nền kinh tế thị trường là tạo động lực cho sự sáng tạo và cải tiến của các chủ thể kinh tế thông qua cơ chế cạnh tranh. A, B, D không đúng.
+    tags:
+      - phan-i
+      - goc-cau-41
+      - nhat-tri
+  - id: ktct-049
+    type: single
+    q: Dịch vụ không có đặc điểm nào ?
+    options:
+      - Không thể cất trữ
+      - Việc sản xuất và tiêu dùng được diễn ra đồng thời
+      - Tính đồng nhất
+      - Tính vô hình
+    answer: 2
+    why: Dịch vụ không có đặc điểm tính đồng nhất. Dịch vụ có tính chất vô hình, không thể cất trữ, sản xuất và tiêu dùng đồng thời, và tính riêng lẻ/khác biệt từng lần.
+    tags:
+      - phan-i
+      - goc-cau-49
+      - nhat-tri
+  - id: ktct-052
+    type: single
+    q: Chức năng phương tiện cất trữ của tiền tệ có nghĩa là?
+    options:
+      - Tiền dùng để mua hàng hoặc trả nợ
+      - Tiền dùng để đo lường giá trị của các hàng hóa khác
+      - Tiền dùng làm phương tiện thúc đẩy lưu thông hàng hóa
+      - Tiền được rút khỏi quá trình lưu thông và được cất giữ nhằm cất trữ của cải
+    answer: 3
+    why: Chức năng cất trữ của tiền là khi tiền được rút khỏi quá trình lưu thông để cất giữ giá trị. Các phương án khác mô tả các chức năng khác của tiền (phương tiện lưu thông, thước đo giá trị, phương tiện thanh toán).
+    tags:
+      - phan-i
+      - goc-cau-52
+      - nhat-tri
+  - id: ktct-053
+    type: single
+    q: 'Chọn đáp án đúng nhất: Các loại thị trường cơ bản ở Việt Nam phân theo đối tượng trao đổi gồm:'
+    options:
+      - Thị trường hàng hoá vàdịch vụ; Thị trường lao động; Thị trường công nghệ; thị trường yếu tố sản xuất
+      - Thị trường hàng hoá tiêu dùng thông thường; thị trường công nghệ; Thị trường hàng hoá sức lao động; thị trường bất động sản
+      - Thị trường Thị trường vốn; thị trường công nghệ; Thị trường hàng hoá sức lao động; thị trường bất động sản
+      - Thị trường hàng hoá tiêu dùng thông thường; Thị trường vốn; thị trường công nghệ; thị trường bất động sản
+    answer: 1
+    why: 'Danh mục chuẩn các loại thị trường cơ bản ở Việt Nam có 5 loại: thị trường hàng hoá tiêu dùng thông thường, thị trường vốn (tài chính), thị trường hàng hoá sức lao động, thị trường khoa học - công nghệ và thị trường bất động sản; không phương án nào của đề nêu đủ cả 5, nên đề thiếu phương án chuẩn. Phương án A phải loại trước vì trộn tiêu chí phân loại khác: đã tách riêng ''thị trường lao động'', ''thị trường công nghệ'' rồi lại thêm ''thị trường yếu tố sản xuất'' vốn bao trùm chính hai thị trường đó. Trong ba phương án còn lại, B giữ được cặp đối lập đúng thuật ngữ kinh tế chính trị là ''hàng hoá tiêu dùng thông thường'' với ''hàng hoá sức lao động'' (hàng hoá đặc biệt) nên gần văn bản gốc nhất; C bỏ mất thị trường hàng hoá tiêu dùng, D bỏ mất thị trường sức lao động là thị trường không thể thiếu.'
+    tags:
+      - phan-i
+      - goc-cau-53
+      - phan-xu
+      - de-co-van-de
+  - id: ktct-059
+    type: single
+    q: Một trong những khuyết tật của kinh tế thị trường là?
+    options:
+      - Thiếu hụt hàng hóa công cộng
+      - Tối ưu hóa phân bổ nguồn lực
+      - Hạn chế đổi mới sáng tạo
+      - Tự do hóa thương mại và đầu tư
+    answer: 0
+    why: Khuyết tật của kinh tế thị trường là không cung cấp đủ hàng hóa công cộng (công cộng), vì thị trường chỉ quan tâm đến lợi nhuận. B, C, D là lợi ích hoặc đặc điểm của thị trường, không phải khuyết tật.
+    tags:
+      - phan-i
+      - goc-cau-59
+      - nhat-tri
+  - id: ktct-062
+    type: single
+    q: Cơ chế thị trường hoạt động dựa trên nguyên tắc nào sau đây?
+    options:
+      - Kế hoạch hóa tập trung
+      - Phân phối thu nhập công bằng
+      - Các doanh nghiệp nhà nước chiếm thị phần khống chế trong tất cả các ngánh
+      - Tự do cạnh tranh, giá cả do thị trường quyết định
+    answer: 3
+    why: Cơ chế thị trường hoạt động dựa trên nguyên tắc tự do cạnh tranh và giá cả do thị trường quyết định. D là định nghĩa cơ bản của cơ chế thị trường.
+    tags:
+      - phan-i
+      - goc-cau-62
+      - nhat-tri
+  - id: ktct-070
+    type: single
+    q: Yếu tố nào sau đây là cốt lõi trong xây dựng giá trị của một thương hiệu?
+    options:
+      - Quảng cáo, tiếp thị
+      - Quy mô kinh doanh
+      - Chất lượng của sản phẩm/dịch vụ
+      - Bao bì, hình thức của sản phẩm/dịch vụ
+    answer: 2
+    why: Chất lượng sản phẩm/dịch vụ là yếu tố cốt lõi tạo giá trị thương hiệu, duy trì niềm tin khách hàng. Quảng cáo, bao bì chỉ là biểu hiện bên ngoài.
+    tags:
+      - phan-i
+      - goc-cau-70
+      - nhat-tri
+  - id: ktct-076
+    type: single
+    q: Chức năng phương tiện thanh toán của tiền có nghĩa là?
+    options:
+      - Tiền dùng để đo lường giá trị của các hàng hóa khác
+      - Tiền dùng để mua hàng hoặc trả nợ
+      - Tiền dùng làm phương tiện thúc đẩy lưu thông hàng hóa
+      - Tiền được rút khỏi quá trình lưu thông và được cất giữ nhằm cất trữ của cải
+    answer: 1
+    why: Chức năng phương tiện thanh toán của tiền là dùng để mua hàng hoặc trả nợ. B chính xác, D là chức năng cất trữ.
+    tags:
+      - phan-i
+      - goc-cau-76
+      - nhat-tri
+  - id: ktct-078
+    type: single
+    q: Kinh tế chính trị Mác – Lênin là kết quả kế thừa trực tiếp lý luận từ trường phái nào?
+    options:
+      - Kinh tế chính trị cổ điển Anh
+      - Kinh tế học hành vi
+      - Chủ nghĩa trọng thương
+      - Chủ nghĩa trọng nông
+    answer: 0
+    why: Kinh tế chính trị Mác-Lênin kế thừa trực tiếp từ trường phái kinh tế chính trị cổ điển Anh (Smith, Ricardo, v.v.). A chính xác.
+    tags:
+      - phan-i
+      - goc-cau-78
+      - nhat-tri
+  - id: ktct-079
+    type: single
+    q: Ai là người sáng lập ra lý luận kinh tế chính trị Mác – Lênin?
+    options:
+      - C. Mác và Ph. Ăngghen
+      - V.I. Lênin
+      - A. Smith
+      - D. Ricardo
+    answer: 0
+    why: C. Mác và Ph. Ăngghen (Engels) là những người sáng lập lý luận kinh tế chính trị Mác-Lênin, sau đó V.I. Lênin phát triển thêm.
+    tags:
+      - phan-i
+      - goc-cau-79
+      - nhat-tri
+  - id: ktct-080
+    type: single
+    q: Khi đồng thời tăng năng suất lao động và cường độ lao động lên 2 lần thì ý nào sau đây là đùng ?
+    options:
+      - Tổng số hàng hóa tăng 2 lần, tổng lượng giá trị tăng 2 lần
+      - Tổng giá trị hàng hóa tăng 2 lần, giá trị 1 đơn vị hàng hóa không thay đổi
+      - Tổng giá trị hàng hóa tăng 2 lần, giá trị 1 đơn vị hàng hóa giảm 2 lần
+      - Tổng số hàng hóa tăng 4 lần, tổng lượng giá trị tăng 4 lần
+    answer: 2
+    why: 'Khi cả năng suất lao động (×2) và cường độ lao động (×2) tăng 2 lần: tổng hàng hóa ×4 nhưng tổng giá trị ×2 (do cường độ). Giá trị mỗi đơn vị = 2V/(4Q) = V/(2Q), giảm 2 lần.'
+    tags:
+      - phan-i
+      - goc-cau-80
+      - nhat-tri
+  - id: ktct-087
+    type: single
+    q: 'Hình thái giá trị ban đầu trong trao đổi hàng hóa là:'
+    options:
+      - Hình thái giá trị ngẫu nhiên
+      - Hình thái giá trị đầy đủ
+      - Hình thái tiền
+      - Hình thái giá trị chung
+    answer: 0
+    why: Hình thái giá trị ban đầu là hình thái ngẫu nhiên, khi hai hàng hóa được trao đổi bình thường lần đầu tiên. Sau đó là hình thái đầy đủ, chung, rồi tiền tệ.
+    tags:
+      - phan-i
+      - goc-cau-87
+      - nhat-tri
+  - id: ktct-094
+    type: single
+    q: 'Những lý luận nền tảng về kinh tế thị trường được xây dựng bởi:'
+    options:
+      - Chủ nghĩa trọng thương
+      - Kinh tế chính trị Mác - Lê nin
+      - Chủ nghĩa trọng nông
+      - Kinh tế chính trị tư sản cổ điển Anh
+    answer: 3
+    why: Lý luận nền tảng về kinh tế thị trường được xây dựng bởi kinh tế chính trị tư sản cổ điển Anh (Smith, Ricardo, v.v.). D chính xác.
+    tags:
+      - phan-i
+      - goc-cau-94
+      - nhat-tri
+  - id: ktct-101
+    type: single
+    q: 'Căn cứ vào tính chất và cơ chế vận hành, thị trường phân thành:'
+    options:
+      - Thị trường tư liệu sản xuất, thị trường tư liệu tiêu dùng
+      - Thị trường tự do, thị trường có điều tiết, thị trường cạnh tranh hoàn hảo, thị trường cạnh tranh không hoàn hảo
+      - Thị trường theo các loại hàng hóa, dịch vụ khác nhau
+      - Thị trường trong nước, thị trường thế giới
+    answer: 1
+    why: 'Căn cứ vào tính chất và cơ chế vận hành, thị trường phân thành: tự do, có điều tiết, cạnh tranh hoàn hảo, cạnh tranh không hoàn hảo. B chính xác.'
+    tags:
+      - phan-i
+      - goc-cau-101
+      - nhat-tri
+  - id: ktct-103
+    type: single
+    q: Mâu thuẫn cơ bản của sản xuất hàng hóa là mâu thuẫn giữa?
+    options:
+      - Sản xuất và tiêu dùng
+      - Cung và cầu
+      - Lao động cụ thể và lao động trừu tượng
+      - Lao động giản đơn và lao động phức tạp
+    answer: 2
+    why: Theo giáo trình, mâu thuẫn cơ bản của sản xuất hàng hoá là mâu thuẫn giữa lao động tư nhân và lao động xã hội, nhưng đề không có phương án này nên đề thiếu đáp án chuẩn. Trong bốn lựa chọn, C là phương án gần nhất vì tính hai mặt lao động cụ thể - lao động trừu tượng chính là hình thức biểu hiện của mâu thuẫn lao động tư nhân - lao động xã hội, và giáo trình cũng nói mâu thuẫn giữa lao động cụ thể và lao động trừu tượng là mầm mống của mọi mâu thuẫn trong nền sản xuất hàng hoá. A và B chỉ là mâu thuẫn bề mặt của thị trường, D là cách phân loại lao động theo mức độ phức tạp, không liên quan.
+    tags:
+      - phan-ii
+      - goc-cau-2
+      - phan-xu
+      - de-co-van-de
+  - id: ktct-106
+    type: single
+    q: Hàng hóa có hai thuộc tính là?
+    options:
+      - Giá trị sử dụng và giá trị
+      - Giá trị và giá cả
+      - Giá cả và giá trị trao đổi
+      - Giá cả và công dụng
+    answer: 0
+    why: Hàng hóa có hai thuộc tính là giá trị sử dụng (công dụng) và giá trị (hao phí lao động xã hội). Hai thuộc tính này tương ứng với hai mặt của lao động trong sản xuất hàng hóa.
+    tags:
+      - phan-ii
+      - goc-cau-5
+      - nhat-tri
+  - id: ktct-108
+    type: single
+    q: Nền kinh tế hàng hóa hình thành và phát triển khi có các điều kiện nào?
+    options:
+      - Phân công lao động xã hội và chế độ công hữu về tư liệu sản xuất
+      - Phân công lao động cá biệt và chế độ tư hữu về tư liệu sản xuất
+      - Phân công lao động xã hội và sự tách biệt về kinh tế giữa các chủ thể sản xuất
+      - Phân công lao động và hệ thống thể chế kinh tế
+    answer: 2
+    why: Nền kinh tế hàng hóa hình thành khi có phân công lao động xã hội và sự tách biệt kinh tế giữa các chủ thể sản xuất (mỗi chủ thể có tư liệu sản xuất riêng). Hai điều kiện này cùng tạo nên nền kinh tế hàng hóa.
+    tags:
+      - phan-ii
+      - goc-cau-7
+      - nhat-tri
+  - id: ktct-112
+    type: single
+    q: Giá trị của hàng hóa là?
+    options:
+      - Sự khan hiếm của hàng hóa trên thị trường
+      - Hao phí lao động xã hội của người sản xuất hàng hóa kết tinh trong hàng hóa
+      - Công dụng của hàng hóa có thể thỏa mãn nhu cầu nào đó của con người
+      - Giá cả hàng hóa
+    answer: 1
+    why: Giá trị của hàng hóa là hao phí lao động xã hội (lao động cần thiết trung bình) của người sản xuất hàng hóa kết tinh trong hàng hóa. Đây là định nghĩa chính xác theo lý thuyết Mác.
+    tags:
+      - phan-ii
+      - goc-cau-11
+      - nhat-tri
+  - id: ktct-113
+    type: single
+    q: Khi cường độ lao động tăng lên, tổng lượng giá trị tạo ra trong một đơn vị thời gian sẽ?
+    options:
+      - Không thay đổi
+      - Giảm xuống
+      - Không thể xác định
+      - Tăng lên
+    answer: 3
+    why: Cường độ lao động là hao phí sức lao động trên một đơn vị thời gian. Khi cường độ tăng, tổng lượng giá trị tạo ra trong một đơn vị thời gian sẽ tăng lên.
+    tags:
+      - phan-ii
+      - goc-cau-12
+      - nhat-tri
+  - id: ktct-120
+    type: single
+    q: Lao động trừu tượng là gì?
+    options:
+      - Sự hao phí sức lao động trong sản xuất công nghiệp
+      - Sự hao phí sức lao động nói chung của người sản xuất hàng hóa
+      - Lao động tạo ra giá trị sử dụng
+      - Sự hao phí sức lao động trong sản xuất nông nghiệp
+    answer: 1
+    why: Lao động trừu tượng là sự hao phí sức lao động nói chung (không xét đến hình thức cụ thể) của người sản xuất hàng hóa. Nó tạo ra giá trị của hàng hóa, trái ngược với lao động cụ thể.
+    tags:
+      - phan-ii
+      - goc-cau-19
+      - nhat-tri
+  - id: ktct-127
+    type: single
+    q: Kinh tế chính trị theo nghĩa hẹp nghiên cứu điều gì?
+    options:
+      - Hệ thống chính trị
+      - Các hoạt động tiêu dùng
+      - Quan hệ sản xuất và trao đổi trong một phương thức sản xuất nhất định
+      - Quy luật thị trường
+    answer: 2
+    why: Kinh tế chính trị theo nghĩa hẹp nghiên cứu quan hệ sản xuất và trao đổi trong một phương thức sản xuất nhất định, chẳng hạn như sản xuất hàng hóa hay sản xuất tư bản chủ nghĩa.
+    tags:
+      - phan-ii
+      - goc-cau-26
+      - nhat-tri
+  - id: ktct-132
+    type: single
+    q: Lượng giá trị của hàng hóa được đo bằng?
+    options:
+      - Thời gian lao động cá biệt
+      - Thời gian lao động của người làm việc hiệu quả nhất
+      - Tổng thời gian lao động
+      - Thời gian lao động xã hội cần thiết
+    answer: 3
+    why: Lượng giá trị của hàng hóa được đo bằng thời gian lao động xã hội cần thiết (thời gian trung bình dưới điều kiện sản xuất hiện có). Không phải thời gian cá biệt hay của người hiệu quả nhất.
+    tags:
+      - phan-ii
+      - goc-cau-31
+      - nhat-tri
+  - id: ktct-133
+    type: single
+    q: Nhân tố nào là cơ bản, lâu dài để tăng sản phẩm và hiệu quả kinh tế cho xã hội?
+    options:
+      - Tăng sô lượng lao động
+      - Tăng năng suất lao động
+      - Tăng cường độ lao động
+      - Tăng thời gian lao động
+    answer: 1
+    why: Nhân tố cơ bản, lâu dài để tăng sản phẩm và hiệu quả kinh tế là tăng năng suất lao động. Các yếu tố khác chỉ là mở rộng quy mô chứ không tăng hiệu quả thực sự.
+    tags:
+      - phan-ii
+      - goc-cau-32
+      - nhat-tri
+  - id: ktct-141
+    type: single
+    q: 'Hàng hóa có hai thuộc tính do lao động của người sản xuất hàng hóa có tính hai mặt là:'
+    options:
+      - Lao động cụ thể và lao động trừu tượng
+      - Lao động tư nhân và lao động xã hội
+      - Lao động giản đơn và lao động phức tạp
+      - Lao động tay chân và lao động trí óc
+    answer: 0
+    why: 'Hàng hóa có hai thuộc tính do lao động của người sản xuất hàng hóa có tính hai mặt: lao động cụ thể (tạo giá trị sử dụng) và lao động trừu tượng (tạo giá trị).'
+    tags:
+      - phan-ii
+      - goc-cau-40
+      - nhat-tri
+  - id: ktct-143
+    type: single
+    q: Hàng hóa là?
+    options:
+      - Sản phẩm của lao động có thể thỏa mãn nhu cầu nào đó của con người thông qua trao đổi, mua bán
+      - Sản phẩm của lao động phục vụ nhu cầu sử dụng của người sản xuất
+      - Sản phẩm phục vụ tiêu dùng
+      - Sản phẩm phục vụ sản xuất
+    answer: 0
+    why: Hàng hóa là sản phẩm của lao động có thể thỏa mãn nhu cầu nào đó của con người thông qua trao đổi, mua bán. Đặc điểm 'trao đổi' làm phân biệt hàng hóa với sản phẩm dùng cho chính mình.
+    tags:
+      - phan-ii
+      - goc-cau-42
+      - nhat-tri
+  - id: ktct-145
+    type: single
+    q: Lao động giản đơn là loại lao động nào?
+    options:
+      - Lao động trong công nghiệp
+      - Lao động trong nông nghiệp
+      - Không đòi hỏi quá trình đào tạo một cách có hệ thống, chuyên sâu cũng có thể thao tác được
+      - Phải trải qua quá trình đào tạo chuyên môn theo các tiêu chuẩn nghề nghiệp khác nhau
+    answer: 2
+    why: Lao động giản đơn là lao động không đòi hỏi quá trình đào tạo một cách có hệ thống, chuyên sâu, mà với một chút hướng dẫn sơ bộ cũng có thể thao tác được.
+    tags:
+      - phan-ii
+      - goc-cau-44
+      - nhat-tri
+  - id: ktct-146
+    type: single
+    q: Giá trị sử dụng của hàng hóa thể hiện ở?
+    options:
+      - Tổng cầu của hàng hóa trên thị trường
+      - Công dụng của hàng hóa có thể thỏa mãn nhu cầu nào đó của con người
+      - Giá cả của hàng hóa
+      - Hao phí lao động xã hội của người sản xuất hàng hóa kết tinh trong hàng hóa
+    answer: 1
+    why: Giá trị sử dụng của hàng hóa thể hiện ở công dụng của nó, khả năng thỏa mãn nhu cầu nào đó của con người. Đây là tính chất vật chất, cụ thể của hàng hóa.
+    tags:
+      - phan-ii
+      - goc-cau-45
+      - nhat-tri
+  - id: ktct-161
+    type: single
+    q: Lao động phức tạp là loại lao động nào?
+    options:
+      - Lao động trong công nghiệp
+      - Không đòi hỏi quá trình đào tạo một cách có hệ thống, chuyên sâu cũng có thể thao tác được
+      - Lao động trong nông nghiệp
+      - Phải trải qua quá trình đào tạo chuyên môn theo các tiêu chuẩn nghề nghiệp khác nhau
+    answer: 3
+    why: Lao động phức tạp là lao động đòi hỏi phải trải qua quá trình đào tạo chuyên môn theo các tiêu chuẩn nghề nghiệp khác nhau. Điều này phân biệt với lao động đơn giản.
+    tags:
+      - phan-ii
+      - goc-cau-60
+      - nhat-tri
+  - id: ktct-164
+    type: single
+    q: Giá trị hàng hóa được quyết định bởi?
+    options:
+      - Công dụng của hàng hóa
+      - Quan hệ cung – cầu về hàng hóa
+      - Lao động xã hội của người sản xuất hàng hóa
+      - Quan hệ cạnh tranh trên thị trường háng hóa
+    answer: 2
+    why: Giá trị hàng hóa được quyết định bởi lao động xã hội cần thiết của người sản xuất hàng hóa, không phải công dụng hoặc cung cầu. Đây là lý thuyết giá trị lao động của Marx.
+    tags:
+      - phan-ii
+      - goc-cau-63
+      - nhat-tri
+  - id: ktct-178
+    type: single
+    q: Khi năng suất lao động xã hội tăng lên, lượng giá trị của một đơn vị hàng hóa sẽ?
+    options:
+      - Không thay đổi
+      - Giảm xuống
+      - Tăng lên
+      - Tùy thuộc vào năng lực quản lý
+    answer: 1
+    why: Khi năng suất lao động xã hội tăng, lượng hàng hóa sản xuất được tăng nhưng tổng giá trị không tăng, nên giá trị của một đơn vị hàng hóa sẽ giảm.
+    tags:
+      - phan-ii
+      - goc-cau-77
+      - nhat-tri
+  - id: ktct-190
+    type: single
+    q: 'Lao động cụ thể phản ánh:'
+    options:
+      - Chính sách lao động – việc làm của nhà nước
+      - Tính chất xã hội của lao động sản xuất hàng hóa
+      - Tính chất tư nhân của lao động sản xuất hàng hóa
+      - Quan hệ cung – cầu trên thị trường lao động
+    answer: 2
+    why: Lao động cụ thể phản ánh tính chất tư nhân của lao động sản xuất hàng hóa. Nó là công việc cụ thể, tư nhân được thực hiện để trao đổi.
+    tags:
+      - phan-ii
+      - goc-cau-89
+      - nhat-tri
+  - id: ktct-195
+    type: single
+    q: Khi cường độ lao động tăng lên, lượng giá trị của một đơn vị hàng hóa sẽ?
+    options:
+      - Tăng lên
+      - Tùy thuộc vào năng suất lao động
+      - Giảm xuống
+      - Không thay đổi
+    answer: 3
+    why: 'Tăng cường độ lao động là tăng mức độ khẩn trương, hao phí nhiều sức lực hơn trong cùng một đơn vị thời gian, về thực chất tương đương với kéo dài ngày lao động: tổng hao phí lao động tăng lên bao nhiêu thì số sản phẩm cũng tăng tương ứng bấy nhiêu, nên lượng giá trị của một đơn vị hàng hóa không thay đổi. Bẫy là nhầm với tăng năng suất lao động - trường hợp đó số sản phẩm tăng mà tổng hao phí không đổi nên giá trị một đơn vị hàng hóa mới giảm xuống.'
+    tags:
+      - phan-ii
+      - goc-cau-94
+      - phan-xu
+  - id: ktct-200
+    type: single
+    q: Theo C. Mác, sản xuất hàng hóa là?
+    options:
+      - Sản xuất để tích trữ
+      - Sản xuất để sử dụng
+      - Sản xuất để trao đổi, mua bán
+      - Sản xuất để tiêu dùng cá nhân
+    answer: 2
+    why: Theo Marx, sản xuất hàng hóa là sản xuất để trao đổi, mua bán - không phải để sử dụng trực tiếp. Đây là đặc trưng của nền kinh tế hàng hóa.
+    tags:
+      - phan-ii
+      - goc-cau-99
+      - nhat-tri
+  - id: ktct-201
+    type: single
+    q: 'Khi tăng năng suất lao động và cường độ lao động sẽ làm cho giá cả hàng hóa:'
+    options:
+      - Tăng lên
+      - Có thể tăng lên hoặc giảm xuống
+      - Không thay đổi
+      - Giảm xuống
+    answer: 3
+    why: Khi tăng cả năng suất lao động (sản xuất nhiều hơn) và cường độ lao động (chất lượng cao hơn), giá cả hàng hóa giảm xuống do giá trị mỗi đơn vị giảm.
+    tags:
+      - phan-ii
+      - goc-cau-100
+      - nhat-tri
+  - id: ktct-205
+    type: single
+    q: 'Theo quy luật lưu thông tiền tệ, lượng tiền giấy được phát hành và đưa vào lưu thông phải căn cứ vào:'
+    options:
+      - Lượng tiền cần thiết cho lưu thông trong một thời kỳ nhất định
+      - Chính sách tiền lương
+      - Tổng chi ngân sách nhà nước trong một năm
+      - Chính sách đầu tư công
+    answer: 0
+    why: A đúng vì quy luật lưu thông tiền tệ quy định lượng tiền giấy phát hành phải căn cứ vào lượng tiền cần thiết cho lưu thông hàng hóa trong một thời kỳ nhất định, không phải theo chính sách tiền lương, ngân sách hay đầu tư công.
+    tags:
+      - phan-iii
+      - goc-cau-3
+      - nhat-tri
+  - id: ktct-211
+    type: single
+    q: 'Khi một ngành có giá cả hàng hóa tăng và cao hơn giá trị sẽ dẫn đến hiện tượng:'
+    options:
+      - Các doanh nghiệp có xu hướng liên kết để tạo ra quyền lực độc quyền
+      - Các doanh nghiệp giảm chi tiêu cho thay đổi công nghệ
+      - Các doanh nghiệp ồ ạt rút lui khỏi ngành
+      - Các doanh nghiệp mới gia nhập vào ngành tăng
+    answer: 3
+    why: D đúng vì khi giá cả một ngành cao hơn giá trị, tỷ suất lợi nhuận ngành đó cao hơn mức bình quân nên thu hút tư bản (doanh nghiệp mới) đổ vào, đây chính là cơ chế cạnh tranh giữa các ngành hình thành lợi nhuận bình quân.
+    tags:
+      - phan-iii
+      - goc-cau-9
+      - nhat-tri
+  - id: ktct-213
+    type: single
+    q: 'Khi giá cả hàng hóa tăng, lượng cung sẽ có xu hướng:'
+    options:
+      - Không thay đổi
+      - Tăng hoặc giảm tùy thuộc vào loại hàng hóa
+      - Tăng
+      - Giảm
+    answer: 2
+    why: 'C đúng theo quy luật cung: giá tăng thì người sản xuất có lợi nhuận cao hơn nên sẵn sàng cung ứng nhiều hơn, lượng cung có xu hướng tăng.'
+    tags:
+      - phan-iii
+      - goc-cau-11
+      - nhat-tri
+  - id: ktct-216
+    type: single
+    q: 'Vai trò của cạnh tranh trong nền kinh tế thị trường là:'
+    options:
+      - Phân hóa xã hội
+      - Đảm bảo giá cả thị trường ổn định
+      - Thúc đẩy nâng cao hiệu quả sản xuất kinh doanh, phát triển lực lượng sản xuất
+      - Tạo ra tình trạng khan hiếm hàng hóa, dịch vụ
+    answer: 2
+    why: C đúng vì cạnh tranh buộc các chủ thể cải tiến kỹ thuật, nâng cao năng suất để tồn tại, qua đó thúc đẩy lực lượng sản xuất phát triển; các phương án khác là mặt trái/hệ quả tiêu cực chứ không phải vai trò tích cực chính của cạnh tranh.
+    tags:
+      - phan-iii
+      - goc-cau-14
+      - nhat-tri
+  - id: ktct-217
+    type: single
+    q: 'Theo yêu cầu của Quy luật giá trị, người sản xuất phải:'
+    options:
+      - Tăng giá trị cá biệt luôn lớn hơn hoặc bằng giá trị thị trường của hàng hóa
+      - Giảm số lượng lao động tri thức, tăng số lượng lao động giản đơn
+      - Giảm giá trị cá biệt xuống nhỏ hơn hoặc bằng giá trị thị trường của hàng hóa
+      - Giảm sản lượng nhằm tác động lên tổng cung hàng hóa trên thị trường
+    answer: 2
+    why: C đúng vì quy luật giá trị yêu cầu hao phí lao động cá biệt phải nhỏ hơn hoặc bằng hao phí lao động xã hội cần thiết (giá trị thị trường) thì người sản xuất mới tồn tại và có lãi; A nêu ngược hoàn toàn nên là bẫy.
+    tags:
+      - phan-iii
+      - goc-cau-15
+      - nhat-tri
+  - id: ktct-226
+    type: single
+    q: Mục tiêu cơ bản của người sản xuất trong nền kinh tế thị trường là?
+    options:
+      - Tối đa hóa lợi nhuận
+      - Tối đa hóa tỷ suất lợi nhuận
+      - Tăng khả năng cạnh tranh
+      - Tối đa hóa doanh thu
+    answer: 0
+    why: A đúng vì trong nền kinh tế thị trường, động cơ và mục tiêu trực tiếp chi phối hành vi của người sản xuất là tối đa hóa lợi nhuận; B, C, D là các mục tiêu phái sinh hoặc phương tiện để đạt mục tiêu đó.
+    tags:
+      - phan-iii
+      - goc-cau-24
+      - nhat-tri
+  - id: ktct-228
+    type: single
+    q: Kết quả của cạnh tranh nội bộ ngành là gì?
+    options:
+      - Kìm hãm sự phát triển của khoa học công nghệ
+      - Hình thành các tổ chức độc quyền
+      - Hình thành giá trị thị trường của từng loại hàng hóa
+      - Thiết lập mặt bằng giá cả thị trường cao hơn
+    answer: 2
+    why: C đúng vì cạnh tranh nội bộ ngành giữa các doanh nghiệp sản xuất cùng loại hàng hóa là cơ sở hình thành giá trị thị trường (giá trị xã hội) của hàng hóa đó, khác với cạnh tranh giữa các ngành hình thành lợi nhuận bình quân.
+    tags:
+      - phan-iii
+      - goc-cau-26
+      - nhat-tri
+  - id: ktct-233
+    type: single
+    q: Vai trò cơ bản của các chủ thể trung gian trong thị trường là?
+    options:
+      - Môi giới trên thị trường tài chính
+      - Làm cầu nối xúc tiến đầu tư trực tiếp nước ngoài
+      - Thực hiện chuyển giao công nghệ
+      - Làm cầu nối giữa các chủ thể sản xuất, tiêu dùng hàng hóa - dịch vụ trên thị trường
+    answer: 3
+    why: D đúng vì vai trò cơ bản, bao quát nhất của các chủ thể trung gian là làm cầu nối giữa người sản xuất và người tiêu dùng trên thị trường; A, B, C chỉ là các hình thức trung gian cụ thể, hẹp hơn.
+    tags:
+      - phan-iii
+      - goc-cau-31
+      - nhat-tri
+  - id: ktct-236
+    type: single
+    q: 'Yếu tố quyết định nhất đến giá cả hàng hóa là:'
+    options:
+      - Sự thay đổi giá trị tiền tệ
+      - Giá trị sử dụng của hàng hóa
+      - Giá trị của hàng hóa
+      - Quan hệ cung - cầu về hàng hóa
+    answer: 2
+    why: C đúng vì giá trị là nội dung bên trong quyết định giá cả hàng hóa; cung - cầu hay giá trị tiền tệ chỉ làm giá cả dao động xoay quanh giá trị chứ không quyết định bản chất giá cả, còn giá trị sử dụng không quyết định tỷ lệ trao đổi.
+    tags:
+      - phan-iii
+      - goc-cau-34
+      - nhat-tri
+  - id: ktct-237
+    type: single
+    q: Cạnh tranh trong nền kinh tế thị trường là gì?
+    options:
+      - Một tổ chức kinh tế có thể kiểm soát giá cả và sản lượng của một loại hàng hóa
+      - Việc sát nhập – hợp nhất giữa các doanh nghiệp
+      - Sự ganh đua giữa các chủ thể kinh tế nhằm thu được lợi ích tối đa
+      - Sự kiểm soát của nhà nước đối với hoạt động sản xuất kinh doanh
+    answer: 2
+    why: C đúng vì cạnh tranh là sự ganh đua giữa các chủ thể kinh tế nhằm giành điều kiện thuận lợi để thu lợi ích tối đa; A mô tả độc quyền, B là tập trung tư bản, D là quản lý nhà nước, đều không phải bản chất cạnh tranh.
+    tags:
+      - phan-iii
+      - goc-cau-35
+      - nhat-tri
+  - id: ktct-242
+    type: single
+    q: 'Quy luật lưu thông tiền tệ là quy luật kinh tế quy định:'
+    options:
+      - Lãi suất trái phiếu chính phủ
+      - Tỷ giá hối đoái giữa đồng tiền nội tệ với các loại ngoại tệ
+      - Tổng chi ngân sách nhà nước trong một năm
+      - Lượng tiền cần thiết cho lưu thông hàng hóa trong một thời kỳ nhất định
+    answer: 3
+    why: D đúng vì quy luật lưu thông tiền tệ quy định lượng tiền cần thiết cho lưu thông hàng hóa trong một thời kỳ nhất định, không liên quan trực tiếp đến lãi suất trái phiếu hay tỷ giá hối đoái.
+    tags:
+      - phan-iii
+      - goc-cau-40
+      - nhat-tri
+  - id: ktct-252
+    type: single
+    q: 'Chính sách tiền tệ nới lỏng nhằm kích thích tăng trưởng kinh tế và giảm tỷ lệ thất nghiệp thông qua:'
+    options:
+      - Giảm Cung tiền
+      - Giảm chi tiêu của chính phủ
+      - Tăng Cung tiền
+      - Tăng đầu tư công
+    answer: 2
+    why: C đúng vì chính sách tiền tệ nới lỏng thực hiện bằng cách tăng cung tiền (giảm lãi suất, mua vào giấy tờ có giá) để kích thích đầu tư, tiêu dùng, qua đó thúc đẩy tăng trưởng và giảm thất nghiệp.
+    tags:
+      - phan-iii
+      - goc-cau-50
+      - nhat-tri
+  - id: ktct-254
+    type: single
+    q: Quy luật kinh tế là gì?
+    options:
+      - Quy định của Nhà nước
+      - Mối liên hệ khách quan, lặp đi lặp lại của các hiện tượng và quá trình kinh tế
+      - Thể chế kinh tế
+      - Chính sách kinh tế
+    answer: 1
+    why: B đúng vì quy luật kinh tế phản ánh mối liên hệ bản chất, tất yếu, lặp đi lặp lại của các hiện tượng và quá trình kinh tế, tồn tại khách quan không phụ thuộc ý muốn con người, khác với chính sách hay quy định do nhà nước đặt ra.
+    tags:
+      - phan-iii
+      - goc-cau-52
+      - nhat-tri
+  - id: ktct-263
+    type: single
+    q: Nếu lượng tiền phát hành vượt quá lượng tiền cần thiết cho lưu thông sẽ dẫn đến hiện tượng
+    options:
+      - Lạm phát
+      - Giá cả ổn định
+      - Tăng trưởng kinh tế bền vững
+      - Giảm phát
+    answer: 0
+    why: Theo quy luật lưu thông tiền tệ, phát hành tiền vượt quá lượng tiền cần thiết cho lưu thông làm đồng tiền mất giá, gây ra lạm phát.
+    tags:
+      - phan-iii
+      - goc-cau-61
+      - nhat-tri
+  - id: ktct-284
+    type: single
+    q: Khi trên thị trường cầu lớn hơn cung, giá cả hàng hóa sẽ có xu hướng?
+    options:
+      - Ổn định
+      - Giảm
+      - Tăng hoặc giảm tùy thuộc vào loại hàng hóa
+      - Tăng
+    answer: 3
+    why: Theo quy luật cung - cầu, khi cầu vượt cung, giá cả hàng hoá trên thị trường có xu hướng tăng lên so với giá trị.
+    tags:
+      - phan-iii
+      - goc-cau-82
+      - nhat-tri
+  - id: ktct-291
+    type: single
+    q: Vai trò định hướng sản xuất của người tiêu dùng được thể hiện thông qua?
+    options:
+      - Việc họ kiểm soát giá cả thị trường
+      - Việc họ tham gia vào các chính sách của nhà nước
+      - Sự lựa chọn và quyết định mua hàng của họ
+      - Việc họ sản xuất ra sản phẩm mới
+    answer: 2
+    why: Người tiêu dùng định hướng sản xuất thông qua nhu cầu, thị hiếu thể hiện ở sự lựa chọn và quyết định mua hàng, từ đó tín hiệu thị trường tác động ngược lại nhà sản xuất.
+    tags:
+      - phan-iii
+      - goc-cau-89
+      - nhat-tri
+  - id: ktct-292
+    type: single
+    q: 'Khái niệm “Cung” trong nền kinh tế thị trường được hiểu là:'
+    options:
+      - Người cung cấp hàng hóa, dịch vụ
+      - Người mua hàng hóa, dịch vụ
+      - Số lượng hàng hóa, dịch vụ mà người sản xuất sẵn sàng và có khả năng cung cấp ra thị trường tại các mức giá khác nhau trong một khoảng thời gian nhất định
+      - Tổng sản phẩm quốc nội
+    answer: 2
+    why: Cung là khối lượng hàng hoá, dịch vụ mà người bán sẵn sàng và có khả năng bán ra thị trường ở các mức giá khác nhau trong một khoảng thời gian nhất định, không phải là chủ thể (người cung cấp) như phương án A.
+    tags:
+      - phan-iii
+      - goc-cau-90
+      - nhat-tri
+  - id: ktct-298
+    type: single
+    q: 'Khi Lượng cầu về hàng hóa tăng, giá cả hàng hóa sẽ có xu hướng:'
+    options:
+      - Tăng hoặc giảm tùy thuộc vào loại hàng hóa
+      - Giảm
+      - Tăng
+      - Không thay đổi
+    answer: 2
+    why: Khi lượng cầu tăng trong khi cung không đổi, theo quy luật cung cầu, giá cả hàng hoá có xu hướng tăng lên.
+    tags:
+      - phan-iii
+      - goc-cau-96
+      - nhat-tri
+  - id: ktct-302
+    type: single
+    q: Chính sách kinh tế nào sau đây không phải là sự vận dụng quy luật cung cầu trong kích thích tăng trưởng kinh tế
+    options:
+      - Chính sách kích cầu
+      - Chính sách tiền tệ nới lỏng
+      - Chính sách tăng cường đầu tư công
+      - Chính sách tiền tệ thắt chặt
+    answer: 3
+    why: 'Đề hỏi chính sách KHÔNG nhằm kích thích tăng trưởng qua quan hệ cung cầu: tiền tệ thắt chặt làm giảm cung tiền và tổng cầu, dùng để kiềm chế lạm phát chứ không kích thích tăng trưởng. Kích cầu, nới lỏng tiền tệ và tăng đầu tư công đều là biện pháp làm tăng tổng cầu.'
+    tags:
+      - phan-iii
+      - goc-cau-100
+      - nhat-tri

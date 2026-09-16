@@ -1,0 +1,554 @@
+title: KTCT — Kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam
+serve: db
+pass: 70
+generated: fable + haiku + opus + sonnet (giải độc lập rồi đối chiếu chéo)
+reviewed: false
+source_hash: f71e85fcef48dd11
+questions:
+  - id: ktct-010
+    type: single
+    q: Việc Chính phủ Việt Nam triển khai các gói hỗ trợ phục hồi kinh tế sau đại dịch COVID- 19 thể hiện rõ nhất đặc trưng nào của Kinh tế thị trường định hướng XHCN?
+    options:
+      - Thực hiện nhiều hình thức phân phối, chủ yếu phân phối theo lao động và hiệu quả kinh tế
+      - Tăng trưởng kinh tế gắn với công bằng và tiến bộ xã hội
+      - Tồn tại nhiều hình thức sở hữu và thành phân kinh tế
+      - Quản lý nền kinh tế có sự điều tiết của Nhà nước xã hội chủ nghĩa
+    answer: 3
+    why: 'Gói hỗ trợ phục hồi kinh tế là chính sách tài khoá - tiền tệ ở tầm vĩ mô, tức hành vi điều tiết nền kinh tế của Nhà nước để khắc phục cú sốc thị trường, nên thể hiện rõ nhất đặc trưng về quản lý: nền kinh tế có sự quản lý, điều tiết của Nhà nước xã hội chủ nghĩa. Bẫy là phương án B: chữ ''hỗ trợ'' gợi tới an sinh xã hội, nhưng đặc trưng ''tăng trưởng gắn với công bằng và tiến bộ xã hội'' được minh hoạ bằng chính sách xoá đói giảm nghèo, bảo hiểm, phúc lợi, còn ở đây mục tiêu nêu rõ là ''phục hồi kinh tế''. Đối chiếu câu 11 cùng bộ đề cũng thấy đề chấm theo nội dung của hành động, không phải theo việc ai là chủ thể.'
+    tags:
+      - phan-i
+      - goc-cau-10
+      - phan-xu
+  - id: ktct-011
+    type: single
+    q: Việc Nhà nước Việt Nam tập trung vào việc tạo lập và phát triển đồng bộ, hiện đại các loại thị trường là một nhiệm vụ nhằm hoàn thiện đặc trưng nào của KTTTĐH XHCN?
+    options:
+      - Nền kinh tế có nhiều hình thức sở hữu, nhiều thành phần kinh tế
+      - Thực hiện nhiều hình thức phân phối, chủ yếu phân phối theo lao động và hiệu quả kinh tế
+      - Tồn tại nhiều hình thức sở hữu và thành phân kinh tế
+      - Kinh tế thị trường vận hành đầy đủ, đồng bộ theo các quy luật của kinh tế thị trường.
+    answer: 3
+    why: Tạo lập các loại thị trường đồng bộ, hiện đại là nhiệm vụ hoàn thiện đặc trưng kinh tế thị trường vận hành đầy đủ. A, B, C liên quan đến sở hữu, phân phối chứ không phải vận hành thị trường.
+    tags:
+      - phan-i
+      - goc-cau-11
+      - nhat-tri
+  - id: ktct-012
+    type: single
+    q: 'Để khắc phục các khuyết tật của kinh tế thị trường Nhà nước cần:'
+    options:
+      - Hạn chế hoạt động kinh doanh của khu vực tư nhân trong lĩnh vực ngân hàng
+      - Thực hiện sản xuất và cung ứng tất cả các hàng hóa công cộng
+      - Xây dựng hệ thống pháp luật, chính sách và cơ chế phù hợp để điều tiết thị trường
+      - Quy định giá trần và giá sàn cho tất cả các hàng hóa – dịch vụ
+    answer: 2
+    why: Để khắc phục khuyết tật của thị trường (thất bại thị trường), nhà nước cần xây dựng hệ thống pháp luật, chính sách và cơ chế điều tiết hợp lý. A, B, D quá cứng nhắc hoặc cực đoan.
+    tags:
+      - phan-i
+      - goc-cau-12
+      - nhat-tri
+  - id: ktct-014
+    type: single
+    q: Trọng tâm của thể chế kinh tế thị trường là?
+    options:
+      - Ngân sách quốc gia
+      - Chính sách phát triển kinh tế tư nhân và thúc đẩy đổi mới sáng tạo
+      - Luật pháp, hệ thống quy tắc, bộ máy quản lý và cơ chế vận hành
+      - Luật giá và chính sách quản lý giá
+    answer: 2
+    why: Trọng tâm của thể chế kinh tế thị trường là hệ thống pháp luật, bộ máy quản lý và cơ chế vận hành. A liên quan đến tài chính, B, D là những chính sách cụ thể chứ không phải lõi của thể chế.
+    tags:
+      - phan-i
+      - goc-cau-14
+      - nhat-tri
+  - id: ktct-020
+    type: single
+    q: Cơ quan lãnh đạo nền kinh tế thị trường định hướng XHCN ở Việt Nam là?
+    options:
+      - Hội đồng doanh nghiệp
+      - Quốc hội
+      - Đảng Cộng sản Việt Nam
+      - Bộ Công thương
+    answer: 2
+    why: Đảng Cộng sản Việt Nam là cơ quan lãnh đạo chính của nền kinh tế thị trường định hướng XHCN. Quốc hội là lập pháp, Bộ Công Thương là thực hành, hội đồng doanh nghiệp là tư vấn.
+    tags:
+      - phan-i
+      - goc-cau-20
+      - nhat-tri
+  - id: ktct-023
+    type: single
+    q: Thể chế kinh tế thị trường định hướng XHCN là?
+    options:
+      - Cơ chế thị trường và các chủ thể tham gia thị trường
+      - Các chính sách kinh tế của nhà nước
+      - Hệ thống pháp luật và bộ máy quản lý nhà nước
+      - Hệ thống đường lối, chủ trương chiến lược, luật pháp, chính sách... nhằm hướng đến xác lập đồng bộ các yếu tố thị trường, các loại thị trường hiện đại theo định hướng xã hội chủ nghĩa
+    answer: 3
+    why: Thể chế kinh tế thị trường định hướng XHCN là hệ thống toàn diện bao gồm đường lối, chủ trương, luật pháp, chính sách nhằm xác lập các yếu tố thị trường theo định hướng xã hội chủ nghĩa. D là định nghĩa đầy đủ nhất.
+    tags:
+      - phan-i
+      - goc-cau-23
+      - nhat-tri
+  - id: ktct-027
+    type: single
+    q: Đảng Cộng sản Việt Nam lãnh đạo nền kinh tế thị trường định hướng XHCN thông qua?
+    options:
+      - Cương lĩnh, pháp luật, kế hoạch, quyết sách, đường lối
+      - Cương lĩnh, đường lối, chủ trương, quyết sách lớn
+      - Cương lĩnh, đường lối, kế hoạch, chiến lược
+      - Cương lĩnh, Luật, Nghị định, chủ trương, quyết sách lớn
+    answer: 1
+    why: Đảng lãnh đạo kinh tế thông qua cương lĩnh, đường lối, chủ trương và quyết sách lớn. Đây là công thức chuẩn trong tài liệu đảng. A, C, D sắp xếp hay bổ sung không theo chuẩn.
+    tags:
+      - phan-i
+      - goc-cau-27
+      - nhat-tri
+  - id: ktct-036
+    type: single
+    q: 'Ở Việt Nam, giá trị đất đai trong mua bán bất động sản là :'
+    options:
+      - Giá trị quyền sở hữu đất
+      - Giá trị lợi thế thương mại
+      - Giá trị quyền sử dụng đất
+      - Giá trị tiền thuê đất hàng năm
+    answer: 2
+    why: Ở Việt Nam, người dân chỉ có quyền sử dụng đất, không sở hữu. Do đó giá đất bất động sản là giá trị quyền sử dụng đất. A sai (không có sở hữu đất tư nhân), B, D không đúng.
+    tags:
+      - phan-i
+      - goc-cau-36
+      - nhat-tri
+  - id: ktct-037
+    type: single
+    q: Các chính sách phát triển kinh tế, chính sách thuế, chính sách an sinh xã hội và giáo dục, y tế hiện nay tại Việt Nam thể hiện rõ nhất đặc trưng nào của Kinh tế thị trường định hướng XHCN
+    options:
+      - Tồn tại nhiều hình thức sở hữu và thành phân kinh tế
+      - Tăng trưởng kinh tế gắn với công bằng và tiến bộ xã hội
+      - Kinh tế nhà nước giữ vai trò chủ đạo, kinh tế tư nhân là động lực quan trọng của nền kinh tế
+      - Thực hiện nhiều hình thức phân phối, chủ yếu phân phối theo lao động và hiệu quả kinh tế
+    answer: 1
+    why: Các chính sách phát triển kinh tế, thuế, an sinh xã hội, giáo dục y tế thể hiện rõ nhất sự gắn kết tăng trưởng kinh tế với công bằng và tiến bộ xã hội, đặc trưng nền tảng XHCN.
+    tags:
+      - phan-i
+      - goc-cau-37
+      - nhat-tri
+  - id: ktct-043
+    type: single
+    q: 'Chọn đáp án đúng nhất: Lý do phải hoàn thiện thể thế kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam:'
+    options:
+      - Do hệ thống pháp luật chưa đầy đủ, còn thiếu và chưa đồng bộ; cơ chế thị trường hiện nay còn kém hiệu quả
+      - Do hệ thống thể chế còn kém hiệu lực, hiệu quả, thiếu các yếu tố thị trường và các loại thị trường.
+      - Do hệ thống thể chế chưa đầy đủ còn thiếu các yếu tố thị trường
+      - Do các cơ chế của nền kinh tế thị trường định hướng xã hội chủ nghĩa còn chưa đồng bộ.
+    answer: 1
+    why: Lý do phải hoàn thiện thể chế là hệ thống thể chế còn kém hiệu lực, hiệu quả, thiếu các yếu tố thị trường và các loại thị trường. B là lý do toàn diện nhất.
+    tags:
+      - phan-i
+      - goc-cau-43
+      - nhat-tri
+  - id: ktct-044
+    type: single
+    q: Thành tựu nổi bật nhất của nền kinh tế thị trường định hướng XHCN ở Việt Nam trong những năm qua là?
+    options:
+      - Nền kinh tế phát triển năng động, duy trì tốc độ tăng trưởng cao, đời sống nhân dân được cải thiện đáng kể
+      - Xóa bỏ hoàn toàn khoảng cách giàu nghèo
+      - Trở thành nước có nền công nghiệp nặng hàng đầu thế giới
+      - Đạt mức thu nhập cao nhất thế giới
+    answer: 0
+    why: Thành tựu nổi bật nhất của KTTTĐHXHCN Việt Nam là nền kinh tế phát triển năng động, duy trì tốc độ tăng trưởng cao, đời sống nhân dân được cải thiện đáng kể. B, C, D là khẳng định quá tuyệt đối.
+    tags:
+      - phan-i
+      - goc-cau-44
+      - nhat-tri
+  - id: ktct-063
+    type: single
+    q: 'Chọn đáp án đúng nhất: Nhà nước quản lý nền kinh tế thị trường định hướng xã hội chủ nghĩa thông qua:'
+    options:
+      - Cương lĩnh, đường lối, chủ trương, quyết sách lớn
+      - Hệ thống pháp luật, các chiến lược, kế hoạch, quy hoạch và cơ chế, chính sách.
+      - Hệ thống pháp luật, các chiến lược, kế hoạch, quy hoạch và cơ chế, chính sách cùng các công cụ kinh tế trên cơ sở tôn trọng các nguyên tắc của thị trường phù hợp với yêu cầu xây dựng xã hội xã hội chủ nghĩa ở Việt Nam.
+      - Hệ thống các chiến lược, kế hoạch, quy hoạch và cơ chế, chính sách cùng các công cụ kinh tế.
+    answer: 2
+    why: Nhà nước quản lý kinh tế thị trường định hướng xã hội chủ nghĩa thông qua hệ thống pháp luật, chiến lược, kế hoạch, cơ chế, chính sách và công cụ kinh tế dựa trên nguyên tắc thị trường. C là câu trả lời đầy đủ nhất.
+    tags:
+      - phan-i
+      - goc-cau-63
+      - nhat-tri
+  - id: ktct-066
+    type: single
+    q: 'Chọn đáp án đúng nhất: Mục tiêu của kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là:'
+    options:
+      - Góp phần giảm bớt phân hoá giàu nghèo trong xã hội.
+      - Thúc đẩy phát triển kinh tế thị trường và hội nhập quốc tế.
+      - Xây dựng quan hệ sản xuất tiến bộ, phù hợp nhằm ngày càng hoàn thiện cơ sở kinh tế - xã hội của chủ nghĩa xã hội.
+      - Để đẩy mạnh công nghiệp hoá, hiện đại hoá đất nước, phát triển lực lượng sản xuất, nâng cao năng lực cạnh tranh của nền kinh tế.
+    answer: 2
+    why: Mục tiêu cơ bản là xây dựng quan hệ sản xuất tiến bộ và hoàn thiện cơ sở kinh tế-xã hội của chủ nghĩa xã hội. Các mục tiêu khác (A, B, D) là hệ quả, không phải mục tiêu cơ bản.
+    tags:
+      - phan-i
+      - goc-cau-66
+      - nhat-tri
+  - id: ktct-072
+    type: single
+    q: Một trong những nhiệm vụ trọng tâm để hoàn thiện thể chế Kinh tế thị trường định hướng XHCN là 'tạo lập môi trường cạnh tranh bình đẳng, minh bạch'. Điều này có ý nghĩa gì đối với vai trò chủ đạo của kinh tế nhà nước?
+    options:
+      - Kinh tế nhà nước cần tham gia và kiểm soát hoàn toàn các ngành tài chính và ngân hàng
+      - Kinh tế nhà nước phải được ưu tiên hoàn toàn, không cần cạnh tranh
+      - Kinh tế nhà nước phải tự chủ kinh doanh, cạnh tranh bình đẳng và chứng minh được vai trò chủ đạo bằng hiệu quả kinh tế.
+      - Các quy định về cạnh tranh chỉ áp dụng cho khu vực kinh tế tư nhân
+    answer: 2
+    why: Tạo môi trường cạnh tranh bình đẳng có nghĩa kinh tế nhà nước phải cạnh tranh bình đẳng và chứng minh vai trò chủ đạo bằng hiệu quả kinh tế, không được ưu tiên nhân tạo.
+    tags:
+      - phan-i
+      - goc-cau-72
+      - nhat-tri
+  - id: ktct-074
+    type: single
+    q: 'Chọn đáp án sai về nội dung hoàn thiện thể chế về các mô hình sản xuất kinh doanh:'
+    options:
+      - Hoàn thiện thể chế về huy động các nguồn lực đầu tư và đổi mới cơ chế quản lý của nhà nước để các đơn vị sự nghiệp công lập phát triển có hiệu quả.
+      - Thể chế hoá nội dung và phương thức hoạt động của kinh tế tập thể.
+      - Hoàn thiện thể chế quản lý các doanh nghiệp có vốn đầu tư trực tiếp nước ngoài.
+      - Thể chế hoá việc cơ cấu lại, đổi mới và nâng cao hiệu quả doanh nghiệp nhà nước.
+    answer: 2
+    why: 'Đề hỏi đáp án SAI, tức phương án chép lệch so với giáo trình. Bốn nội dung hoàn thiện thể chế về các mô hình sản xuất kinh doanh gồm: cơ cấu lại, đổi mới và nâng cao hiệu quả doanh nghiệp nhà nước; huy động nguồn lực đầu tư và đổi mới cơ chế quản lý để các đơn vị sự nghiệp công lập phát triển hiệu quả; thể chế hoá nội dung và phương thức hoạt động của kinh tế tập thể; và hoàn thiện thể chế THU HÚT đầu tư trực tiếp nước ngoài theo hướng chủ động lựa chọn dự án, công nghệ, quản trị hiện đại. Phương án C đổi ''thu hút đầu tư trực tiếp nước ngoài'' thành ''quản lý các doanh nghiệp có vốn đầu tư trực tiếp nước ngoài'' nên là câu sai. Bẫy là phương án A: đơn vị sự nghiệp công lập nghe như không phải mô hình kinh doanh, nhưng đây đúng là một gạch đầu dòng nguyên văn của giáo trình.'
+    tags:
+      - phan-i
+      - goc-cau-74
+      - phan-xu
+  - id: ktct-081
+    type: single
+    q: Để khắc phục tình trạng 'chảy máu chất xám' (lao động có trình độ cao rời bỏ Việt Nam), nhiệm vụ trọng tâm nào trong hoàn thiện thể chế thị trường lao động cần được ưu tiên?
+    options:
+      - Tăng cường kiểm soát sự di chuyển của lao động giữa các vùng miền.
+      - Xây dựng các khu công nghiệp mới
+      - Đơn giản hóa thủ tục xuất nhập cảnh cho lao động nước ngoài
+      - Hoàn thiện thể chế về tiền lương, bảo hiểm xã hội, và các cơ chế tạo động lực, tôn vinh người tài.
+    answer: 3
+    why: Để khắc phục chảy máu chất xám, cần hoàn thiện thể chế tiền lương, bảo hiểm xã hội và tạo động lực, tôn vinh người tài. D chính xác, A là cách tiếp cận sai lệch.
+    tags:
+      - phan-i
+      - goc-cau-81
+      - nhat-tri
+  - id: ktct-083
+    type: single
+    q: 'Chọn đáp án đúng nhất: Nội dung hoàn thiện thế chế phát triển đồng bộ các yếu tố thị trường gồm:'
+    options:
+      - Hoàn thiện hệ thống thể chế về giá; về thúc đẩy cạnh tranh.
+      - Hoàn thiện hệ thống thể chế về giá; về chất lượng hàng hoá, dịch vụ.
+      - Hoàn thiện hệ thống thể chế về giá; về thúc đẩy cạnh tranh; về chất lượng hàng hoá, dịch vụ.
+      - Hoàn thiện hệ thống thể chế về thúc đẩy cạnh tranh; về chất lượng hàng hoá, dịch vụ.
+    answer: 2
+    why: 'Phát triển đồng bộ các yếu tố thị trường yêu cầu hoàn thiện ba lĩnh vực: thể chế giá, thúc đẩy cạnh tranh, và chất lượng hàng hóa-dịch vụ. C là câu trả lời đầy đủ.'
+    tags:
+      - phan-i
+      - goc-cau-83
+      - nhat-tri
+  - id: ktct-085
+    type: single
+    q: Mục tiêu cơ bản của hoàn thiện thể chế kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là?
+    options:
+      - Thúc đẩy tăng trưởng xuất khẩu và thu hút đầu tư nước ngoài
+      - Đảm bảo vai trò chủ đạo của kinh tế nhà nước
+      - Thúc đẩy phát triển khu vực kinh tế tư nhân
+      - Phát triển kinh tế nhanh, hiệu quả, bền vững, hội nhập quốc tế thành công và giữ vững định hướng xã hội chủ nghĩa.
+    answer: 3
+    why: Mục tiêu cơ bản là phát triển kinh tế nhanh, hiệu quả, bền vững, hội nhập quốc tế thành công và giữ vững định hướng xã hội chủ nghĩa. D tổng hợp đầy đủ các yếu tố.
+    tags:
+      - phan-i
+      - goc-cau-85
+      - nhat-tri
+  - id: ktct-088
+    type: single
+    q: 'Chọn đáp án đúng: Phạm trù: “Kinh tế thị trường định hướng xã hội chủ nghĩa” lần đầu tiên được Đảng Cộng sản Việt Nam nêu ra tại Đại hội lần thứ mấy?'
+    options:
+      - Đại hội Đảng toàn quốc lần thứ XIII (2021)
+      - Đại hội Đảng toàn quốc lần thứ IX (2001)
+      - Đại hội Đảng toàn quốc lần thứ XI (2011)
+      - Đại hội Đảng toàn quốc lần thứ VII (1991)
+    answer: 1
+    why: 'Phạm trù ''kinh tế thị trường định hướng xã hội chủ nghĩa'' lần đầu được Đảng chính thức nêu tại Đại hội IX năm 2001, khi xác định đây là mô hình kinh tế tổng quát của thời kỳ quá độ. Bẫy là Đại hội VII (1991): đại hội này thông qua Cương lĩnh và chủ trương phát triển kinh tế hàng hoá nhiều thành phần theo cơ chế thị trường có sự quản lý của Nhà nước, nhưng chưa dùng cụm từ ''định hướng xã hội chủ nghĩa'' cho kinh tế thị trường. Các đại hội XI, XIII chỉ bổ sung, làm rõ nội hàm.'
+    tags:
+      - phan-i
+      - goc-cau-88
+      - phan-xu
+  - id: ktct-129
+    type: single
+    q: Trong KTTTĐH XHCN ở Việt Nam, vai trò chủ đạo của kinh tế nhà nước thể hiện rõ nhất thông qua việc nào sau đây?
+    options:
+      - Khu vực kinh tế nhà nước đảm bảo các cân đối lớn, chi phối các lĩnh vực then chốt, và thúc đẩy phát triển hệ thống an sinh xã hội.
+      - Các doanh nghiệp nhà nước đóng góp nhiều nhất cho ngân sách nhà nước
+      - Khu vực kinh tế nhà nước kiểm soát hoàn toàn lĩnh vực ngân hàng và tài chính.
+      - Kinh tế nhà nước chiếm tỷ trọng lớn nhất trong GDP.
+    answer: 0
+    why: 'Vai trò chủ đạo của kinh tế nhà nước trong KTTTĐH XHCN Việt Nam thể hiện qua: đảm bảo các cân đối lớn, chi phối lĩnh vực then chốt, và thúc đẩy an sinh xã hội. Đây là định nghĩa chính chính thức.'
+    tags:
+      - phan-ii
+      - goc-cau-28
+      - nhat-tri
+  - id: ktct-136
+    type: single
+    q: Tính 'định hướng xã hội chủ nghĩa' của Kinh tế thị trường ở Việt Nam được bảo đảm bằng yếu tố nào là chủ yếu?
+    options:
+      - Mọi thành phần kinh tế đều được khuyến khích phát triển.
+      - Sự ưu tiên tuyệt đối cho khu vực kinh tế tập thể.
+      - Tỷ trọng GDP của khu vực kinh tế nhà nước luôn phải đạt trên 50%
+      - Sự lãnh đạo của Đảng Cộng sản Việt Nam và vai trò quản lý, điều tiết của Nhà nước xã hội chủ nghĩa.
+    answer: 3
+    why: Tính 'định hướng xã hội chủ nghĩa' của KTTTĐH Việt Nam được bảo đảm chủ yếu bằng sự lãnh đạo của Đảng Cộng sản Việt Nam và vai trò quản lý, điều tiết của Nhà nước XHCN.
+    tags:
+      - phan-ii
+      - goc-cau-35
+      - nhat-tri
+  - id: ktct-139
+    type: single
+    q: Tính 'phát triển bền vững' trong KTTTĐH XHCN ở Việt Nam được hiểu là sự kết hợp hài hòa của các trụ cột nào?
+    options:
+      - Tăng cường hợp tác quốc tế, mở rộng thị trường xuất khẩu và thu hút đầu tư nước ngoài
+      - Tăng trưởng kinh tế và đảm bảo an ninh quốc phòng
+      - Ưu tiên phát triển công nghiệp nặng và dịch vụ.
+      - Kinh tế tăng trưởng ổn định, xã hội công bằng và môi trường được bảo vệ.
+    answer: 3
+    why: 'Phát triển bền vững trong KTTTĐH XHCN Việt Nam là sự kết hợp hài hoà của: kinh tế tăng trưởng ổn định, xã hội công bằng, và môi trường được bảo vệ.'
+    tags:
+      - phan-ii
+      - goc-cau-38
+      - nhat-tri
+  - id: ktct-142
+    type: single
+    q: Một trong những thách thức của việc xây dựng kinh tế thị trường định hướng XHCN là?
+    options:
+      - Tăng trưởng kinh tế quá nhanh
+      - Thiếu tính cạnh tranh
+      - Xử lý mối quan hệ giữa thị trường và nhà nước, tăng trưởng và công bằng xã hội
+      - Tình trạng lạm phát cao
+    answer: 2
+    why: Một thách thức của xây dựng KTTTĐH XHCN là xử lý mối quan hệ giữa thị trường và nhà nước, giữa tăng trưởng kinh tế và công bằng xã hội. Cần cân bằng hai mục tiêu này.
+    tags:
+      - phan-ii
+      - goc-cau-41
+      - nhat-tri
+  - id: ktct-153
+    type: single
+    q: Yếu tố nào là mục tiêu lâu dài để phân biệt nền kinh tế Việt Nam với kinh tế thị trường tư bản chủ nghĩa?
+    options:
+      - Tốc độ tăng trưởng GDP hàng năm
+      - 'Mục tiêu hướng tới: ''Dân giàu, nước mạnh, dân chủ, công bằng, văn minh''.'
+      - Tốc độ tăng trường của xuất khẩu hàng năm
+      - Số lượng các doanh nghiệp tư nhân hoạt động trên thị trường.
+    answer: 1
+    why: Yếu tố là mục tiêu lâu dài để phân biệt nền kinh tế Việt Nam với KTTTĐH tư bản chủ nghĩa là mục tiêu 'Dân giàu, nước mạnh, dân chủ, công bằng, văn minh' - mục tiêu định hướng xã hội chủ nghĩa.
+    tags:
+      - phan-ii
+      - goc-cau-52
+      - nhat-tri
+  - id: ktct-157
+    type: single
+    q: Sự lãnh đạo của Đảng Cộng sản Việt Nam đối với nền kinh tế có tác dụng?
+    options:
+      - Đảm bảo định hướng XHCN cho sự phát triển kinh tế thị trường
+      - Đảm bảo an ninh quốc gia và an toàn kinh tế
+      - Đảm bảo tăng trường kinh tế nhanh
+      - Bảo vệ độc quyền nhà nước về kinh tế
+    answer: 0
+    why: Vai trò lãnh đạo của Đảng là đảm bảo định hướng XHCN cho sự phát triển kinh tế thị trường. Đây là đặc trưng cơ bản của kinh tế thị trường định hướng XHCN ở Việt Nam.
+    tags:
+      - phan-ii
+      - goc-cau-56
+      - nhat-tri
+  - id: ktct-163
+    type: single
+    q: Tính tất yếu khách quan của việc phát triển kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam được giải thích chủ yếu dựa trên cơ sở nào?
+    options:
+      - Sự cần thiết phải xóa bỏ hoàn toàn khu vực kinh tế tư nhân để kinh tế nhà nước giữ vai trò tuyệt đối.
+      - Yêu cầu của hội nhập kinh tế quốc tế và tuân thủ các cam kết thương mại trong hội nhập kinh tế quốc tế
+      - Kinh nghiệm thành công của các nước xã hội chủ nghĩa khác đã chuyển đổi sang kinh tế thị trường.
+      - Sự thống nhất giữa tính phổ biến của kinh tế thị trường và các nguyên tắc, mục tiêu cơ bản của chủ nghĩa xã hội.
+    answer: 3
+    why: Tính tất yếu khách quan của kinh tế thị trường định hướng XHCN được giải thích dựa trên sự thống nhất giữa tính phổ biến của kinh tế thị trường và các nguyên tắc, mục tiêu cơ bản của chủ nghĩa xã hội.
+    tags:
+      - phan-ii
+      - goc-cau-62
+      - nhat-tri
+  - id: ktct-165
+    type: single
+    q: Lý do khách quan nào sau đây là quan trọng nhất cho việc áp dụng kinh tế thị trường định hướng xã hội chủ nghĩa tại Việt Nam
+    options:
+      - Mục tiêu đẩy nhanh tốc độ công nghiệp hóa, hiện đại hóa.
+      - Nhu cầu đẩy mạnh cải cách và mở cửa kinh tế
+      - Mục tiêu nâng cao hiệu quả hoạt động của khu vực kinh tế nhà nước
+      - Xu hướng phát triển khách quan của Việt Nam trong bối cảnh thế giới hiện nay
+    answer: 3
+    why: Lý do khách quan quan trọng nhất là xu hướng phát triển khách quan của Việt Nam trong bối cảnh thế giới hiện nay. Các yếu tố khác là hệ quả của xu hướng này.
+    tags:
+      - phan-ii
+      - goc-cau-64
+      - nhat-tri
+  - id: ktct-168
+    type: single
+    q: 'Sự khác biệt cơ bản giữa kinh tế thị trường định hướng xã hội chủ nghĩa với kinh tế thị trường tư bản chủ nghĩa là:'
+    options:
+      - Hình thức phân phối thu nhập
+      - Vai trò của kinh tế nhà nước
+      - Hình thức sở hữu tư liệu sản xuất
+      - Vai trò của nhà nước và mục tiêu phát triển
+    answer: 3
+    why: Sự khác biệt cơ bản giữa hai mô hình kinh tế thị trường nằm ở vai trò của nhà nước và mục tiêu phát triển, không phải hình thức sở hữu (cả hai đều có sở hữu tư nhân).
+    tags:
+      - phan-ii
+      - goc-cau-67
+      - nhat-tri
+  - id: ktct-171
+    type: single
+    q: 'Các hình thức sở hữu tư liệu sản xuất hiện nay tại Việt Nam bao gồm:'
+    options:
+      - Sở hữu nhà nước, sở hữu hợp tác, sở hữu tập thể
+      - Sở hữu toàn dân, sở hữu riêng, sở hữu chung
+      - Sở hữu nhà nước, sở hữu tư nhân, sở hữu của tổ chức chính trị - xã hội
+      - Sở hữu toàn dân, sở hữu tư nhân, sở hữu hỗn hợp
+    answer: 3
+    why: Theo cách diễn đạt của kinh tế chính trị về sở hữu tư liệu sản xuất trong nền kinh tế thị trường định hướng xã hội chủ nghĩa, các hình thức cơ bản là sở hữu toàn dân, sở hữu tư nhân và sở hữu hỗn hợp (tương ứng nhiều thành phần kinh tế), nên D gần đúng nhất. Bẫy là B - đó là cách phân loại của Bộ luật Dân sự (sở hữu toàn dân, sở hữu riêng, sở hữu chung) về tài sản nói chung, không phải cách trình bày của giáo trình; A và C dùng 'sở hữu nhà nước' thay cho 'sở hữu toàn dân' là sai thuật ngữ. Lưu ý D vẫn thiếu 'sở hữu tập thể' mà giáo trình có nhắc tới.
+    tags:
+      - phan-ii
+      - goc-cau-70
+      - phan-xu
+      - can-nguoi-doc-lai
+  - id: ktct-185
+    type: single
+    q: Nền kinh tế thị trường định hướng xã hội chủ nghĩa là mô hình tổng quát của?
+    options:
+      - Chủ nghĩa xã hội
+      - Giai đoạn kinh tế tự cung tự cấp
+      - Thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam
+      - Chủ nghĩa tư bản hiện đại
+    answer: 2
+    why: Kinh tế thị trường định hướng XHCN là mô hình tổng quát của thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam, không phải thời kỳ khác.
+    tags:
+      - phan-ii
+      - goc-cau-84
+      - nhat-tri
+  - id: ktct-186
+    type: single
+    q: Tính chất "định hướng xã hội chủ nghĩa" của kinh tế thị trường Việt Nam thể hiện qua việc?
+    options:
+      - Xóa bỏ tư hữu về tư liệu sản xuất
+      - Từ bỏ các quy luật kinh tế thị trường
+      - Thực hiện mục tiêu dân giàu, nước mạnh, dân chủ, công bằng, văn minh
+      - Thực hiện chính sách kinh tế kế hoạch hóa tập trung
+    answer: 2
+    why: 'Tính chất định hướng XHCN thể hiện qua việc thực hiện mục tiêu: dân giàu, nước mạnh, dân chủ, công bằng, văn minh - các mục tiêu đặc trưng của xã hội chủ nghĩa.'
+    tags:
+      - phan-ii
+      - goc-cau-85
+      - nhat-tri
+  - id: ktct-187
+    type: single
+    q: Công cụ điều tiết chủ yếu của nhà nước đối với nền kinh tế thị trường định hướng xã hội chủ nghĩa là?
+    options:
+      - Chính sách phúc lợi xã hội
+      - Luật pháp, chiến lược, quy hoạch, kế hoạch, chính sách kinh tế
+      - Công cụ kế hoạch hóa
+      - Chính sách tài khóa và chính sách tiền tệ
+    answer: 1
+    why: Công cụ điều tiết chủ yếu của nhà nước là luật pháp, chiến lược, quy hoạch, kế hoạch, và các chính sách kinh tế. Đây là phương tiện điều tiết macro của nhà nước.
+    tags:
+      - phan-ii
+      - goc-cau-86
+      - nhat-tri
+  - id: ktct-193
+    type: single
+    q: 'Mô hình kinh tế khái quát trong thời kỳ quá độ lên chủ nghĩa xã hội ở nước ta là:'
+    options:
+      - Kinh tế thị trường định hướng xã hội chủ nghĩa
+      - Kinh tế kế hoạch hóa tập trung
+      - Kinh tế thị trường tự do
+      - Kinh tế thị trường xã hội
+    answer: 0
+    why: Mô hình kinh tế khái quát trong thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam là kinh tế thị trường định hướng xã hội chủ nghĩa.
+    tags:
+      - phan-ii
+      - goc-cau-92
+      - nhat-tri
+  - id: ktct-224
+    type: single
+    q: Vai trò nào sau đây của nhà nước trong nền kinh tế thị trường là quan trọng nhất?
+    options:
+      - Cung cấp hàng hóa và dịch vụ công cộng
+      - Tạo ra lợi nhuận tối đa cho các doanh nghiêp nhà nước
+      - Điều tiết thị trường, khắc phục các khuyết tật của kinh tế thị trường và đảm bảo công bằng xã hội
+      - Quán lý giả cả
+    answer: 2
+    why: C đúng vì vai trò quan trọng nhất, bao trùm của nhà nước trong kinh tế thị trường là điều tiết, khắc phục khuyết tật thị trường và bảo đảm công bằng xã hội, chứ không phải trực tiếp kinh doanh kiếm lời hay quản lý giá cả.
+    tags:
+      - phan-iii
+      - goc-cau-22
+      - nhat-tri
+  - id: ktct-256
+    type: single
+    q: 'Chức năng thực tiễn của kinh tế chính trị Mác – Lênin là:'
+    options:
+      - Vận dụng quy luật kinh tế vào phát triển kinh tế - xã hội
+      - Phân tích văn hóa tiêu dùng
+      - Xây dựng chiến lược marketing
+      - Tăng giá trị xuất khẩu
+    answer: 0
+    why: Chức năng thực tiễn nghĩa là vận dụng những tri thức về quy luật kinh tế vào thực tiễn phát triển kinh tế - xã hội, các phương án B, C, D là hoạt động chuyên môn cụ thể không phải chức năng của một môn khoa học.
+    tags:
+      - phan-iii
+      - goc-cau-54
+      - nhat-tri
+  - id: ktct-277
+    type: single
+    q: 'Chức năng tư tưởng của kinh tế chính trị Mác - Lênin là:'
+    options:
+      - Xây dựng lý tưởng khoa học nhằm xây dựng chế độ xã hội tốt đẹp, hướng tới giải phóng con người, xóa bỏ áp bức, bất công.
+      - Định hướng tư tưởng cho các tổ chức kinh tế
+      - Vận dụng quy luật kinh tế vào phát triển kinh tế - xã hội
+      - Tuyên truyền các chính sách kinh tế của Nhà nước
+    answer: 0
+    why: Chức năng tư tưởng của kinh tế chính trị Mác - Lênin là góp phần xây dựng nền tảng tư tưởng cho giai cấp công nhân và nhân dân lao động, hướng tới xây dựng xã hội tốt đẹp, giải phóng con người khỏi áp bức, bất công.
+    tags:
+      - phan-iii
+      - goc-cau-75
+      - nhat-tri
+  - id: ktct-279
+    type: single
+    q: Mục đích nghiên cứu cao nhất của kinh tế chính trị Mác – Lênin là gì?
+    options:
+      - Thúc đẩy tiêu dùng
+      - Tăng trưởng kinh tế nhanh
+      - Tăng hiệu quả của chính sách tài khóa
+      - Phát hiện ra các quy luật chi phối quan hệ giữa người với người trong sản xuất và trao đổi
+    answer: 3
+    why: Mục đích nghiên cứu cao nhất của kinh tế chính trị Mác - Lênin là phát hiện ra các quy luật kinh tế chi phối quan hệ giữa người với người trong sản xuất và trao đổi, không dừng lại ở các mục tiêu ứng dụng ngắn hạn như tăng trưởng hay tiêu dùng.
+    tags:
+      - phan-iii
+      - goc-cau-77
+      - nhat-tri
+  - id: ktct-294
+    type: single
+    q: Chức năng nhận thức của kinh tế chính trị Mác – Lênin là gì?
+    options:
+      - Hiểu bản chất và quy luật của các quan hệ kinh tế
+      - Tổ chức bộ máy sản xuất kinh doanh
+      - Thúc đẩy đầu tư
+      - Tạo ra của cải vật chất
+    answer: 0
+    why: Chức năng nhận thức của kinh tế chính trị Mác - Lênin là cung cấp tri thức để hiểu rõ bản chất và các quy luật chi phối các quan hệ kinh tế trong xã hội, không phải là hoạt động tổ chức sản xuất kinh doanh cụ thể.
+    tags:
+      - phan-iii
+      - goc-cau-92
+      - nhat-tri
+  - id: ktct-295
+    type: single
+    q: 'Chính sách tài khóa có thể tác động đến tăng trưởng kinh tế thông qua:'
+    options:
+      - Thay đổi lãi suất
+      - Kiểm soát lạm phát
+      - Điều chỉnh thuế và chi tiêu chính phủ
+      - Thu hút đầu tư nước ngoài
+    answer: 2
+    why: Chính sách tài khoá tác động đến tăng trưởng thông qua công cụ thuế và chi tiêu chính phủ; thay đổi lãi suất (phương án A) là công cụ của chính sách tiền tệ, đây là bẫy dễ nhầm giữa hai loại chính sách.
+    tags:
+      - phan-iii
+      - goc-cau-93
+      - nhat-tri

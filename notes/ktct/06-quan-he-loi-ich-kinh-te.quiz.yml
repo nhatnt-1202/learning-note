@@ -1,0 +1,357 @@
+title: KTCT — Quan hệ lợi ích kinh tế ở Việt Nam
+serve: db
+pass: 70
+generated: fable + haiku + opus + sonnet (giải độc lập rồi đối chiếu chéo)
+reviewed: false
+source_hash: 0d4acee3de9accf4
+questions:
+  - id: ktct-022
+    type: single
+    q: Trong hoàn thiện thể chế về phân phối thu nhập, giải pháp nào sau đây thể hiện tính định hướng xã hội chủ nghĩa rõ nét nhất?
+    options:
+      - Thiết lập một hệ thống thuế lũy tiến và thuế tài sản phù hợp để đảm bảo công bằng trong phân phối lại.
+      - Tăng cường tính cạnh tranh trong việc trả lương cho người lao động.
+      - Bỏ chính sách lương tối thiểu vùng
+      - Loại bỏ các quỹ an sinh xã hội và sự tham gia của các tổ chức xã hội trong phân phối thu nhập
+    answer: 0
+    why: Thuế lũy tiến và thuế tài sản phù hợp để đảm bảo công bằng trong phân phối lại thu nhập thể hiện rõ nét định hướng xã hội chủ nghĩa. B, C, D là các giải pháp thị trường hay chống xã hội chủ nghĩa.
+    tags:
+      - phan-i
+      - goc-cau-22
+      - nhat-tri
+  - id: ktct-042
+    type: single
+    q: Chính sách quản lý nào của Nhà nước thể hiện rõ nhất vai trò điều tiết nhằm đảm bảo tính định hướng xã hội chủ nghĩa trong cơ chế phân phối?
+    options:
+      - Tăng cường kiểm soát giá cả đối với tất cả các mặt hàng tiêu dùng.
+      - Chính sách tiền lương tối thiểu và thực hiện bảo hiểm xã hội bắt buộc.
+      - Thực hiện cổ phần hóa các doanh nghiệp nhà nước.
+      - Đẩy mạnh cải cách hành chính, giảm thủ tục đăng ký kinh doanh.
+    answer: 1
+    why: Chính sách lương tối thiểu và bảo hiểm xã hội bắt buộc thể hiện rõ nhất vai trò điều tiết để đảm bảo định hướng xã hội chủ nghĩa trong phân phối. A cứng nhắc, C là cổ phần hoá, D là cải cách hành chính.
+    tags:
+      - phan-i
+      - goc-cau-42
+      - nhat-tri
+  - id: ktct-058
+    type: single
+    q: Yếu tố nào dưới đây là cơ bản nhất để Nhà nước có thể đảm bảo hài hòa các quan hệ lợi ích kinh tế?
+    options:
+      - Bảo vệ lợi ích hợp pháp, tạo môi trường thuận lợi cho hoạt đông tìm kiếm lợi ích của các chủ thể kinh tế
+      - Tăng thuế suất thuế thu nhập cá nhân
+      - Tăng thuế suất thuế thu nhập doanh nghiệp
+      - Tạo môi trường kinh doanh thuận lợi cho khu vực kinh tế tư nhân
+    answer: 0
+    why: Yếu tố cơ bản để Nhà nước hài hòa lợi ích kinh tế là bảo vệ lợi ích hợp pháp của các chủ thể kinh tế và tạo môi trường thuận lợi. Tăng thuế (B, C) là công cụ cụ thể, không phải yếu tố cơ bản.
+    tags:
+      - phan-i
+      - goc-cau-58
+      - nhat-tri
+  - id: ktct-167
+    type: single
+    q: 'Trong thời kỳ quá độ ở nước ta tồn tại nhiều nguyên tắc phân phối vì trong thời kỳ quá độ còn:'
+    options:
+      - Nhiều hình thức sở hữu tư liệu sản xuất
+      - Nhiều hình thức sở hữu, nhiều thành phần kinh tế
+      - Nhiều hình thức kinh doanh
+      - Nhiều thành phần kinh tế
+    answer: 1
+    why: Trong thời kỳ quá độ ở Việt Nam tồn tại nhiều nguyên tắc phân phối vì còn tồn tại nhiều hình thức sở hữu và nhiều thành phần kinh tế khác nhau.
+    tags:
+      - phan-ii
+      - goc-cau-66
+      - nhat-tri
+  - id: ktct-174
+    type: single
+    q: 'Hình thức phân phối thu nhập nào phản ánh định hướng xã hội chủ nghĩa của nền kinh tế thị trường:'
+    options:
+      - Phân phối theo nhu cầu
+      - Phân phối theo vốn và tài sản
+      - Phân phối theo lao động và hiệu quả kinh tế, phân phối theo phúc lợi xã hội
+      - Phân phối lại theo các chính sách của nhà nước
+    answer: 2
+    why: 'Hình thức phân phối phản ánh định hướng XHCN là: phân phối theo lao động và hiệu quả kinh tế, cộng với phân phối theo phúc lợi xã hội (từ chương trình xã hội).'
+    tags:
+      - phan-ii
+      - goc-cau-73
+      - nhat-tri
+  - id: ktct-176
+    type: single
+    q: Quan hệ nào sau đây có vai trò quyết định đến quan hệ phân phối?
+    options:
+      - Quan hệ xã hội, đạo đức
+      - Quan hệ phân công lao động
+      - Quan hệ tổ chức quản lý
+      - Quan hệ sở hữu tư liệu sản xuất
+    answer: 3
+    why: Quan hệ sở hữu tư liệu sản xuất có vai trò quyết định đến quan hệ phân phối. Cách thức sở hữu quyết định ai chiếm lấy sản phẩm và thặng dư.
+    tags:
+      - phan-ii
+      - goc-cau-75
+      - nhat-tri
+  - id: ktct-199
+    type: single
+    q: 'Hãy chọn câu trả lời đúng nhất trong các câu dưới đây: Ở nước ta hiện nay tồn tại nhiều hình thức phân phối thu nhập vì:'
+    options:
+      - Do sự khác nhau về trình độ của lực lượng sản xuất
+      - Còn tồn tại nhiều thành phần kinh tế và hình thức tổ chức sản xuất kinh doanh
+      - Còn tồn tại nhiều kiểu quan hệ sản xuất khác nhau
+      - Còn tồn tại nhiều hình thức sở hữu tư liệu sản xuất
+    answer: 1
+    why: Ở Việt Nam hiện tại tồn tại nhiều hình thức phân phối vì còn tồn tại nhiều thành phần kinh tế và hình thức tổ chức sản xuất kinh doanh khác nhau.
+    tags:
+      - phan-ii
+      - goc-cau-98
+      - nhat-tri
+  - id: ktct-207
+    type: single
+    q: Mâu thuẫn giữa lợi ích cá nhân của người lao động và lợi ích của người sử dụng lao động phát sinh chủ yếu từ việc tranh chấp yếu tố nào?
+    options:
+      - Tiến độ thực hiện dự án đầu tư
+      - Tỷ lệ chi trả cổ tức
+      - Tỷ lệ phân chia giá trị mới tạo ra (v+m) giữa tiền lương và lợi nhuận
+      - Chi phí sử dụng tư liệu sản xuất
+    answer: 2
+    why: C đúng vì phần giá trị mới do người lao động tạo ra (v+m) được chia thành tiền lương và lợi nhuận, nên mâu thuẫn lợi ích chủ yếu xoay quanh tỷ lệ phân chia này giữa hai bên.
+    tags:
+      - phan-iii
+      - goc-cau-5
+      - nhat-tri
+  - id: ktct-212
+    type: single
+    q: Sự thống nhất giữa lợi ích cá nhân và lợi ích xã hội thể hiện rõ nhất qua hoạt động nào của các chủ thể kinh tế?
+    options:
+      - Doanh nghiệp đầu tư mở rộng sản xuất, nâng cao chất lượng sản phẩm, nộp thuế và tạo việc làm cho người lao động.
+      - Tạo môi trường đầu tư thuận lợi cho thu hút vốn đầu tư trực tiếp nước ngoài
+      - Doanh nghiệp nhà nước được Nhà nước bù lỗ để duy trì hoạt động
+      - Bảo hộ hoạt động kinh doanh của thành phần kinh tế tập thể
+    answer: 0
+    why: A đúng vì khi doanh nghiệp theo đuổi lợi ích riêng (mở rộng sản xuất, nâng chất lượng) đồng thời tạo ra lợi ích chung cho xã hội (việc làm, thuế), đó là biểu hiện rõ nhất sự thống nhất lợi ích cá nhân và xã hội; các phương án khác chỉ là biện pháp hỗ trợ một chiều của nhà nước.
+    tags:
+      - phan-iii
+      - goc-cau-10
+      - nhat-tri
+  - id: ktct-220
+    type: single
+    q: Trong bối cảnh biến đổi khí hậu, việc Nhà nước đánh thuế carbon (carbon tax) đối với các doanh nghiệp gây ô nhiễm là công cụ nhằm giải quyết mâu thuẫn nào sau đây?
+    options:
+      - Mâu thuẫn giữa lợi ích doanh nghiệp và lợi ích người tiêu dùng.
+      - Mâu thuẫn giữa lợi ích giữa nông nghiệp và công nghiệp.
+      - Mâu thuẫn giữa lợi ích ngắn hạn và lợi ích dài hạn của cá nhân.
+      - Mâu thuẫn giữa lợi ích cá nhân (doanh nghiệp) và lợi ích xã hội (môi trường).
+    answer: 3
+    why: D đúng vì thuế carbon buộc doanh nghiệp nội hóa chi phí gây ô nhiễm mà trước đây họ đẩy ra cho xã hội gánh chịu, đây là công cụ điều hòa mâu thuẫn giữa lợi ích riêng của doanh nghiệp và lợi ích chung về môi trường.
+    tags:
+      - phan-iii
+      - goc-cau-18
+      - nhat-tri
+  - id: ktct-229
+    type: single
+    q: Yếu tố nào sau đây đóng vai trò quyết định trong sự phát triển kinh tế và tạo ra các sản phẩm, dịch vụ để đáp ứng nhu cầu xã hội, từ đó tác động trực tiếp đến lợi ích kinh tế?
+    options:
+      - Lực lượng sản xuất
+      - Quan hệ sản xuất
+      - Chính sách phân phối thu nhập của nhà nước
+      - Hội nhập kinh tế quốc tế
+    answer: 0
+    why: A đúng vì lực lượng sản xuất (người lao động và tư liệu sản xuất) quyết định năng suất, tạo ra của cải đáp ứng nhu cầu xã hội, từ đó là cơ sở vật chất quyết định lợi ích kinh tế của các chủ thể.
+    tags:
+      - phan-iii
+      - goc-cau-27
+      - nhat-tri
+  - id: ktct-238
+    type: single
+    q: Việc mở rộng và tăng cường vai trò của các tổ chức xã hội - nghề nghiệp có ý nghĩa gì trong việc giải quyết quan hệ lợi ích kinh tế?
+    options:
+      - Bảo vệ lợi ích của kinh tế nhà nước.
+      - Làm giảm vai trò quản lý của Nhà nước về phân phối, để các tổ chức tự quản lý.
+      - Thay thế hoàn toàn vai trò của các cơ quan tư pháp trong tranh chấp kinh tế.
+      - Làm cầu nối trung gian, bảo vệ lợi ích chính đáng của các chủ thể thành viên và tham gia vào quá trình xây dựng chính sách.
+    answer: 3
+    why: D đúng vì các tổ chức xã hội - nghề nghiệp làm cầu nối trung gian, bảo vệ lợi ích chính đáng của hội viên và tham gia góp ý xây dựng chính sách, chứ không thay thế vai trò quản lý nhà nước hay cơ quan tư pháp như B, C nêu sai.
+    tags:
+      - phan-iii
+      - goc-cau-36
+      - nhat-tri
+  - id: ktct-240
+    type: single
+    q: 'Chọn đáp án đúng nhất: Bản chất của lợi ích kinh tế là:'
+    options:
+      - Lợi ích kinh tế phản ánh mục đích và động cơ của các quan hệ kinh tế giữa các chủ thể trong nền sản xuất xã hội
+      - Lợi ích kinh tế phản ánh mục đích của các quan hệ kinh tế giữa các chủ thể trong nền sản xuất xã hội
+      - Lợi ích kinh tế phản ánh động cơ của các quan hệ kinh tế giữa các chủ thể trong nền sản xuất xã hội
+      - Lợi ích kinh tế phản ánh mục đích và động cơ của các quan hệ kinh tế
+    answer: 0
+    why: 'A đúng nhất vì đây là định nghĩa đầy đủ theo giáo trình: lợi ích kinh tế phản ánh cả mục đích và động cơ của quan hệ kinh tế đặt trong nền sản xuất xã hội; D thiếu vế ''giữa các chủ thể trong nền sản xuất xã hội'' nên chưa đầy đủ bằng A.'
+    tags:
+      - phan-iii
+      - goc-cau-38
+      - nhat-tri
+  - id: ktct-244
+    type: single
+    q: Trong nền kinh tế thị trường định hướng XHCN, vai trò của Nhà nước trong việc đảm bảo hài hòa lợi ích kinh tế được thể hiện rõ nhất qua công cụ nào?
+    options:
+      - Sử dụng các công cụ kinh tế (thuế, trợ cấp, lãi suất) và pháp luật để điều chỉnh các quan hệ lợi ích.
+      - Can thiệp trực tiếp vào quá trình sản xuất của từng doanh nghiệp.
+      - Sử dụng công cụ hành chính để yêu cầu các bên phải thỏa hiệp.
+      - Chỉ tập trung vào lợi ích của khu vực kinh tế nhà nước.
+    answer: 0
+    why: A đúng vì nhà nước đảm bảo hài hòa lợi ích chủ yếu qua công cụ kinh tế (thuế, trợ cấp, lãi suất) kết hợp pháp luật để điều tiết gián tiếp, không can thiệp hành chính trực tiếp vào từng doanh nghiệp như B, C nêu sai.
+    tags:
+      - phan-iii
+      - goc-cau-42
+      - nhat-tri
+  - id: ktct-247
+    type: single
+    q: Yếu tố nào sau đây là biểu hiện của quan hệ lợi ích kinh tế tiêu cực, gây ảnh hưởng xấu đến sự phát triển kinh tế - xã hội?
+    options:
+      - Đầu tư vào giáo dục, y tế và hạ tầng kỹ thuật của nền kinh tế
+      - Cạnh tranh giữa các doanh nghiệp trong cùng một ngành
+      - Hợp tác giữa các nhà đầu tư lớn nhằm thao túng thị trường chứng khoán
+      - Hoạt động tài trợ của các tổ chức phi chính phủ trong cứu trợ do thiên tai, cung cấp nước sạch và bảo vệ môi trường
+    answer: 2
+    why: C đúng vì các nhà đầu tư lớn cấu kết thao túng thị trường chứng khoán là biểu hiện lợi ích nhóm tiêu cực, gây tổn hại lợi ích chung của nhà đầu tư nhỏ lẻ và nền kinh tế; các phương án còn lại đều là hoạt động tích cực.
+    tags:
+      - phan-iii
+      - goc-cau-45
+      - nhat-tri
+  - id: ktct-248
+    type: single
+    q: Việc Nhà nước quy định 'tỷ lệ trích nộp bảo hiểm xã hội bắt buộc' là công cụ nhằm đảm bảo hài hòa lợi ích nào?
+    options:
+      - Lợi ích giữa các vùng miền kinh tế.
+      - Lợi ích giữa các doanh nghiệp vừa và nhỏ.
+      - Lợi ích giữa thế hệ hiện tại và thế hệ tương lai.
+      - Lợi ích giữa người bán và người mua hàng hóa.
+    answer: 2
+    why: Bảo hiểm xã hội bắt buộc thực chất là cơ chế phân phối lại thu nhập giữa người đang lao động đóng góp và người hưởng lương hưu ở thế hệ trước hoặc tương lai, nhằm bảo đảm hài hòa lợi ích giữa các thế hệ.
+    tags:
+      - phan-iii
+      - goc-cau-46
+      - nhat-tri
+  - id: ktct-265
+    type: single
+    q: Mục tiêu chính của chính sách phân phối thu nhập của nhà nước là?
+    options:
+      - Tăng cường vai trò của Nhà nước trong việc phân phối lại của cải
+      - Đảm bảo cán cân thanh toán quốc tế và ổn định kinh tế vĩ mô
+      - Giảm thiểu sự phân hóa giàu nghèo, đảm bảo công bằng xã hội
+      - Tạo ra sự bình đẳng tuyệt đối về thu nhập giữa các tầng lớp dân cư
+    answer: 2
+    why: Mục tiêu cuối cùng của phân phối thu nhập là giảm phân hóa giàu nghèo, bảo đảm công bằng xã hội; phương án D là bẫy vì bình đẳng tuyệt đối về thu nhập không phải mục tiêu và không thể đạt được, còn A chỉ là công cụ thực hiện mục tiêu.
+    tags:
+      - phan-iii
+      - goc-cau-63
+      - nhat-tri
+  - id: ktct-270
+    type: single
+    q: 'Động lực trực tiếp của các chủ thể và hoạt động kinh tế - xã hội là:'
+    options:
+      - Lợi ích văn hoá
+      - Lợi ích tinh thần
+      - Lợi ích chính trị xã hội
+      - Lợi ích kinh tế
+    answer: 3
+    why: Lợi ích kinh tế là động lực trực tiếp, mạnh mẽ nhất thúc đẩy các chủ thể tham gia vào các hoạt động kinh tế - xã hội, các loại lợi ích khác (văn hoá, tinh thần, chính trị) có tác động gián tiếp hơn.
+    tags:
+      - phan-iii
+      - goc-cau-68
+      - nhat-tri
+  - id: ktct-280
+    type: single
+    q: 'Chọn đáp án đúng nhất: Lợi ích kinh tế là:'
+    options:
+      - Là lợi ích thu được khi thực hiện các hoạt động kinh tế
+      - Là các khoản thu nhập của người lao động
+      - Là lợi ích vật chất, lợi ích thu được khi thực hiện các hoạt động kinh tế của con người.
+      - Là lợi nhuận từ đầu tư sản xuất kinh doanh
+    answer: 2
+    why: Lợi ích kinh tế là lợi ích vật chất, là kết quả thu được khi con người thực hiện các hoạt động kinh tế, phương án C diễn đạt đầy đủ và đúng bản chất nhất so với A (thiếu tính chất vật chất) và B, D (chỉ là các dạng biểu hiện cụ thể).
+    tags:
+      - phan-iii
+      - goc-cau-78
+      - nhat-tri
+  - id: ktct-282
+    type: single
+    q: Nguyên tắc cơ bản của giải quyết những mấu thuẫn trong quan hệ lợi ích kinh tế tại Việt Nam hiện nay là?
+    options:
+      - Sử dụng biện pháp hành chính để chấm dứt mâu thuẫn.
+      - Đặt lợi ích quốc gia - dân tộc lên trên hết, đồng thời phải có sự tham gia và tôn trọng lợi ích chính đáng của tất cả các bên
+      - Ưu tiên tuyệt đối lợi ích cá nhân để tạo động lực phát triển kinh tế
+      - Nhà nước tham gia giải quyết khi mâu thuẫn đã trở nên gay gắt
+    answer: 1
+    why: Nguyên tắc cơ bản là đặt lợi ích quốc gia - dân tộc lên trên hết, đồng thời tôn trọng lợi ích chính đáng của các bên liên quan, không thiên lệch tuyệt đối về một phía như phương án C hay chỉ dùng biện pháp hành chính như A.
+    tags:
+      - phan-iii
+      - goc-cau-80
+      - nhat-tri
+  - id: ktct-287
+    type: single
+    q: Phương thức cơ bản để thực hiện lợi ích kinh tế tại Việt Nam hiện nay là
+    options:
+      - Nhà nước quy định tỷ lệ thanh toán tiền lương cho các ngành
+      - Thực hiện lợi ích kinh tế theo nguyên tắc của các tổ chức quốc tế
+      - Thực hiện lợi ích kinh tê theo nguyên tắc thị trường
+      - Thực hiện lợi ích kinh tế theo nguyên tắc của các tổ chức chính trị
+    answer: 2
+    why: Trong nền kinh tế thị trường định hướng XHCN, phương thức cơ bản để thực hiện lợi ích kinh tế là thông qua các nguyên tắc thị trường (cung cầu, cạnh tranh, giá cả), có sự điều tiết của Nhà nước chứ không phải mệnh lệnh hành chính.
+    tags:
+      - phan-iii
+      - goc-cau-85
+      - nhat-tri
+  - id: ktct-290
+    type: single
+    q: Hội nhập kinh tế quốc tế có tác động như thế nào đến quan hệ lợi ích kinh tế trong nước?
+    options:
+      - Mở rộng thị trường, tạo cơ hội cho các chủ thể kinh tế đồng thời gia tăng áp lực cạnh tranh
+      - Kìm hãm sự phát triển của lực lượng sản xuất
+      - Đảm bảo vai trò chủ đạo của kinh tế nhà nước
+      - Tăng tỷ lệ thất nghiệp
+    answer: 0
+    why: Hội nhập kinh tế quốc tế vừa mở rộng thị trường, tạo cơ hội cho các chủ thể kinh tế trong nước, vừa làm gia tăng áp lực cạnh tranh - đây là tác động hai mặt biện chứng, khác với các phương án chỉ nêu một chiều tiêu cực đơn thuần.
+    tags:
+      - phan-iii
+      - goc-cau-88
+      - nhat-tri
+  - id: ktct-296
+    type: single
+    q: Nguyên nhân sâu xa dẫn đến mâu thuẫn trong quan hệ lợi ích kinh tế là?
+    options:
+      - Sự phát triển không đồng đều giữa các vùng kinh tế
+      - Sự khác biệt về trình độ và kỹ năng của người lao động
+      - Quan hệ sản xuất và phương thức chiếm hữu tư liệu sản xuất
+      - Chính sách phân phối thu nhập của nhà nước
+    answer: 2
+    why: Nguyên nhân sâu xa của mâu thuẫn lợi ích kinh tế nằm ở sự khác biệt về vị trí, vai trò trong quan hệ sản xuất và phương thức chiếm hữu tư liệu sản xuất giữa các chủ thể, các phương án còn lại chỉ là biểu hiện hoặc nguyên nhân trực tiếp bề mặt.
+    tags:
+      - phan-iii
+      - goc-cau-94
+      - nhat-tri
+  - id: ktct-297
+    type: single
+    q: Mục đích cốt lõi của chính sách an sinh xã hội ở Việt Nam là gì?
+    options:
+      - Chỉ tập trung vào người già và trẻ em
+      - Tăng cường năng lực cạnh tranh của khu vực kinh tế tư nhân
+      - Chuyển dịch cơ cấu lao động và phát triển kinh tế tri thức
+      - Phòng ngừa, hạn chế và khắc phục rủi ro, bảo đảm an toàn thu nhập và cuộc sống cho mọi người
+    answer: 3
+    why: Mục đích cốt lõi của an sinh xã hội là phòng ngừa, hạn chế và khắc phục rủi ro, bảo đảm an toàn thu nhập và cuộc sống cho mọi người dân, không giới hạn ở một nhóm đối tượng như phương án A.
+    tags:
+      - phan-iii
+      - goc-cau-95
+      - nhat-tri
+  - id: ktct-299
+    type: single
+    q: Lợi ích kinh tế của người sử dụng lao động trong quan hệ lao động là?
+    options:
+      - Tiền lãi từ sở hữu trái phiếu doanh nghiệp
+      - Sự gắn bó của người lao động với doanh nghiệp
+      - Lợi nhuận và giá trị doanh nghiệp
+      - Tiền lương và các khoản thu nhập theo lương
+    answer: 2
+    why: Lợi ích kinh tế của người sử dụng lao động chủ yếu là lợi nhuận và giá trị doanh nghiệp; tiền lương và thu nhập theo lương (phương án D) là lợi ích của người lao động, đây là bẫy dễ nhầm giữa hai chủ thể trong quan hệ lao động.
+    tags:
+      - phan-iii
+      - goc-cau-97
+      - nhat-tri

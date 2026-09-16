@@ -1,0 +1,471 @@
+title: KTCT — Hội nhập kinh tế quốc tế của Việt Nam
+serve: db
+pass: 70
+generated: fable + haiku + opus + sonnet (giải độc lập rồi đối chiếu chéo)
+reviewed: false
+source_hash: a632f58ede1732ac
+questions:
+  - id: ktct-007
+    type: single
+    q: 'Chọn đáp án đúng nhất về tác động tích cực của hội nhập kinh tế quốc tế:'
+    options:
+      - Hội nhập kinh tế quốc tế tạo điều kiện mở rộng thị trường, tiếp thu khoa học - công nghệ, vốn, chuyển dịch cơ cấu kinh tế trong nước.
+      - Hội nhập kinh tế quốc tế gia tăng sự phụ thuộc do nợ nước ngoài, tình trạng bất bình đẳng trương trao đổi mậu dich.
+      - Hội nhập kinh tế quốc tế tạo ra nhiều cơ hội việc làm mới và nâng cao mức thu nhập tương đối của các tầng lớp dân cư.
+      - Hội nhập kinh tế quốc tế giúp mở cửa thị trường, thu hút vốn, thúc đẩy công nghiệp hoá, tăng tích luỹ.
+    answer: 0
+    why: Tác động tích cực chủ yếu của hội nhập kinh tế quốc tế là mở rộng thị trường, tiếp thu khoa học công nghệ, thu hút vốn và chuyển dịch cơ cấu kinh tế. A là phương án đúng nhất, bao quát hơn C, D.
+    tags:
+      - phan-i
+      - goc-cau-7
+      - nhat-tri
+  - id: ktct-013
+    type: single
+    q: 'Chọn đáp án đúng: Trong điều kiện toàn cầu hoá kinh tế, hội nhập kinh tế quốc tế trở thành tất yếu khách quan vì:'
+    options:
+      - Sự phát triển của khoa học - công nghệ làm cho mọi nền kinh tế trở nên độc lập hoàn toàn
+      - Toàn cầu hoá kinh tế đã lôi cuốn tất cả các nước vào hệ thống phân công lao động quốc tế
+      - Các quốc gia ngày càng có nhu cầu hợp tác để tận dụng lợi thế của nhau
+      - Các quốc gia đều muốn mở rộng lãnh thổ và chiếm lĩnh thị trường thế giới
+    answer: 1
+    why: Nguyên nhân khách quan của hội nhập là toàn cầu hoá kinh tế đã lôi cuốn tất cả các nước vào hệ thống phân công lao động quốc tế, tạo thành tất yếu khách quan. A sai (lôi cuốn vào phụ thuộc), C, D là nguyên nhân chủ quan.
+    tags:
+      - phan-i
+      - goc-cau-13
+      - nhat-tri
+  - id: ktct-016
+    type: single
+    q: Giá trị thương hiệu quốc gia của Việt Nam năm 2024 xếp thứ bao nhiêu trong số 193 quốc gia được đánh giá ?
+    options:
+      - '32'
+      - '30'
+      - '33'
+      - '31'
+    answer: 0
+    why: Theo báo cáo Brand Finance Nation Brands 2024, giá trị thương hiệu quốc gia Việt Nam đạt khoảng 507 tỷ USD, xếp thứ 32 trong 193 quốc gia được đánh giá, tăng một bậc so với hạng 33 của năm 2023. Phương án D (31) là số liệu không có thật, còn C (33) là thứ hạng của năm trước chứ không phải năm 2024.
+    tags:
+      - phan-i
+      - goc-cau-16
+      - phan-xu
+  - id: ktct-024
+    type: single
+    q: 'Chủ trương trong quan hệ quốc tế của Việt Nam là:'
+    options:
+      - Việt Nam muốn là bạn, là đối tác của các nước trong cộng đồng quốc tế
+      - Việt Nam sẵn sàng là bạn của các nước trong cộng đồng quốc tế
+      - Việt Nam sẵn sàng là bạn, là đối tác tin cậy của các nước trong cộng đồng quốc tế
+      - Việt Nam sẵn sàng là bạn tin cậy của các nước trong cộng đồng quốc tế
+    answer: 2
+    why: Chủ trương chính thức của Việt Nam trong quan hệ quốc tế là sẵn sàng là bạn, là đối tác tin cậy (không phải bạn thôi hay đối tác thôi). C là công thức đầy đủ và chính xác.
+    tags:
+      - phan-i
+      - goc-cau-24
+      - nhat-tri
+  - id: ktct-029
+    type: single
+    q: 'Chọn đáp án đúng nhất về nội dung hội nhập kinh tế quốc tế:'
+    options:
+      - Thực hiện đa dạng hoá các hình thức hội nhập kinh tế quốc tế.
+      - Chuẩn bị các điều kiện để thực hiện hội nhập hiệu quả, thành công.
+      - Hội nhập kinh tế quốc tế là phương thức phát triển phổ biến của các nước, nhất là các nước đang và kém phát triển trong điều kiện hiện nay.
+      - Các nước đang và kém phát triển cần phải có chiến lược hợp lý, tìm kiếm các đối sách phù hợp để thức ứng với quá trình toàn cầu hoá.
+    answer: 1
+    why: 'Phần ''nội dung hội nhập kinh tế quốc tế'' của giáo trình chỉ gồm hai việc: thứ nhất chuẩn bị các điều kiện để thực hiện hội nhập hiệu quả, thành công; thứ hai thực hiện đa dạng các hình thức, các mức độ hội nhập. C và D không thuộc phần nội dung mà thuộc phần tính tất yếu khách quan của hội nhập, nên loại ngay. Giữa A và B thì B là câu chữ nguyên văn và là bước tiền đề được nêu trước, còn A bị sửa thành ''đa dạng hoá các hình thức'' và bỏ mất vế ''các mức độ'' nên chỉ đúng một phần; đề hỏi ''đúng nhất'' nên chốt B, nhưng cần lưu ý A cũng là một nội dung thật (xem câu 101 phần II, đáp án gộp cả hai vế).'
+    tags:
+      - phan-i
+      - goc-cau-29
+      - phan-xu
+      - can-nguoi-doc-lai
+  - id: ktct-031
+    type: single
+    q: 'Chọn đáp án đúng: Câu nói: “Toàn cầu hoá không tốt, không xấu. Nó có sức mạnh để đem lại vô số điều tốt” là của ai?'
+    options:
+      - Josehp E. Stiglitz
+      - Thomas Friedman
+      - P.A. Samuelson
+      - V.I. Lênin
+    answer: 0
+    why: 'Câu này trích từ Joseph E. Stiglitz trong ''Globalization and Its Discontents'': ''Toàn cầu hoá tự nó không tốt cũng không xấu. Nó có sức mạnh đem lại vô số điều tốt.'' Bẫy là Thomas Friedman vì ông nổi tiếng hơn về đề tài toàn cầu hoá với ''Thế giới phẳng'', nhưng Friedman viết theo hướng ca ngợi thế giới phẳng chứ không phải câu trung tính hai mặt này; chính Stiglitz, người phê phán mặt trái của toàn cầu hoá, mới nhấn mạnh rằng kết quả tuỳ thuộc cách quản trị.'
+    tags:
+      - phan-i
+      - goc-cau-31
+      - phan-xu
+  - id: ktct-047
+    type: single
+    q: 'Chọn đáp án đúng về xây dựng chiến lược và lộ trình hội nhập kinh tế phù hợp:'
+    options:
+      - Về chủ thể tham gia hội nhập, Nhà nước là một chủ thể quan trọng nhưng không phải là duy nhất
+      - Vấn đề tranh thủ thời cơ, vượt qua thách thức trong hội nhập quốc tế là vấn đề cần đặc biệt coi trọng.
+      - Đánh giá được những điều kiện khách quan, chủ quan có ảnh hưởng đến hội nhập kinh tế của nước ta. Cần làm rõ vị trí của Việt Nam để xác định khả năng và điều kiện để có thể hội nhập.
+      - Việt Nam không thể đứng ngoài dòng chảy của lịch sử, hội nhập quốc tế không chỉ là “khẩu hiệu thời thượng” mà phải là “phương thức tồn tại và phát triển” của nước ta hiện nay.
+    answer: 2
+    why: 'Trong mục ''xây dựng chiến lược và lộ trình hội nhập kinh tế phù hợp'', giáo trình liệt kê: đánh giá đúng bối cảnh quốc tế; đánh giá các điều kiện khách quan và chủ quan ảnh hưởng đến hội nhập, làm rõ vị trí của Việt Nam để xác định khả năng và điều kiện hội nhập; nghiên cứu kinh nghiệm các nước; xây dựng phương hướng, mục tiêu, giải pháp; xác định lộ trình hợp lý. C là nguyên văn ý thứ hai. A, B, D đều nằm ở mục trước đó là ''nhận thức sâu sắc về thời cơ và thách thức do hội nhập đem lại'', nên dù nội dung đúng nhưng sai mục mà đề hỏi.'
+    tags:
+      - phan-i
+      - goc-cau-47
+      - phan-xu
+  - id: ktct-054
+    type: single
+    q: 'Chọn khái niệm đúng nhất về toàn cầu hoá:'
+    options:
+      - Toàn cầu hoá là sự phụ thuộc lẫn nhau ngày càng tăng giữa các quốc gia trên quy mô toàn cầu.
+      - Toàn cầu hoá là quá trình tạo ra sự phụ thuộc lẫn nhau ngày càng tăng giữa các quốc gia trên quy mô toàn cầu.
+      - Toàn cầu hoá là quá trình tạo ra liên kết ngày càng tăng giữa các quốc gia trên quy mô toàn cầu.
+      - Toàn cầu hoá là quá trình tạo ra liên kết và sự phụ thuộc lẫn nhau ngày càng tăng giữa các quốc gia trên quy mô toàn cầu.
+    answer: 3
+    why: 'Toàn cầu hóa không chỉ là sự phụ thuộc mà còn là quá trình tạo ra liên kết ngày càng tăng. D là khái niệm đầy đủ nhất, tích hợp cả hai yếu tố: quá trình, liên kết và phụ thuộc lẫn nhau.'
+    tags:
+      - phan-i
+      - goc-cau-54
+      - nhat-tri
+  - id: ktct-060
+    type: single
+    q: Xu thế toàn cầu hóa là gì?
+    options:
+      - Sự liên kết văn hóa
+      - Sự độc quyền của một nước trên thế giới
+      - Sự phát triển độc lập của mỗi quốc gia
+      - Quá trình gia tăng sự phụ thuộc lẫn nhau giữa các quốc gia về kinh tế, chính trị, văn hóa, xã hội
+    answer: 3
+    why: 'Xu thế toàn cầu hóa bao gồm tất cả các lĩnh vực: kinh tế, chính trị, văn hóa, xã hội. D là định nghĩa toàn diện nhất, A chỉ là một khía cạnh.'
+    tags:
+      - phan-i
+      - goc-cau-60
+      - nhat-tri
+  - id: ktct-071
+    type: single
+    q: 'Chọn đáp án đúng nhất về biện pháp trọng tâm để xây dựng thành công nền kinh tế độc lập, tự chủ đi đôi với tích cực hội nhập kinh tế quốc tế:'
+    options:
+      - Hoàn thiện, bổ sung đường lối kinh tế, xây dựng và phát triển đất nước.
+      - Đẩy mạnh công nghiệp hoá, hiện đại hoá đất nước.
+      - Đẩy mạnh quan hệ đối ngoại và chủ động hội nhập kinh tế quốc tế đáp ứng yêu cầu và lợi ích của đất nước.
+      - Tăng cường năng lực cạnh tranh của nền kinh tế bằng hoàn thiện thể chế kinh tế, hành chính, đặc biệt là tăng cường ứng dụng khoa học – công nghệ hiện đại
+    answer: 1
+    why: 'Giáo trình nêu năm biện pháp xây dựng nền kinh tế độc lập, tự chủ, trong đó ghi rõ đẩy mạnh công nghiệp hoá, hiện đại hoá là nhiệm vụ trọng tâm nhằm xây dựng cơ sở vật chất cho chủ nghĩa xã hội, giúp đi tắt đón đầu, tránh tụt hậu. Chính bộ đề này tự xác nhận: câu 98 phần II hỏi ''nhiệm vụ nào được coi là nhiệm vụ trọng tâm... giúp Việt Nam đi tắt, đón đầu'' và đáp án là đẩy mạnh công nghiệp hoá, hiện đại hoá. Phương án D (tăng năng lực cạnh tranh qua thể chế và khoa học - công nghệ) chỉ là biện pháp thứ tư, cần thiết nhưng mang tính điều kiện, không phải biện pháp trọng tâm.'
+    tags:
+      - phan-i
+      - goc-cau-71
+      - phan-xu
+  - id: ktct-092
+    type: single
+    q: 'Chủ trương trong quan hệ quốc tế của Việt Nam là:'
+    options:
+      - Việt Nam sẵn sàng là bạn, là đối tác tin cậy của các nước trong cộng đồng quốc tế
+      - Việt Nam muốn là bạn, là đối tác của các nước trong cộng đồng quốc tế
+      - Việt Nam sẵn sàng là bạn của các nước trong cộng đồng quốc tế
+      - Việt Nam sẵn sàng là bạn tin cậy của các nước trong cộng đồng quốc tế
+    answer: 0
+    why: Chủ trương của Việt Nam là sẵn sàng là bạn, là đối tác tin cậy của các nước trong cộng đồng quốc tế. A là công thức chính thức đầy đủ.
+    tags:
+      - phan-i
+      - goc-cau-92
+      - nhat-tri
+  - id: ktct-097
+    type: single
+    q: 'Lựa chọn các từ thích hợp dưới đây để điền vào chỗ chấm: Nền kinh tế độc lập, tự chủ là nền kinh tế không bị …(1)…., phụ thuộc vào nước khác, người khác hoặc vào một tổ chức kinh tế nào đó về đường lối, chính sách phát triển, không bị bất cứ ai dùng những điều kiện kinh tế, tài chính, thương mại, viện trợ…để …(2)……, khống chế làm tổn hại …(3)….. quốc gia và …(4)…. cơ bản của dân tộc.'
+    options:
+      - khống chế; áp đặt; lợi ích; chủ quyền.
+      - khống chế; chi phối; lợi ích; chủ quyền.
+      - lệ thuộc; áp đặt; chủ quyền; lợi ích.
+      - lệ thuộc; chi phối; chủ quyền; lợi ích.
+    answer: 2
+    why: 'Nguyên văn giáo trình: nền kinh tế độc lập, tự chủ là nền kinh tế không bị LỆ THUỘC, phụ thuộc vào nước khác... không bị bất cứ ai dùng những điều kiện kinh tế, tài chính, thương mại, viện trợ để ÁP ĐẶT, khống chế, làm tổn hại CHỦ QUYỀN quốc gia và LỢI ÍCH cơ bản của dân tộc. Hai dấu hiệu nhận biết: chỗ (1) phải ghép được với ''phụ thuộc'' ngay sau nó nên là ''lệ thuộc''; chỗ (2) phải khác với ''khống chế'' đứng liền sau nên là ''áp đặt''. Bẫy ở B là đảo thứ tự thành ''lợi ích quốc gia'' và ''chủ quyền của dân tộc'', vốn sai cách kết hợp từ.'
+    tags:
+      - phan-i
+      - goc-cau-97
+      - phan-xu
+  - id: ktct-202
+    type: single
+    q: 'Nội dung của hội nhập kinh tế quốc tế ở nước ta là:'
+    options:
+      - thực hiện các hình thức, các mức độ hội nhập kinh tế quốc tế và phát huy nội lực.
+      - đa phương hoá các quan hệ đối ngoại và thực hiện các hình thức, các mức độ hội nhập kinh tế quốc tế
+      - chuẩn bị các điều kiện để thực hiện hội nhập hiệu quả, thành công và thực hiện đa phương hoá các quan hệ đối ngoại
+      - chuẩn bị các điều kiện để thực hiện hội nhập hiệu quả, thành công và thực hiện đa dạng các hình thức, các mức độ hội nhập kinh tế quốc tế.
+    answer: 3
+    why: Nội dung hội nhập kinh tế quốc tế ở Việt Nam là thực hiện đa dạng các hình thức, mức độ hội nhập kinh tế quốc tế và phát huy nội lực.
+    tags:
+      - phan-ii
+      - goc-cau-101
+      - nhat-tri
+  - id: ktct-206
+    type: single
+    q: 'Đối với các nước đang và kém phát triển như hiện nay thì hội nhập kinh tế quốc tế càng trở nên cần thiết vì hội nhập kinh tế quốc tế:'
+    options:
+      - Là cơ hội để các nước này tiếp cận và sử dụng được các nguồn lực bên ngoài như tài chính, khoa học - công nghệ, kinh nghiệm của các nước cho phát triển.
+      - Tạo ra khoảng cách ngày càng xa giữa các nước phát triển với các nước đang và kém phát triển.
+      - Có thể làm gia tăng sự phụ thuộc của nền kinh tế quốc gia vào thị trường bên ngoài.
+      - Tạo điều kiện để các nước này tranh thủ nguồn việc trợ từ các nước phát triển trên thế giới.
+    answer: 0
+    why: A đúng vì hội nhập giúp nước đang và kém phát triển tiếp cận vốn, khoa học công nghệ, kinh nghiệm quản lý từ bên ngoài để rút ngắn khoảng cách phát triển; B và C là nguy cơ tiêu cực chứ không phải lý do khiến hội nhập trở nên cần thiết, dễ nhầm nếu đọc lướt.
+    tags:
+      - phan-iii
+      - goc-cau-4
+      - nhat-tri
+  - id: ktct-209
+    type: single
+    q: 'Chọn đáp án sai về chuẩn bị các điều kiện để thực hiện hội nhập hiệu quả, thành công:'
+    options:
+      - Quá trình hội nhập phải được cân nhắc với lộ trình và cách thức tối ưu.
+      - Hội nhập kinh tế quốc tế chỉ cần chú trọng đến hợp tác kinh tế song phương, không cần đến đa phương
+      - Phải có sự chuẩn bị các điều kiện trọng nội bộ nền kinh tế cũng như các môi quan hệ quốc tế thích hợp.
+      - 'Hội nhập kinh tế quốc tế là toàn bộ các hoạt động kinh tế đối ngoại của một nước gồm nhiều hình thức như: ngoại thương, đầu tư quốc tế.'
+    answer: 1
+    why: Đáp án sai là B vì hội nhập hiệu quả đòi hỏi kết hợp cả hợp tác song phương lẫn đa phương, không thể chỉ chú trọng song phương mà bỏ qua đa phương; đây là câu phủ định một nguyên tắc đúng nên chính là phương án sai cần chọn.
+    tags:
+      - phan-iii
+      - goc-cau-7
+      - nhat-tri
+  - id: ktct-219
+    type: single
+    q: 'Chọn đáp án đúng: Trong các phương diện của toàn cầu hoá, phương diện nào là trung tâm?'
+    options:
+      - Toàn cầu hoá về kinh tế
+      - Toàn cầu hoá về chính trị
+      - Toàn cầu hoá về văn hoá
+      - Toàn cầu hoá về xã hội
+    answer: 0
+    why: A đúng vì trong các phương diện toàn cầu hóa (kinh tế, chính trị, văn hóa, xã hội), toàn cầu hóa kinh tế là trung tâm, chi phối và là cơ sở thúc đẩy các phương diện còn lại.
+    tags:
+      - phan-iii
+      - goc-cau-17
+      - nhat-tri
+  - id: ktct-221
+    type: single
+    q: Nội dung “Xây dựng nền kinh tế tự chủ phải trên cơ sở làm chủ công nghệ và chủ động, tích cực hội nhập, đa dạng hóa thị trường, nâng cao khả năng thích ứng của nền kinh tế” được Đảng ta nêu rõ trong văn bản nào dưới đây?
+    options:
+      - Chiến lược phát triển kinh tế - xã hội 2021 - 2030.
+      - Chiến lược phát triển kinh tế - xã hội 2001 – 2010.
+      - Chiến lược phát triển kinh tế - xã hội 2011 – 2020.
+      - Chiến lược phát triển kinh tế - xã hội 1991 – 2000.
+    answer: 0
+    why: A đúng vì nội dung này được nêu trong Chiến lược phát triển kinh tế - xã hội 2021-2030 (Đại hội XIII), nhấn mạnh xây dựng nền kinh tế độc lập, tự chủ gắn với chủ động, tích cực hội nhập quốc tế.
+    tags:
+      - phan-iii
+      - goc-cau-19
+      - nhat-tri
+  - id: ktct-225
+    type: single
+    q: 'Chọn đáp án sai về phương hướng nâng cao năng lực cạnh tranh quốc tế của nền kinh tế:'
+    options:
+      - Phải học cách thức kinh doanh trong bối cảnh mới.
+      - Để đứng vững trong cạnh tranh các doanh nghiệp phải chú trọng tới đầu tư, cái tiến công nghệ để nâng cao khả năng cạnh tranh của mình.
+      - Nhà nước cần tăng cường hỗ trợ các doanh nghiệp, giúp các doanh nghiệp vượt qua những thách thức của thời kỳ hội nhập.
+      - Triển khai đầy đủ, nghiêm túc các cam kết hội nhập kinh tế quốc tế, đặc biệt là cắt giảm thuế quan, mở cửa dịch vụ, đầu tư.
+    answer: 3
+    why: 'Đề hỏi đáp án SAI. Phương hướng ''nâng cao năng lực cạnh tranh quốc tế của nền kinh tế'' trong giáo trình gồm: doanh nghiệp phải đầu tư, cải tiến công nghệ (B); nhà nước hỗ trợ doanh nghiệp vượt thách thức hội nhập (C); phải học cách thức kinh doanh trong bối cảnh mới (A). Việc triển khai đầy đủ, nghiêm túc các cam kết hội nhập, cắt giảm thuế quan, mở cửa dịch vụ, đầu tư thuộc phương hướng ''thực hiện đầy đủ các cam kết/chủ động tham gia liên kết kinh tế quốc tế''. Bẫy là cả bốn câu đều là phát biểu đúng về hội nhập nói chung, phải loại theo đúng đầu mục chứ không theo đúng/sai nội dung.'
+    tags:
+      - phan-iii
+      - goc-cau-23
+      - phan-xu
+  - id: ktct-234
+    type: single
+    q: 'Chọn đáp án đúng nhất: Hội nhập kinh tế quốc tế là gì?'
+    options:
+      - Là quá trình quốc gia đó tham gia vào các tổ chức kinh tế của khu vực và thế giới.
+      - Là quá trình quốc gia đó tham gia vào các hoạt động chính trị tại các diễn đàn thế giới.
+      - Là quá trình mở cửa nền kinh tế với thế giới.
+      - Là quá trình quốc gia đó thực hiện gắn kết nền kinh tế của mình với nền kinh tế thế giới dựa trên sự chia sẻ lợi ích, đồng thời tuân thủ các chuẩn mực quốc tế chung
+    answer: 3
+    why: D đúng nhất vì đây là định nghĩa đầy đủ theo giáo trình, nhấn mạnh cả việc gắn kết nền kinh tế trên cơ sở chia sẻ lợi ích và tuân thủ chuẩn mực quốc tế chung; A, C chỉ nêu một khía cạnh chưa đầy đủ, B sai vì hội nhập kinh tế không phải hoạt động chính trị.
+    tags:
+      - phan-iii
+      - goc-cau-32
+      - nhat-tri
+  - id: ktct-243
+    type: single
+    q: Đâu là một thách thức lớn đối với doanh nghiệp Việt Nam trong hội nhập?
+    options:
+      - Thiếu vốn
+      - Khả năng cạnh tranh còn hạn chế, thiếu công nghệ, quản lý chưa chuyên nghiệp
+      - Quá nhiều cơ hội
+      - Thị trường quá lớn
+    answer: 1
+    why: B đúng vì thách thức lớn nhất, bao quát của doanh nghiệp Việt Nam khi hội nhập là năng lực cạnh tranh còn yếu, thiếu công nghệ và quản lý chưa chuyên nghiệp; C, D là bẫy vì cơ hội/thị trường lớn không phải là thách thức.
+    tags:
+      - phan-iii
+      - goc-cau-41
+      - nhat-tri
+  - id: ktct-245
+    type: single
+    q: 'Chọn đáp án không đúng: Hội nhập kinh tế quốc tế sâu rộng đòi hỏi Việt Nam phải?'
+    options:
+      - Phụ thuộc hoàn toàn vào các tổ chức và doanh nghiệp nước ngoài
+      - Mở rộng thị trường và tăng cường thu hút đầu tư nước ngoài
+      - Nâng cao năng lực quản lý và sức cạnh tranh của nền kinh tế
+      - Hoàn thiện hệ thống pháp luật, thể chế phù hợp với chuẩn mực quốc tế
+    answer: 0
+    why: Đáp án không đúng là A vì hội nhập sâu rộng không đồng nghĩa với phụ thuộc hoàn toàn vào bên ngoài, mà đòi hỏi giữ vững độc lập tự chủ song song với mở cửa; đây là ý cực đoan sai lệch bản chất hội nhập nên bị chọn.
+    tags:
+      - phan-iii
+      - goc-cau-43
+      - nhat-tri
+  - id: ktct-253
+    type: single
+    q: Quan hệ lợi ích kinh tế trong hội nhập quốc tế được xác định dựa trên nguyên tắc nào là chủ đạo?
+    options:
+      - Đặc biệt ưu đãi đối với vốn đầu tư trực tiếp nước ngoài (FDI) trong lĩnh vực công nghiệp nặng
+      - Ưu tiên lợi ích của các đối tác thương mại lớn.
+      - Thực hiện chính sách bảo hộ sản xuất trong nước
+      - Đảm bảo lợi ích quốc gia - dân tộc là tối cao, trên cơ sở bình đẳng, cùng có lợi và tôn trọng luật pháp quốc tế.
+    answer: 3
+    why: D đúng vì nguyên tắc chủ đạo trong quan hệ lợi ích kinh tế khi hội nhập là đặt lợi ích quốc gia - dân tộc lên trên hết, trên cơ sở bình đẳng, cùng có lợi và tôn trọng luật pháp quốc tế, không thiên vị đối tác lớn hay bảo hộ cực đoan như các phương án còn lại.
+    tags:
+      - phan-iii
+      - goc-cau-51
+      - nhat-tri
+  - id: ktct-255
+    type: single
+    q: 'Chọn đáp án đúng về tác động tích cực của hội nhập kinh tế quốc tế:'
+    options:
+      - Hội nhập kinh tế quốc tế làm gia tăng sự phụ thuộc của nền kinh tế quốc gia vào thị trường bên ngoài.
+      - Hội nhập kinh tế quốc tế dẫn tới các nước đang phát triển đối mặt với nguy cơ chuyển dịch cơ cấu kinh tế tự nhiên bất lợi.
+      - Hội nhập kinh tế quốc tế làm gia tăng sự cạnh tranh gay gắt khiến nhiều doanh nghiệp và ngành kinh tế gặp khó khăn trong phát triển.
+      - Tạo điều kiện mở rộng thị trường, tiếp thu khoa học - công nghệ, vốn, chuyển dịch cơ cấu kinh tế trong nước.
+    answer: 3
+    why: 'D đúng vì đây là tác động tích cực điển hình của hội nhập: mở rộng thị trường, tiếp thu khoa học công nghệ, vốn, thúc đẩy chuyển dịch cơ cấu kinh tế theo hướng tích cực; A, B, C đều là các tác động tiêu cực/nguy cơ, dễ nhầm nếu không đọc kỹ yêu cầu đề chọn ý tích cực.'
+    tags:
+      - phan-iii
+      - goc-cau-53
+      - nhat-tri
+  - id: ktct-258
+    type: single
+    q: 'Chọn đáp án sai về tác động tiêu cực của hội nhập kinh tế quốc tế:'
+    options:
+      - Hội nhập kinh tế quốc tế làm tăng cơ hội cho các doanh nghiệp trong nước tiếp cận thị trường quốc tế, nguồn tín dụng và các đối tác quốc tế.
+      - Hội nhập kinh tế quốc tế làm gia tăng sự phụ thuộc của nền kinh tế quốc gia vào thị trường bên ngoài.
+      - Hội nhập kinh tế quốc tế làm gia tăng sự cạnh tranh gay gắt khiến nhiều doanh nghiệp và ngành kinh tế gặp khó khăn trong phát triển.
+      - Hội nhập kinh tế quốc tế dẫn tới các nước đang phát triển đối mặt với nguy cơ chuyển dịch cơ cấu kinh tế tự nhiên bất lợi.
+    answer: 0
+    why: Bẫy nằm ở việc đề hỏi tác động tiêu cực nhưng phương án A lại mô tả một tác động tích cực (mở rộng cơ hội tiếp cận thị trường, tín dụng, đối tác quốc tế), nên đây là phương án sai cần chọn.
+    tags:
+      - phan-iii
+      - goc-cau-56
+      - nhat-tri
+  - id: ktct-259
+    type: single
+    q: 'Chọn đáp án đúng: Việt Nam gia nhập Tổ chức Thương mại thế giới (WTO) năm nào?'
+    options:
+      - '2006'
+      - '2005'
+      - '2004'
+      - '2007'
+    answer: 3
+    why: Việt Nam chính thức trở thành thành viên thứ 150 của WTO vào ngày 11/1/2007.
+    tags:
+      - phan-iii
+      - goc-cau-57
+      - nhat-tri
+  - id: ktct-260
+    type: single
+    q: 'Việt Nam không tham gia tổ chức nào sau đây:'
+    options:
+      - APEC
+      - OPEC
+      - ASEAN
+      - WTO
+    answer: 1
+    why: Việt Nam không phải thành viên của OPEC (Tổ chức các nước xuất khẩu dầu mỏ) vì không phải quốc gia xuất khẩu dầu mỏ chủ lực, trong khi có tham gia APEC, ASEAN, WTO.
+    tags:
+      - phan-iii
+      - goc-cau-58
+      - nhat-tri
+  - id: ktct-266
+    type: single
+    q: 'Hội nhập kinh tế quốc tế mang tính tất yếu khách quan vì:'
+    options:
+      - Hội nhập kinh tế quốc tế là xu hướng phát triển riêng của các nước lớn trên thế giới
+      - Hội nhập kinh tế quốc tế góp phần hạn chế chủ quyền quốc gia của các nước kém phát triển
+      - Hội nhập kinh tế quốc tế là phương thức phát triển phổ biến của các nước
+      - Hội nhập kinh tế quốc tế không phải là con đường giúp các nước kém phát triển khắc phục nguy cơ tụt hậu
+    answer: 2
+    why: Hội nhập kinh tế quốc tế là phương thức phát triển phổ biến của các nước, nhất là nước đang và kém phát triển trong điều kiện toàn cầu hoá hiện nay; các phương án A, B, D nêu sai bản chất (không phải xu hướng riêng của nước lớn, không hạn chế chủ quyền, và có giúp khắc phục tụt hậu).
+    tags:
+      - phan-iii
+      - goc-cau-64
+      - nhat-tri
+  - id: ktct-271
+    type: single
+    q: 'Chọn đáp án đúng nhất: Hội nhập kinh tế quốc tế có tác động tích cực như thế nào tới Việt Nam?'
+    options:
+      - Tạo điều kiện mở rộng thị trường, tiếp thu khoa học công nghệ, vốnn nâng cao chất lượng nguồn nhân lực cho Việt Nam.
+      - Giúp mở rộng cơ hội hợp tác để giao lực văn hoá và nâng cao năng lực quốc phòng.
+      - Giúp Việt Nam mở rộng hợp tác với các nước, tham gia vào các tổ chức kinh tế quốc tế.
+      - Giúp Việt Nam khẳng định vị thế và uy tín trên trường quốc tế.
+    answer: 0
+    why: 'Phương án A khái quát đầy đủ nhất các tác động tích cực cơ bản của hội nhập được giáo trình nêu: mở rộng thị trường, thu hút vốn, tiếp thu khoa học công nghệ và nâng cao chất lượng nguồn nhân lực, trong khi các phương án còn lại chỉ nêu một khía cạnh nhỏ, hẹp hơn.'
+    tags:
+      - phan-iii
+      - goc-cau-69
+      - nhat-tri
+  - id: ktct-272
+    type: single
+    q: 'Để thích nghi với hội nhập, Việt Nam cần:'
+    options:
+      - Tự sản xuất toàn bộ sản phẩm mà không tham gia thương mại quốc tế
+      - Đổi mới tư duy, cải cách thể chế, nâng cao năng lực cạnh tranh
+      - Cấm các hoạt động đầu tư từ khu vực doanh nghiệp nước ngoài
+      - Hạn chế việc tiếp cận và ứng dụng các tiến bộ khoa học – công nghệ mới
+    answer: 1
+    why: Để thích nghi và tận dụng cơ hội của hội nhập, Việt Nam cần chủ động đổi mới tư duy, cải cách thể chế, nâng cao năng lực cạnh tranh, ngược lại với việc đóng cửa nền kinh tế như các phương án A, C, D.
+    tags:
+      - phan-iii
+      - goc-cau-70
+      - nhat-tri
+  - id: ktct-273
+    type: single
+    q: 'Chọn đáp án đúng nhất: Tại sao các quốc gia phải đẩy mạnh hội nhập kinh tế quốc tế?'
+    options:
+      - Do hội nhập giúp các quốc gia phát huy lợi thế và tăng trưởng kinh tế
+      - Do sự phát triển của phân công lao động quốc tế
+      - Do các yếu tố sản xuất ngày càng mang tính toàn cầu
+      - Do nhu cầu hợp tác để giải quyết các vấn đề chung của nhân loại
+    answer: 0
+    why: 'Giáo trình nêu hai lý do của tính tất yếu hội nhập: một là xu thế khách quan trong bối cảnh toàn cầu hóa kinh tế, hai là hội nhập là phương thức phát triển phổ biến giúp các nước, nhất là nước đang phát triển, tiếp cận nguồn lực bên ngoài, phát huy lợi thế so sánh và thúc đẩy tăng trưởng. Ba phương án B, C, D đều chỉ là những mặt bộ phận của cùng một lý do thứ nhất (phân công lao động quốc tế, các yếu tố sản xuất mang tính toàn cầu, nhu cầu giải quyết vấn đề toàn cầu) nên không thể là đáp án ''đúng nhất'' khi cả ba cùng đứng cạnh nhau; A mới là lý do trực tiếp giải thích vì sao mỗi quốc gia chủ động đẩy mạnh hội nhập và bao quát được lợi ích của việc hội nhập.'
+    tags:
+      - phan-iii
+      - goc-cau-71
+      - phan-xu
+      - can-nguoi-doc-lai
+  - id: ktct-286
+    type: single
+    q: Để khai thác hiệu quả các Hiệp định thương mại tự do (FTA), Việt Nam cần?
+    options:
+      - Tăng cường nhập khẩu từ các quốc gia đối tác FTA
+      - Hạn chế hoạt động xuất khẩu để bảo vệ thị trường trong nước
+      - Nâng cao năng lực cạnh tranh, đa dạng hóa thị trường, nâng cao chất lượng sản phẩm
+      - Chỉ tập trung vào phát triển một thị trường duy nhất để giảm rủi ro
+    answer: 2
+    why: Để khai thác hiệu quả các FTA, Việt Nam cần chủ động nâng cao năng lực cạnh tranh, đa dạng hoá thị trường và nâng cao chất lượng sản phẩm, thay vì thu hẹp hoạt động thương mại như các phương án B, D.
+    tags:
+      - phan-iii
+      - goc-cau-84
+      - nhat-tri
+  - id: ktct-288
+    type: single
+    q: Để thành công trong hội nhập, Việt Nam cần chú trọng đến việc?
+    options:
+      - Tăng cường các biện pháp phòng vệ và hạn chế mở cửa thị trường
+      - Nâng cao chất lượng nguồn nhân lực, đặc biệt là nhân lực có trình độ cao
+      - Giảm dần các hoạt động trao đổi và hợp tác quốc tế
+      - Chỉ dựa vào khai thác tài nguyên thiên nhiên để phát triển kinh tế
+    answer: 1
+    why: Nguồn nhân lực chất lượng cao là yếu tố then chốt quyết định năng lực cạnh tranh quốc gia trong hội nhập, khác với hướng đóng cửa hoặc chỉ dựa vào tài nguyên như các phương án còn lại.
+    tags:
+      - phan-iii
+      - goc-cau-86
+      - nhat-tri
+  - id: ktct-303
+    type: single
+    q: Việt Nam ra nhập Hiệp hội các quốc gia Đông Nam Á ( ASEAN) vào năm nào?
+    options:
+      - '1997'
+      - '1998'
+      - '1995'
+      - '1996'
+    answer: 2
+    why: Việt Nam chính thức gia nhập ASEAN vào ngày 28/7/1995.
+    tags:
+      - phan-iii
+      - goc-cau-101
+      - nhat-tri
