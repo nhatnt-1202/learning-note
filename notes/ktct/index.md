@@ -13,4 +13,7 @@ Ngân hàng 303 câu trắc nghiệm, chia theo chương của giáo trình.
 | [Công nghiệp hoá, hiện đại hoá ở Việt Nam](/notes/ktct/07-cong-nghiep-hoa-hien-dai-hoa) | 36 |
 | [Hội nhập kinh tế quốc tế của Việt Nam](/notes/ktct/08-hoi-nhap-kinh-te-quoc-te) | 33 |
 
+Muốn làm liền một mạch thì vào [Làm cả bộ đề](/notes/ktct/toan-bo) — cũng ở đó
+rút ngẫu nhiên 30/50/100 câu để thi thử.
+
 Điểm, hàng đợi ôn tập và bảng xếp hạng nằm ở [trang Quiz](/notes/quiz/).

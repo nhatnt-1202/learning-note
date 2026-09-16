@@ -232,6 +232,29 @@ for (const t of TOPICS) {
   summary.push({...t, n: list.length});
 }
 
+// Trang làm cả bộ. Không có .quiz.yml đi kèm: nó đọc lại câu hỏi của tám chương
+// từ DB chứ không giữ bản sao của chúng.
+fs.writeFileSync(
+  path.join(OUT_DIR, "toan-bo.md"),
+  `# Làm cả bộ đề
+
+Toàn bộ ${rows.length} câu trong một lượt, hoặc rút ngẫu nhiên một phần để thi thử.
+
+<QuizBank prefix="notes/ktct/" title="KTCT — cả bộ đề" />
+
+## Lưu ý
+
+Câu hỏi ở đây là **chính những câu của tám chương**, không phải bản sao. Nhờ vậy
+làm ở đâu thì hàng đợi ôn tập cũng chung một chỗ: sai một câu ở trang này thì
+lần sau vào chương tương ứng vẫn thấy nó được hẹn ôn.
+
+Đổi lại, một lượt ở đây trải trên nhiều đề nên **không có đề nào để ghi điểm** —
+điểm vẫn hiện ngay sau khi chấm, chỉ là không vào
+[bảng xếp hạng](/notes/quiz/#bang-xep-hang). Muốn lên hạng thì làm theo từng
+chương.
+`
+);
+
 // Trang mục lục của cả phần.
 const index = `# Kinh tế chính trị Mác - Lênin
 
@@ -243,6 +266,9 @@ ${summary
   .filter((s) => s.n)
   .map((s) => `| [${s.title}](/notes/ktct/${s.slug}) | ${s.n} |`)
   .join("\n")}
+
+Muốn làm liền một mạch thì vào [Làm cả bộ đề](/notes/ktct/toan-bo) — cũng ở đó
+rút ngẫu nhiên 30/50/100 câu để thi thử.
 
 Điểm, hàng đợi ôn tập và bảng xếp hạng nằm ở [trang Quiz](/notes/quiz/).
 `;

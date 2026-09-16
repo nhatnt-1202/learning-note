@@ -3,6 +3,7 @@ import CodePlayground from "./components/CodePlayground.vue";
 import Quiz from "./components/Quiz.vue";
 import QuizHub from "./components/QuizHub.vue";
 import Leaderboard from "./components/Leaderboard.vue";
+import QuizBank from "./components/QuizBank.vue";
 
 export default {
   extends: DefaultTheme,
@@ -11,5 +12,6 @@ export default {
     app.component("Quiz", Quiz);
     app.component("QuizHub", QuizHub);
     app.component("Leaderboard", Leaderboard);
+    app.component("QuizBank", QuizBank);
   }
 };

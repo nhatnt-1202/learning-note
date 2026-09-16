@@ -83,6 +83,22 @@ Mỗi câu mang tag để tra ngược: `phan-i|ii|iii`, `goc-cau-<số>` (số 
 gốc), và `nhat-tri` hoặc `phan-xu`. Câu do người phân xử đánh dấu đề có vấn đề
 mang thêm tag `de-co-van-de`.
 
+## Trang "Làm cả bộ đề"
+
+`notes/ktct/toan-bo.md` cho làm cả 303 câu một lượt, hoặc rút ngẫu nhiên
+30/50/100 câu để thi thử. Nó **không có `.quiz.yml`** đi kèm, và đó là chỗ đáng
+chú ý nhất: trang này đọc lại chính những câu của tám chương từ DB.
+
+Cách dễ hơn là tạo một đề thứ chín chứa lại 303 câu. Nhưng bản sao sẽ mang id
+khác, nên hàng đợi ôn tập coi chúng là câu khác — sai một câu ở trang tổng sẽ
+không làm câu tương ứng trong chương được hẹn ôn — và bảng xếp hạng đếm cùng một
+kiến thức hai lần.
+
+Cái giá của việc đọc lại: một lượt ở đây trải trên nhiều đề nên không có đề nào
+để ghi `attempts`, tức là không vào bảng xếp hạng. Chấm bằng `grade_review` (cả
+bài) và `grade_one` (từng câu) — cả hai đều cập nhật hàng đợi ôn tập mà không
+cần thuộc về đề nào.
+
 ## Vì sao `shuffle: false`
 
 Các đề khác trộn thứ tự đáp án mỗi lần làm, để làm lại lần hai không nhớ được

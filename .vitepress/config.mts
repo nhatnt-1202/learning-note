@@ -414,7 +414,10 @@ export default defineConfig({
       "/notes/ktct/": [
         {
           text: "Kinh tế chính trị Mác - Lênin",
-          items: [{text: "Mục lục", link: "/notes/ktct/"}]
+          items: [
+            {text: "Mục lục", link: "/notes/ktct/"},
+            {text: "Làm cả bộ đề", link: "/notes/ktct/toan-bo"}
+          ]
         },
         {
           text: "Ngân hàng câu hỏi",

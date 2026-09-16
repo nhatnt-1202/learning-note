@@ -250,6 +250,50 @@ export async function recordAttempt(quiz: Quiz, picks: Record<string, unknown>) 
   if (error) throw error;
 }
 
+/**
+ * Gom câu hỏi của nhiều đề thành một ngân hàng để làm một lượt.
+ *
+ * Đọc lại chính những câu đã có chứ không tạo một đề thứ chín chứa bản sao:
+ * bản sao sẽ mang id khác, nên hàng đợi ôn tập coi chúng là câu khác và bảng
+ * xếp hạng đếm gấp đôi cùng một kiến thức.
+ */
+export async function loadBank(slugPrefix: string): Promise<QuizQuestion[]> {
+  const sb = await getSupabase();
+  if (!sb) return [];
+
+  const {data: quizzes, error} = await sb
+    .from("quizzes")
+    .select("id, slug")
+    .like("slug", `${slugPrefix}%`)
+    .order("slug", {ascending: true});
+  if (error) throw error;
+  if (!quizzes?.length) return [];
+
+  const rank = new Map(quizzes.map((q: any, i: number) => [q.id, i]));
+
+  const {data: qs, error: qErr} = await sb
+    .from("questions_public")
+    .select("id, quiz_id, position, type, prompt, options, case_sensitive")
+    .in("quiz_id", quizzes.map((q: any) => q.id));
+  if (qErr) throw qErr;
+
+  // Sắp lại ở client: PostgREST không xếp được theo thứ tự đề rồi mới tới thứ
+  // tự câu trong đề bằng một lần gọi.
+  return (qs ?? [])
+    .sort(
+      (a: any, b: any) =>
+        (rank.get(a.quiz_id) ?? 0) - (rank.get(b.quiz_id) ?? 0) || a.position - b.position
+    )
+    .map((q: any) => ({
+      id: q.id,
+      type: q.type,
+      promptHtml: renderMd(q.prompt),
+      options: q.options ?? null,
+      optionsHtml: q.options ? q.options.map((o: string) => renderMd(o)) : null,
+      caseSensitive: Boolean(q.case_sensitive)
+    }));
+}
+
 // ── Danh sách đề & ôn tập chéo ──────────────────────────────────────────────
 
 export type QuizRow = {
