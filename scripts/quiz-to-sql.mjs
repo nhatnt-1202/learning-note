@@ -46,12 +46,15 @@ for (const rel of collectQuizFiles(ROOT)) {
   // chung một snapshot, nên INSERT sẽ không thấy DELETE vừa chạy và đâm vào
   // ràng buộc unique (quiz_id, position).
   out.push(`insert into public.quizzes`);
-  out.push(`  (slug, lesson_path, title, source, visibility, owner_id, pass_score, model, source_hash)`);
+  out.push(`  (slug, lesson_path, title, source, visibility, owner_id, pass_score,`);
+  out.push(`   shuffle_options, model, source_hash)`);
   out.push(`values (${lit(lessonPath)}, ${lit(lessonPath)}, ${lit(quiz.title)},`);
-  out.push(`        'auto', 'public', null, ${quiz.pass}, ${lit(quiz.generated)}, ${lit(quiz.sourceHash)})`);
+  out.push(`        'auto', 'public', null, ${quiz.pass}, ${quiz.shuffle},`);
+  out.push(`        ${lit(quiz.generated)}, ${lit(quiz.sourceHash)})`);
   out.push(`on conflict (slug) do update set`);
   out.push(`  title = excluded.title, lesson_path = excluded.lesson_path,`);
   out.push(`  pass_score = excluded.pass_score, model = excluded.model,`);
+  out.push(`  shuffle_options = excluded.shuffle_options,`);
   out.push(`  source_hash = excluded.source_hash, updated_at = now();`);
   out.push(``);
   out.push(`delete from public.questions`);

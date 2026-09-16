@@ -30,6 +30,8 @@ export type Quiz = {
   pass: number;
   generated: string | null;
   reviewed: boolean;
+  /** false = giữ nguyên thứ tự đáp án như trong đề gốc. */
+  shuffle: boolean;
   questions: QuizQuestion[];
 };
 
@@ -47,6 +49,7 @@ export function fromPageData(raw: any): Quiz {
     pass: raw.pass,
     generated: raw.generated ?? null,
     reviewed: Boolean(raw.reviewed),
+    shuffle: raw.shuffle !== false,
     questions: raw.questions.map((q: any) => ({
       id: q.id,
       type: q.type,
@@ -67,7 +70,7 @@ export async function loadForLesson(lessonPath: string): Promise<Quiz | null> {
 
   const {data: rows, error} = await sb
     .from("quizzes")
-    .select("id, title, pass_score, model, source, visibility")
+    .select("id, title, pass_score, model, source, visibility, shuffle_options")
     .eq("lesson_path", lessonPath)
     // Đề của site trước, rồi mới tới đề người dùng chia sẻ cho bài này.
     .order("source", {ascending: true})
@@ -85,7 +88,7 @@ export async function loadById(quizId: string): Promise<Quiz | null> {
 
   const {data, error} = await sb
     .from("quizzes")
-    .select("id, title, pass_score, model, source, visibility")
+    .select("id, title, pass_score, model, source, visibility, shuffle_options")
     .eq("id", quizId)
     .maybeSingle();
   if (error) throw error;
@@ -111,6 +114,7 @@ async function withQuestions(row: any): Promise<Quiz> {
     pass: row.pass_score,
     generated: row.source === "auto" ? row.model : null,
     reviewed: row.source !== "auto",
+    shuffle: row.shuffle_options !== false,
     questions: (qs ?? []).map((q: any) => ({
       id: q.id,
       type: q.type,

@@ -54,5 +54,18 @@ begin
     raise exception '% câu: nhập đúng đáp án đã lưu mà vẫn bị tính sai', v_bad;
   end if;
   raise notice '% câu hỏi nạp từ YAML, chấm đúng hết', v_n;
+
+  -- Cờ giữ nguyên thứ tự đáp án phải đi được từ YAML tới DB. Mất cờ này thì
+  -- chữ cái hiển thị lệch khỏi chữ cái trong đề in, mà lỗi đó nhìn giao diện
+  -- không thấy — nó chỉ hiện ra khi người học tra chéo với bản gốc.
+  select count(*) into v_bad
+  from public.quizzes where slug like 'notes/ktct/%' and shuffle_options;
+  if v_bad > 0 then
+    raise exception '% đề KTCT bị bật trộn đáp án — phải giữ nguyên thứ tự đề gốc', v_bad;
+  end if;
+  if not (select shuffle_options from public.quizzes
+          where slug = 'notes/web/06-javascript-can-ban') then
+    raise exception 'đề không khai shuffle phải mặc định là có trộn';
+  end if;
 end \$\$;"
 echo "→ quiz từ YAML nạp được và thoả ràng buộc"

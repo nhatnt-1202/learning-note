@@ -200,6 +200,9 @@ for (const t of TOPICS) {
   const quiz = {
     title: `KTCT — ${t.title}`,
     serve: "db",
+    // Giữ nguyên thứ tự đáp án của đề gốc: người học tra chéo với bản in và nói
+    // chuyện với nhau bằng "câu 7 chọn A", nên chữ cái hiển thị phải khớp.
+    shuffle: false,
     pass: 70,
     // Ghi đúng những model thật sự đã bỏ phiếu cho đề này — hai chunk cuối do
     // Fable giải thay Haiku, và đề nào cũng phải nói đúng nguồn gốc của nó.

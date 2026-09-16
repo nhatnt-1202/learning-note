@@ -143,6 +143,7 @@ function lessonLink(path) {
             :questions="taking.questions"
             :generated="taking.generated"
             :reviewed="taking.reviewed"
+            :shuffle="taking.shuffle"
             :store-key="`quiz-id:${taking.quizId}`"
             :grade="(picks, opts) => gradeRemote(taking, picks, !opts.drill)"
             :grade-one="(q, given) => gradeOneRemote(q.id, given)"

@@ -83,6 +83,16 @@ Mỗi câu mang tag để tra ngược: `phan-i|ii|iii`, `goc-cau-<số>` (số 
 gốc), và `nhat-tri` hoặc `phan-xu`. Câu do người phân xử đánh dấu đề có vấn đề
 mang thêm tag `de-co-van-de`.
 
+## Vì sao `shuffle: false`
+
+Các đề khác trộn thứ tự đáp án mỗi lần làm, để làm lại lần hai không nhớ được
+"câu này chọn ô thứ ba" thay vì nhớ kiến thức.
+
+Bộ này thì không, vì thứ tự là một phần của đề: người học tra chéo với bản in
+và nói chuyện với nhau bằng "câu 7 chọn A". Trộn thứ tự ở đây sẽ làm chữ cái
+hiển thị lệch khỏi chữ cái trong đề — và lỗi đó nhìn giao diện không thấy, nó
+chỉ hiện ra khi ai đó đối chiếu với bản gốc.
+
 ## Vì sao `serve: db`
 
 Bộ đề này dùng để tính điểm và xếp hạng, nên **phải** chấm ở server. Quiz nhúng

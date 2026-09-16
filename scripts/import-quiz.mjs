@@ -65,6 +65,7 @@ for (const rel of files) {
     visibility: "public",
     owner_id: null,
     pass_score: quiz.pass,
+    shuffle_options: quiz.shuffle,
     model: quiz.generated,
     source_hash: quiz.sourceHash
   };

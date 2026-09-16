@@ -18,6 +18,9 @@ const props = defineProps({
   finish: {type: Function, default: null},
   generated: {type: String, default: null},
   reviewed: {type: Boolean, default: false},
+  // false = giữ nguyên thứ tự đáp án như đề gốc, để chữ cái hiển thị khớp với
+  // chữ cái trong bản in.
+  shuffle: {type: Boolean, default: true},
   // Khoá localStorage để nhớ câu sai; để trống thì không nhớ gì.
   storeKey: {type: String, default: ""},
   emptyText: {type: String, default: ""}
@@ -84,10 +87,11 @@ function start(ids = null, mix = true) {
   failure.value = "";
   cursor.value = 0;
   finished.value = false;
+  const mixing = mix && props.shuffle;
   order.value = Object.fromEntries(
     shown.value.map((q) => [
       q.id,
-      q.options ? (mix ? shuffle(q.options.length) : q.options.map((_, i) => i)) : []
+      q.options ? (mixing ? shuffle(q.options.length) : q.options.map((_, i) => i)) : []
     ])
   );
 }
@@ -152,9 +156,19 @@ function optClass(q, i) {
   return chosen(q, i) ? "miss" : "";
 }
 
+// Nhãn A/B/C/D. Khi không trộn thì đây đúng là chữ cái trong đề gốc, nên người
+// học tra chéo với bản in được; khi có trộn thì nó chỉ là nhãn của vị trí đang
+// hiện — vẫn cần, vì không có nhãn thì không nói được "câu này chọn ý thứ mấy".
+const LETTERS = "ABCDEFGHIJ";
+function letterAt(q, i) {
+  const pos = (order.value[q.id] || []).indexOf(i);
+  return LETTERS[pos >= 0 ? pos : i] ?? "";
+}
+
 function keyOf(q) {
   const a = answerOf(q);
-  return q.options ? a.map((i) => q.options[i]).join(" · ") : String(a[0] ?? "");
+  if (!q.options) return String(a[0] ?? "");
+  return a.map((i) => `${letterAt(q, i)}. ${q.options[i]}`).join(" · ");
 }
 
 const unanswered = computed(
@@ -378,6 +392,7 @@ defineExpose({restart: () => start(null, mounted.value)});
               :checked="chosen(q, i)"
               :disabled="isGraded(q)"
               @change="toggle(q, i)" />
+            <b class="qz-letter">{{ letterAt(q, i) }}.</b>
             <span v-html="q.optionsHtml[i]"></span>
           </label>
         </div>
@@ -589,6 +604,17 @@ defineExpose({restart: () => start(null, mounted.value)});
   transition: border-color .2s, background-color .2s;
 }
 .qz-opt:hover {border-color: var(--vp-c-brand-1);}
+/* Chữ cái đứng thành một cột riêng, rộng cố định, để nội dung các đáp án thẳng
+   hàng với nhau thay vì so le theo bề rộng của chữ cái. */
+.qz-letter {
+  flex: none;
+  min-width: 1.15em;
+  color: var(--vp-c-text-3);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.qz-opt.on .qz-letter,
+.qz-opt.key .qz-letter {color: inherit;}
 .qz-opt input {margin: 3px 0 0; flex: none; accent-color: var(--vp-c-brand-1);}
 .qz-opt.on {border-color: var(--vp-c-brand-1); background: var(--vp-c-brand-soft);}
 .qz-opt.key {border-color: var(--vp-c-green-1); background: var(--vp-c-green-soft);}

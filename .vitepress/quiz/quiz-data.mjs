@@ -137,9 +137,15 @@ export function normalizeQuiz(raw, lessonPath) {
     errors.push(`serve "${raw.serve}" không hợp lệ — chỉ nhận "static" hoặc "db"`);
   }
 
+  // Mặc định trộn: làm lại lần hai mà thứ tự y hệt thì rất dễ nhớ "câu này chọn
+  // ô thứ ba" thay vì nhớ kiến thức. Đặt false khi thứ tự là một phần của đề —
+  // đề in sẵn, nơi người học tra chéo với bản gốc theo chữ cái A/B/C/D.
+  const shuffle = raw.shuffle !== false;
+
   const quiz = {
     lessonPath,
     serve,
+    shuffle,
     title: String(raw.title || "Tự kiểm tra"),
     pass: Number.isFinite(pass) ? Math.min(100, Math.max(0, Math.round(pass))) : 70,
     generated: raw.generated ? String(raw.generated) : null,

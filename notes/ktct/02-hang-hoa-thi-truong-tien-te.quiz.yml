@@ -1,5 +1,6 @@
 title: KTCT — Hàng hoá, thị trường và tiền tệ
 serve: db
+shuffle: false
 pass: 70
 generated: fable + haiku + opus + sonnet (giải độc lập rồi đối chiếu chéo)
 reviewed: false

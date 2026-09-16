@@ -84,6 +84,7 @@ function finish(picks) {
     :questions="quiz.questions"
     :generated="quiz.generated"
     :reviewed="quiz.reviewed"
+    :shuffle="quiz.shuffle"
     :store-key="`quiz:${lessonPath}`"
     :grade="grade"
     :grade-one="gradeOne"
