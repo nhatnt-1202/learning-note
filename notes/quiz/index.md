@@ -16,6 +16,7 @@ Nơi làm lại các đề đã có, tự tạo đề riêng, và ôn tập ché
 | Đề tự tạo | Mặc định **chỉ tôi**; đổi sang *có link* hoặc *công khai* khi muốn chia sẻ |
 | Ôn tập chéo | Câu trả lời sai được hẹn lại ngày mai, đúng thì giãn dần tới 30 ngày |
 | Đáp án | Nằm lại trên server, chỉ trả về sau khi nộp bài |
+| Hai cách làm | **Cả bài** — chấm một lượt lúc nộp. **Từng câu** — chấm ngay, biết đúng sai và đọc lời giải trước khi sang câu sau |
 | Xếp hạng | Tính theo **lần làm tốt nhất**, chỉ trên đề của site |
 
 ## Bảng xếp hạng

@@ -4,14 +4,14 @@ layout: home
 hero:
   name: "Learning Notes"
   text: "Tài liệu học tập cá nhân"
-  tagline: Ghi chép kiến thức về Linux, Database, Docker, JavaScript và nhiều hơn nữa
+  tagline: Linux, Web, Database, Docker, Cloud, Kinh tế chính trị — kèm quiz tự chấm và bảng xếp hạng
   actions:
     - theme: brand
       text: Bắt đầu đọc
       link: /notes/linux/
     - theme: alt
       text: Xem trên GitHub
-      link: https://github.com/
+      link: https://github.com/nhatnt-1202/learning-note
 
 features:
   - icon: 🐧
@@ -34,4 +34,16 @@ features:
     title: JavaScript
     details: ES6+, async/await, Node.js, các design pattern và tips thực chiến.
     link: /notes/javascript/
+  - icon: ☁️
+    title: Cloud / AWS
+    details: IAM, EC2, S3, RDS, Lambda, DynamoDB — lộ trình ôn chứng chỉ Solutions Architect Associate.
+    link: /notes/cloud/
+  - icon: 📚
+    title: Kinh tế chính trị
+    details: Ngân hàng 303 câu trắc nghiệm chia theo 8 chương giáo trình, có lời giải cho từng câu.
+    link: /notes/ktct/
+  - icon: 🎯
+    title: Quiz & Xếp hạng
+    details: Làm đề, tự tạo đề riêng, ôn lại câu từng làm sai theo lịch, và bảng xếp hạng chung.
+    link: /notes/quiz/
 ---

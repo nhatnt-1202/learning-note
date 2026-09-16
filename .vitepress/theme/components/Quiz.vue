@@ -3,7 +3,15 @@ import {computed, ref, onMounted} from "vue";
 import {useData} from "vitepress";
 import QuizRunner from "./QuizRunner.vue";
 import {hasSupabase} from "../lib/supabase";
-import {fromPageData, loadForLesson, gradeLocal, gradeRemote} from "../lib/quiz";
+import {
+  fromPageData,
+  loadForLesson,
+  gradeLocal,
+  gradeRemote,
+  gradeOneLocal,
+  gradeOneRemote,
+  recordAttempt
+} from "../lib/quiz";
 
 // Component không nhận prop nào: mỗi bài chỉ cần một dòng <Quiz /> ở cuối trang.
 // Việc duy nhất ở đây là tìm ra quiz của bài này đến từ đâu.
@@ -45,6 +53,20 @@ function grade(picks, {drill}) {
     ? gradeRemote(quiz.value, picks, !drill)
     : Promise.resolve(gradeLocal(quiz.value, picks));
 }
+
+function gradeOne(q, given) {
+  return quiz.value.origin === "db"
+    ? gradeOneRemote(q.id, given)
+    : Promise.resolve(gradeOneLocal(q, given));
+}
+
+// Nguồn "static" chấm ở client nên không có điểm để ghi — chế độ từng câu vẫn
+// dùng được, chỉ là không vào bảng xếp hạng. Đúng như chế độ làm cả bài.
+function finish(picks) {
+  return quiz.value.origin === "db"
+    ? recordAttempt(quiz.value, picks)
+    : Promise.resolve();
+}
 </script>
 
 <template>
@@ -63,7 +85,9 @@ function grade(picks, {drill}) {
     :generated="quiz.generated"
     :reviewed="quiz.reviewed"
     :store-key="`quiz:${lessonPath}`"
-    :grade="grade" />
+    :grade="grade"
+    :grade-one="gradeOne"
+    :finish="finish" />
 </template>
 
 <style scoped>

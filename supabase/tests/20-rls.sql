@@ -455,3 +455,127 @@ end $$;
 rollback;
 
 \echo 'KIỂM TRA BẢNG XẾP HẠNG ĐẠT'
+
+-- ── Chế độ làm từng câu ─────────────────────────────────────────────────────
+
+-- 22. grade_one chỉ nhả đáp án của ĐÚNG câu được hỏi
+--
+-- Đây là cả lý do hàm này tồn tại: grade_attempt trả đáp án của cả đề, nên gọi
+-- nó sau câu đầu tiên là đưa luôn đáp án còn lại xuống trình duyệt.
+begin;
+set local role authenticated;
+set local request.jwt.claims = '{"sub":"22222222-2222-2222-2222-222222222222"}';
+do $$
+declare
+  v_n int;
+  v_ok boolean;
+begin
+  select count(*) into v_n
+  from public.grade_one('a1000000-0000-0000-0000-000000000000', '[1]'::jsonb);
+  if v_n <> 1 then
+    raise exception 'RÒ: grade_one trả % dòng, phải đúng 1 (chỉ câu được hỏi)', v_n;
+  end if;
+
+  select correct into v_ok
+  from public.grade_one('a1000000-0000-0000-0000-000000000000', '[1]'::jsonb);
+  if not v_ok then raise exception 'đáp án [1] phải được tính là đúng'; end if;
+
+  select correct into v_ok
+  from public.grade_one('a1000000-0000-0000-0000-000000000000', '[0]'::jsonb);
+  if v_ok then raise exception 'đáp án [0] phải được tính là sai'; end if;
+
+  -- Câu thuộc đề private của u1 thì u2 không được chấm, cũng không được thấy.
+  begin
+    perform public.grade_one('b1000000-0000-0000-0000-000000000000', '[0,3]'::jsonb);
+    raise exception 'RÒ: chấm được câu của đề private người khác';
+  exception when insufficient_privilege then null;
+  end;
+end $$;
+
+-- 23. grade_one cập nhật hàng đợi ôn tập ngay, không đợi hết bài
+do $$
+declare
+  v record;
+begin
+  select * into v from public.review_items
+  where user_id = '22222222-2222-2222-2222-222222222222'
+    and question_id = 'a1000000-0000-0000-0000-000000000000';
+  if not found then
+    raise exception 'grade_one phải đưa câu vừa làm vào hàng đợi ôn tập';
+  end if;
+  -- 3 lần gọi ở trên: đúng, đúng, sai.
+  if v.seen_count <> 3 or v.wrong_count <> 1 or v.last_correct then
+    raise exception 'đếm sai: seen=% wrong=% last_correct=%',
+      v.seen_count, v.wrong_count, v.last_correct;
+  end if;
+  -- Vừa sai thì phải hẹn lại sớm.
+  if v.due_at > now() + interval '2 days' then
+    raise exception 'câu vừa sai phải được hẹn ôn trong vòng 1 ngày';
+  end if;
+end $$;
+
+-- 24. record_attempt ghi điểm do SERVER tính, và không đụng hàng đợi ôn tập
+do $$
+declare
+  v record;
+  v_seen_before int;
+  v_seen_after int;
+begin
+  select seen_count into v_seen_before from public.review_items
+  where user_id = '22222222-2222-2222-2222-222222222222'
+    and question_id = 'a1000000-0000-0000-0000-000000000000';
+
+  select * into v from public.record_attempt(
+    'aaaaaaaa-0000-0000-0000-000000000000',
+    '{"a1000000-0000-0000-0000-000000000000": [1],
+      "a2000000-0000-0000-0000-000000000000": "sai"}'::jsonb
+  );
+  if v.question_count <> 2 or v.correct_count <> 1 or v.score <> 50 then
+    raise exception 'điểm sai: %/% = %', v.correct_count, v.question_count, v.score;
+  end if;
+
+  if (select score from public.attempts
+      where user_id = '22222222-2222-2222-2222-222222222222'
+      order by created_at desc limit 1) <> 50 then
+    raise exception 'attempt phải được ghi với đúng điểm server tính';
+  end if;
+
+  select seen_count into v_seen_after from public.review_items
+  where user_id = '22222222-2222-2222-2222-222222222222'
+    and question_id = 'a1000000-0000-0000-0000-000000000000';
+  if v_seen_after <> v_seen_before then
+    raise exception 'record_attempt không được đụng hàng đợi ôn tập (grade_one đã làm): % -> %',
+      v_seen_before, v_seen_after;
+  end if;
+end $$;
+rollback;
+
+-- 25. Khách chưa đăng nhập vẫn chấm được từng câu, chỉ không lưu gì
+begin;
+set local role anon;
+do $$
+declare
+  v_ok boolean;
+begin
+  select correct into v_ok
+  from public.grade_one('a1000000-0000-0000-0000-000000000000', '[1]'::jsonb);
+  if not v_ok then raise exception 'khách vẫn phải được chấm'; end if;
+
+  perform public.record_attempt('aaaaaaaa-0000-0000-0000-000000000000', '{}'::jsonb);
+end $$;
+
+-- Đếm phải làm ở vai khác: anon vốn không có quyền đọc hai bảng này, và giữ
+-- nguyên như vậy mới đúng.
+reset role;
+do $$
+begin
+  if (select count(*) from public.review_items) <> 0 then
+    raise exception 'khách không có tài khoản thì không ghi hàng đợi ôn tập';
+  end if;
+  if (select count(*) from public.attempts) <> 0 then
+    raise exception 'khách không được ghi attempt';
+  end if;
+end $$;
+rollback;
+
+\echo 'KIỂM TRA LÀM TỪNG CÂU ĐẠT'

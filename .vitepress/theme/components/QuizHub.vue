@@ -12,7 +12,9 @@ import {
   dueReview,
   gradeReview,
   loadById,
-  gradeRemote
+  gradeRemote,
+  gradeOneRemote,
+  recordAttempt
 } from "../lib/quiz";
 
 const {user, ready, hasSupabase} = useSession();
@@ -120,6 +122,7 @@ function lessonLink(path) {
             :pass="70"
             :questions="reviewQuestions"
             :grade="(picks) => gradeReview(picks)"
+            :grade-one="(q, given) => gradeOneRemote(q.id, given)"
             empty-text="Chưa có câu nào đến hạn ôn." />
           <p v-else class="hub-dim">
             Chưa có câu nào đến hạn. Làm vài bài quiz trước đã — câu nào sai sẽ
@@ -142,6 +145,8 @@ function lessonLink(path) {
             :reviewed="taking.reviewed"
             :store-key="`quiz-id:${taking.quizId}`"
             :grade="(picks, opts) => gradeRemote(taking, picks, !opts.drill)"
+            :grade-one="(q, given) => gradeOneRemote(q.id, given)"
+            :finish="(picks) => recordAttempt(taking, picks)"
             @graded="takingBoard?.refresh()" />
           <Leaderboard ref="takingBoard" :quiz-id="taking.quizId" :limit="10" />
         </section>

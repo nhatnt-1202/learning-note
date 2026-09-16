@@ -10,6 +10,12 @@ const props = defineProps({
   questions: {type: Array, required: true},
   // async (picks, {drill}) => {[id]: {correct, answer, explanationHtml}}
   grade: {type: Function, required: true},
+  // async (question, given) => {correct, answer, explanationHtml}
+  // Thiếu hàm này thì không có chế độ làm từng câu — vì chấm một câu bằng
+  // `grade` sẽ kéo về đáp án của cả đề.
+  gradeOne: {type: Function, default: null},
+  // async (picks) => void — ghi điểm sau khi làm xong lượt từng câu.
+  finish: {type: Function, default: null},
   generated: {type: String, default: null},
   reviewed: {type: Boolean, default: false},
   // Khoá localStorage để nhớ câu sai; để trống thì không nhớ gì.
@@ -21,6 +27,12 @@ const emit = defineEmits(["graded"]);
 
 const all = computed(() => props.questions);
 
+// "all" = hiện cả bài rồi chấm một lượt; "step" = mỗi lần một câu, chấm ngay.
+const mode = ref("all");
+const cursor = ref(0);
+// Đã đi hết lượt từng câu: lúc này hiện lại toàn bộ để xem lại.
+const finished = ref(false);
+
 // null = làm cả bài; mảng id = đang luyện lại riêng những câu đã sai.
 const drill = ref(null);
 const shown = computed(() =>
@@ -30,7 +42,25 @@ const shown = computed(() =>
 const picks = ref({});
 const order = ref({});     // {id: number[]} — thứ tự đáp án đang hiển thị
 const results = ref({});   // {id: {correct, answer, explanationHtml}}
-const graded = computed(() => Object.keys(results.value).length > 0);
+
+// Ở chế độ từng câu, mỗi câu được chấm vào một thời điểm khác nhau, nên "đã
+// chấm" phải hỏi theo từng câu chứ không còn là một cờ chung của cả bài.
+function isGraded(q) {
+  return results.value[q.id] !== undefined;
+}
+const allGraded = computed(
+  () => shown.value.length > 0 && shown.value.every(isGraded)
+);
+
+const stepMode = computed(() => mode.value === "step" && Boolean(props.gradeOne));
+// Đã chấm câu nào thì khoá việc đổi chế độ: đổi là làm lại từ đầu, và mất bài
+// đang làm dở mà không báo trước là chuyện không nên xảy ra.
+const started = computed(() => Object.keys(results.value).length > 0);
+const current = computed(() => shown.value[cursor.value] ?? null);
+// Đang đi từng câu thì chỉ hiện câu hiện tại; đi hết rồi thì hiện lại cả bài.
+const visible = computed(() =>
+  stepMode.value && !finished.value ? (current.value ? [current.value] : []) : shown.value
+);
 const last = ref(null);
 const busy = ref(false);
 const failure = ref("");
@@ -52,6 +82,8 @@ function start(ids = null, mix = true) {
   picks.value = {};
   results.value = {};
   failure.value = "";
+  cursor.value = 0;
+  finished.value = false;
   order.value = Object.fromEntries(
     shown.value.map((q) => [
       q.id,
@@ -95,7 +127,7 @@ function chosen(q, i) {
 }
 
 function toggle(q, i) {
-  if (graded.value) return;
+  if (isGraded(q)) return;
   if (q.type === "multi") {
     const cur = picks.value[q.id] || [];
     picks.value[q.id] = cur.includes(i) ? cur.filter((v) => v !== i) : [...cur, i];
@@ -115,7 +147,7 @@ function answerOf(q) {
 }
 
 function optClass(q, i) {
-  if (!graded.value) return chosen(q, i) ? "on" : "";
+  if (!isGraded(q)) return chosen(q, i) ? "on" : "";
   if (answerOf(q).includes(i)) return "key";
   return chosen(q, i) ? "miss" : "";
 }
@@ -135,10 +167,17 @@ const unanswered = computed(
     }).length
 );
 
-const wrong = computed(() => shown.value.filter((q) => !isCorrect(q)).map((q) => q.id));
+const wrong = computed(() =>
+  shown.value.filter((q) => isGraded(q) && !isCorrect(q)).map((q) => q.id)
+);
+const rightCount = computed(() => shown.value.filter((q) => isCorrect(q)).length);
+// Mẫu số là cả lượt, không phải số câu đã chấm: bỏ dở nửa chừng thì điểm phải
+// phản ánh việc bỏ dở, không được làm tròn thành "đúng hết phần đã làm".
 const score = computed(() =>
   shown.value.length
-    ? Math.round(((shown.value.length - wrong.value.length) / shown.value.length) * 100)
+    ? Math.round(
+        (shown.value.filter((q) => isCorrect(q)).length / shown.value.length) * 100
+      )
     : 0
 );
 const passed = computed(() => score.value >= props.pass);
@@ -192,6 +231,64 @@ async function submit() {
   }
 }
 
+// ── Chế độ làm từng câu ─────────────────────────────────────────────────────
+
+function pickOf(q) {
+  return picks.value[q.id] ?? null;
+}
+
+function answered(q) {
+  const p = pickOf(q);
+  return q.type === "fill" || q.type === "output"
+    ? String(p || "").trim() !== ""
+    : Array.isArray(p) && p.length > 0;
+}
+
+/** Chấm câu đang hiện. Bỏ trống vẫn chấm được — và vẫn tính là sai. */
+async function checkOne() {
+  const q = current.value;
+  if (!q || busy.value || isGraded(q)) return;
+  busy.value = true;
+  failure.value = "";
+  try {
+    results.value = {...results.value, [q.id]: await props.gradeOne(q, pickOf(q))};
+  } catch (e) {
+    failure.value = "Không chấm được câu này: " + String(e?.message || e);
+  } finally {
+    busy.value = false;
+  }
+}
+
+async function next() {
+  if (cursor.value < shown.value.length - 1) {
+    cursor.value += 1;
+    return;
+  }
+  // Câu cuối: chốt lượt. Điểm ghi một lần ở đây chứ không ghi sau mỗi câu —
+  // một lượt làm bài là một attempt, dù nó được chấm làm bao nhiêu lần.
+  finished.value = true;
+  save();
+  // Luyện lại một phần bài thì không ghi điểm: điểm của vài câu không nói lên
+  // gì về cả đề. Giống hệt cách chế độ làm cả bài xử lý drill.
+  if (props.finish && !drill.value) {
+    busy.value = true;
+    try {
+      await props.finish(picks.value);
+    } catch (e) {
+      failure.value = "Không lưu được điểm: " + String(e?.message || e);
+    } finally {
+      busy.value = false;
+    }
+  }
+  emit("graded", {score: score.value, passed: passed.value});
+}
+
+function setMode(m) {
+  if (mode.value === m) return;
+  mode.value = m;
+  start(drill.value, mounted.value);
+}
+
 defineExpose({restart: () => start(null, mounted.value)});
 </script>
 
@@ -214,23 +311,58 @@ defineExpose({restart: () => start(null, mounted.value)});
           </template>
         </div>
       </div>
-      <button
-        v-if="mounted && !graded && !drill && last && last.wrong.length"
-        class="qz-btn"
-        @click="start(last.wrong)">
-        Luyện {{ last.wrong.length }} câu sai
-      </button>
+      <div class="qz-head-right">
+        <div v-if="mounted && gradeOne" class="qz-modes" role="group">
+          <button
+            class="qz-mode"
+            :class="{on: !stepMode}"
+            :aria-pressed="!stepMode"
+            :disabled="started"
+            :title="started ? 'Làm lại cả bài trước khi đổi chế độ' : ''"
+            @click="setMode('all')">
+            Cả bài
+          </button>
+          <button
+            class="qz-mode"
+            :class="{on: stepMode}"
+            :aria-pressed="stepMode"
+            :disabled="started"
+            :title="started ? 'Làm lại cả bài trước khi đổi chế độ' : ''"
+            @click="setMode('step')">
+            Từng câu
+          </button>
+        </div>
+        <button
+          v-if="mounted && !allGraded && !drill && last && last.wrong.length"
+          class="qz-btn"
+          @click="start(last.wrong)">
+          Luyện {{ last.wrong.length }} câu sai
+        </button>
+      </div>
+    </div>
+
+    <!-- Thanh tiến độ chỉ có nghĩa khi đi từng câu: ở chế độ cả bài thì cuộn
+         trang đã cho biết mình đang ở đâu rồi. -->
+    <div v-if="stepMode && !finished && shown.length" class="qz-progress">
+      <div class="qz-progress-bar">
+        <span :style="{width: `${(cursor / shown.length) * 100}%`}"></span>
+      </div>
+      <div class="qz-progress-text">
+        Câu {{ cursor + 1 }}/{{ shown.length }}
+        <span v-if="rightCount" class="ok">· đúng {{ rightCount }}</span>
+        <span v-if="wrong.length" class="bad">· sai {{ wrong.length }}</span>
+      </div>
     </div>
 
     <p v-if="!shown.length" class="qz-state">{{ emptyText || "Đề này chưa có câu hỏi." }}</p>
 
     <ol v-else class="qz-list">
       <li
-        v-for="(q, qi) in shown"
+        v-for="q in visible"
         :key="q.id"
         class="qz-q"
-        :class="graded ? (isCorrect(q) ? 'ok' : 'bad') : ''">
-        <div class="qz-num">Câu {{ qi + 1 }}</div>
+        :class="isGraded(q) ? (isCorrect(q) ? 'ok' : 'bad') : ''">
+        <div class="qz-num">Câu {{ shown.indexOf(q) + 1 }}</div>
         <div class="qz-prompt" v-html="q.promptHtml"></div>
         <div v-if="q.type === 'multi'" class="qz-hint">Chọn tất cả đáp án đúng</div>
 
@@ -244,7 +376,7 @@ defineExpose({restart: () => start(null, mounted.value)});
               :type="q.type === 'multi' ? 'checkbox' : 'radio'"
               :name="`qz-${q.id}`"
               :checked="chosen(q, i)"
-              :disabled="graded"
+              :disabled="isGraded(q)"
               @change="toggle(q, i)" />
             <span v-html="q.optionsHtml[i]"></span>
           </label>
@@ -255,13 +387,13 @@ defineExpose({restart: () => start(null, mounted.value)});
           class="qz-input"
           :class="{mono: q.type === 'output'}"
           :rows="q.type === 'output' ? 3 : 1"
-          :disabled="graded"
+          :disabled="isGraded(q)"
           spellcheck="false"
           :placeholder="q.type === 'output' ? 'Output bạn nghĩ sẽ in ra…' : 'Câu trả lời…'"
           :value="picks[q.id] || ''"
           @input="picks[q.id] = $event.target.value"></textarea>
 
-        <div v-if="graded" class="qz-why">
+        <div v-if="isGraded(q)" class="qz-why">
           <div class="qz-verdict">
             <template v-if="isCorrect(q)">✓ Đúng</template>
             <template v-else>✗ Sai — đáp án: <b>{{ keyOf(q) }}</b></template>
@@ -275,10 +407,33 @@ defineExpose({restart: () => start(null, mounted.value)});
     </ol>
 
     <div v-if="shown.length" class="qz-foot">
-      <button v-if="!graded" class="qz-btn primary" :disabled="busy" @click="submit">
+      <!-- Làm từng câu: chấm câu đang hiện, rồi mới sang câu sau -->
+      <template v-if="stepMode && !finished">
+        <button
+          v-if="current && !isGraded(current)"
+          class="qz-btn primary"
+          :disabled="busy"
+          @click="checkOne">
+          {{ busy ? "Đang chấm…" : "Kiểm tra câu này" }}
+        </button>
+        <button v-else class="qz-btn primary" :disabled="busy" @click="next">
+          {{ cursor < shown.length - 1 ? "Câu tiếp →" : "Xem kết quả" }}
+        </button>
+        <span v-if="current && !isGraded(current) && !answered(current)" class="qz-note">
+          chưa chọn đáp án — kiểm tra luôn thì tính là sai
+        </span>
+      </template>
+
+      <!-- Làm cả bài: một nút nộp cho toàn bộ -->
+      <button
+        v-else-if="!allGraded"
+        class="qz-btn primary"
+        :disabled="busy"
+        @click="submit">
         {{ busy ? "Đang chấm…" : "Kiểm tra" }}
       </button>
-      <template v-else>
+
+      <template v-if="allGraded || finished">
         <span class="qz-score" :class="passed ? 'ok' : 'bad'">
           {{ score }}% — {{ passed ? "đạt" : "chưa đạt" }}
         </span>
@@ -287,7 +442,8 @@ defineExpose({restart: () => start(null, mounted.value)});
           Luyện {{ wrong.length }} câu sai
         </button>
       </template>
-      <span v-if="!graded && unanswered" class="qz-note">
+
+      <span v-if="!stepMode && !allGraded && unanswered" class="qz-note">
         còn {{ unanswered }} câu chưa trả lời
       </span>
       <span v-if="failure" class="qz-err">{{ failure }}</span>
@@ -325,6 +481,62 @@ defineExpose({restart: () => start(null, mounted.value)});
   color: var(--vp-c-text-2);
   cursor: help;
 }
+.qz-head-right {display: flex; gap: 8px; align-items: center;}
+
+/* Nút đổi chế độ: hai ô dính nhau để thấy ngay đây là một lựa chọn hai đường,
+   không phải hai hành động rời. */
+.qz-modes {
+  display: inline-flex;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.qz-mode {
+  padding: 4px 10px;
+  font-size: 12.5px;
+  color: var(--vp-c-text-3);
+  white-space: nowrap;
+}
+.qz-mode + .qz-mode {border-left: 1px solid var(--vp-c-divider);}
+.qz-mode:hover {color: var(--vp-c-brand-1);}
+.qz-mode.on {
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+.qz-mode:disabled {opacity: 0.45; cursor: not-allowed;}
+.qz-mode:disabled:hover {color: var(--vp-c-text-3);}
+.qz-mode.on:disabled:hover {color: var(--vp-c-brand-1);}
+
+.qz-progress {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+.qz-progress-bar {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--vp-c-default-soft);
+  overflow: hidden;
+}
+.qz-progress-bar span {
+  display: block;
+  height: 100%;
+  background: var(--vp-c-brand-1);
+  transition: width 0.2s ease;
+}
+.qz-progress-text {
+  font-size: 12px;
+  color: var(--vp-c-text-3);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.qz-progress-text .ok {color: var(--vp-c-green-1);}
+.qz-progress-text .bad {color: var(--vp-c-red-1);}
+
 .qz-list {list-style: none; margin: 0; padding: 0;}
 .qz-q {
   padding: 14px;

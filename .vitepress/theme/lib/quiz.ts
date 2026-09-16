@@ -194,6 +194,58 @@ export async function gradeRemote(
   return out;
 }
 
+/** Chấm một câu ở client, cho chế độ làm từng câu với nguồn "static". */
+export function gradeOneLocal(q: QuizQuestion, given: unknown): Verdict {
+  return {
+    correct: matchLocal(q, given),
+    answer: q.answer ?? [],
+    explanationHtml: q.explanationHtml ?? ""
+  };
+}
+
+/**
+ * Chấm đúng một câu, cho chế độ làm từng câu.
+ *
+ * Không dùng gradeRemote với payload một câu được: grade_attempt trả về đáp án
+ * của cả đề, nên gọi nó sau câu đầu tiên là đưa luôn đáp án còn lại xuống
+ * trình duyệt.
+ */
+export async function gradeOneRemote(
+  questionId: string,
+  given: unknown
+): Promise<Verdict> {
+  const sb = await getSupabase();
+  if (!sb) throw new Error("chưa cấu hình Supabase");
+
+  const {data, error} = await sb.rpc("grade_one", {
+    p_question: questionId,
+    p_given: given ?? null
+  });
+  if (error) throw error;
+
+  const row = data?.[0];
+  return {
+    correct: Boolean(row?.correct),
+    answer: row?.answer ?? [],
+    explanationHtml: row?.explanation ? renderMd(row.explanation) : ""
+  };
+}
+
+/**
+ * Ghi điểm khi làm xong lượt từng câu. Điểm vẫn do server tính từ đáp án đã
+ * lưu; hàng đợi ôn tập không đụng tới vì gradeOneRemote đã cập nhật từng câu.
+ */
+export async function recordAttempt(quiz: Quiz, picks: Record<string, unknown>) {
+  const sb = await getSupabase();
+  if (!sb || !quiz.quizId) throw new Error("chưa cấu hình Supabase");
+
+  const {error} = await sb.rpc("record_attempt", {
+    p_quiz: quiz.quizId,
+    p_answers: picks
+  });
+  if (error) throw error;
+}
+
 // ── Danh sách đề & ôn tập chéo ──────────────────────────────────────────────
 
 export type QuizRow = {

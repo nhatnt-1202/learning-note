@@ -125,6 +125,28 @@ Ba quyết định đáng nhớ:
 Các hàm này là `security definer` nên đi xuyên qua RLS của `attempts` — đó là
 chủ ý, và cũng là lý do test 18–21 tồn tại.
 
+## Làm từng câu
+
+`20260916140000_step_mode.sql` thêm hai hàm cho chế độ chấm ngay sau mỗi câu.
+
+Không dùng lại `grade_attempt` được, và đây là điều quan trọng nhất cần nhớ:
+**`grade_attempt` trả về đáp án của TOÀN BỘ đề.** Gọi nó sau câu đầu tiên là
+đưa luôn đáp án còn lại xuống trình duyệt — mở tab Network là thấy hết.
+
+| Hàm | Việc |
+|---|---|
+| `grade_one(question, given)` | Chấm một câu, chỉ trả đáp án của câu đó, cập nhật lịch ôn ngay |
+| `record_attempt(quiz, answers)` | Cuối lượt mới ghi điểm; **không** đụng hàng đợi ôn tập |
+
+Chia đôi như vậy vì hai việc có nhịp khác nhau: lịch ôn cần cập nhật ngay sau
+từng câu (bỏ dở nửa chừng thì phần đã làm vẫn được ghi nhận), còn điểm thì một
+lượt làm bài chỉ là một `attempt` dù nó được chấm làm bao nhiêu lần. Nếu
+`record_attempt` cũng cập nhật `review_items` thì `seen_count` bị đội gấp đôi và
+lịch ôn giãn ra sớm hơn thực tế — test 24 canh đúng chỗ đó.
+
+Điểm vẫn do server tính từ đáp án đã lưu; client gửi lên những gì mình đã chọn,
+không gửi lên điểm của mình.
+
 ## `supabase/tests/00-stub-auth.sql`
 
 Chỉ dành cho test local bằng Postgres thuần. **Không chạy file này lên project
