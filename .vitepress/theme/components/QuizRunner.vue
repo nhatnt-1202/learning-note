@@ -1,5 +1,6 @@
 <script setup>
 import {computed, ref, onMounted, watch} from "vue";
+import {playResult} from "../lib/sound";
 
 // Chỉ lo việc làm bài: hiện câu hỏi, thu câu trả lời, gọi hàm chấm được truyền
 // vào, hiện kết quả. Không biết quiz đến từ file, từ DB hay từ hàng đợi ôn tập
@@ -65,6 +66,9 @@ const visible = computed(() =>
   stepMode.value && !finished.value ? (current.value ? [current.value] : []) : shown.value
 );
 const last = ref(null);
+// Câu thoại vui nhộn đi kèm âm báo — chỉ có ý nghĩa ở chế độ từng câu, ngay
+// sau khi chấm câu đang hiện; dọn đi khi sang câu khác để không lưu lại sai chỗ.
+const caption = ref("");
 const busy = ref(false);
 const failure = ref("");
 const mounted = ref(false);
@@ -87,6 +91,7 @@ function start(ids = null, mix = true) {
   failure.value = "";
   cursor.value = 0;
   finished.value = false;
+  caption.value = "";
   const mixing = mix && props.shuffle;
   order.value = Object.fromEntries(
     shown.value.map((q) => [
@@ -265,7 +270,9 @@ async function checkOne() {
   busy.value = true;
   failure.value = "";
   try {
-    results.value = {...results.value, [q.id]: await props.gradeOne(q, pickOf(q))};
+    const verdict = await props.gradeOne(q, pickOf(q));
+    results.value = {...results.value, [q.id]: verdict};
+    caption.value = playResult(verdict.correct);
   } catch (e) {
     failure.value = "Không chấm được câu này: " + String(e?.message || e);
   } finally {
@@ -274,6 +281,7 @@ async function checkOne() {
 }
 
 async function next() {
+  caption.value = "";
   if (cursor.value < shown.value.length - 1) {
     cursor.value += 1;
     return;
@@ -413,6 +421,7 @@ defineExpose({restart: () => start(null, mounted.value)});
             <template v-if="isCorrect(q)">✓ Đúng</template>
             <template v-else>✗ Sai — đáp án: <b>{{ keyOf(q) }}</b></template>
           </div>
+          <div v-if="stepMode && caption" class="qz-caption">{{ caption }}</div>
           <div
             v-if="verdict(q)?.explanationHtml"
             class="qz-why-body"
@@ -649,6 +658,9 @@ defineExpose({restart: () => start(null, mounted.value)});
 .qz-verdict {font-weight: 600; margin-bottom: 4px;}
 .qz-q.ok .qz-verdict {color: var(--vp-c-green-1);}
 .qz-q.bad .qz-verdict {color: var(--vp-c-red-1);}
+.qz-caption {font-style: italic; font-size: 13.5px; margin-bottom: 6px;}
+.qz-q.ok .qz-caption {color: var(--vp-c-green-1);}
+.qz-q.bad .qz-caption {color: var(--vp-c-red-1);}
 .qz-why-body {color: var(--vp-c-text-2);}
 .qz-why-body :deep(p) {margin: 0 0 6px;}
 .qz-why-body :deep(p:last-child) {margin-bottom: 0;}
