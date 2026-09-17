@@ -4,6 +4,7 @@ import Quiz from "./components/Quiz.vue";
 import QuizHub from "./components/QuizHub.vue";
 import Leaderboard from "./components/Leaderboard.vue";
 import QuizBank from "./components/QuizBank.vue";
+import QuizPick from "./components/QuizPick.vue";
 
 export default {
   extends: DefaultTheme,
@@ -13,5 +14,6 @@ export default {
     app.component("QuizHub", QuizHub);
     app.component("Leaderboard", Leaderboard);
     app.component("QuizBank", QuizBank);
+    app.component("QuizPick", QuizPick);
   }
 };

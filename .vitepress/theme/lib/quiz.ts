@@ -294,6 +294,37 @@ export async function loadBank(slugPrefix: string): Promise<QuizQuestion[]> {
     }));
 }
 
+/**
+ * Đọc lại đúng những câu có id cho trước, theo đúng thứ tự truyền vào — dùng
+ * để dựng một đề "trích" (ví dụ đề giữa kỳ) từ các câu đã có trong ngân hàng,
+ * không tạo bản sao. Lý do giống hệt loadBank ở trên.
+ */
+export async function loadByIds(ids: string[]): Promise<QuizQuestion[]> {
+  const sb = await getSupabase();
+  if (!sb || !ids.length) return [];
+
+  const {data: qs, error} = await sb
+    .from("questions_public")
+    .select("id, type, prompt, options, case_sensitive")
+    .in("id", ids);
+  if (error) throw error;
+
+  const byId = new Map((qs ?? []).map((q: any) => [q.id, q]));
+  return ids
+    .filter((id) => byId.has(id))
+    .map((id) => {
+      const q = byId.get(id);
+      return {
+        id: q.id,
+        type: q.type,
+        promptHtml: renderMd(q.prompt),
+        options: q.options ?? null,
+        optionsHtml: q.options ? q.options.map((o: string) => renderMdInline(o)) : null,
+        caseSensitive: Boolean(q.case_sensitive)
+      };
+    });
+}
+
 // ── Danh sách đề & ôn tập chéo ──────────────────────────────────────────────
 
 export type QuizRow = {

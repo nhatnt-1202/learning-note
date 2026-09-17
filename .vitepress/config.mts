@@ -416,7 +416,8 @@ export default defineConfig({
           text: "Kinh tế chính trị Mác - Lênin",
           items: [
             {text: "Mục lục", link: "/notes/ktct/"},
-            {text: "Làm cả bộ đề", link: "/notes/ktct/toan-bo"}
+            {text: "Làm cả bộ đề", link: "/notes/ktct/toan-bo"},
+            {text: "Đề giữa kỳ", link: "/notes/ktct/giua-ky"}
           ]
         },
         {
