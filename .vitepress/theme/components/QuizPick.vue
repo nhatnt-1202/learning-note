@@ -1,16 +1,17 @@
 <script setup>
-// Làm một đề "trích" — tập hợp câu hỏi có id cho trước, lấy từ nhiều chương
-// khác nhau (ví dụ đề giữa kỳ). Đọc lại chính các câu đã có, không phải bản
-// sao: bản sao sẽ mang id khác nên hàng đợi ôn tập coi chúng là câu khác và
-// bảng xếp hạng đếm hai lần cùng một kiến thức. Giống hệt lý do của QuizBank,
-// chỉ khác là danh sách câu cố định thay vì gộp theo tiền tố rồi rút ngẫu nhiên.
+// Làm một đề "trích" — tập hợp câu hỏi có key cho trước (id ổn định trong
+// YAML, ví dụ "ktct-002"), lấy từ nhiều chương khác nhau (ví dụ đề giữa kỳ).
+// Đọc lại chính các câu đã có, không phải bản sao: bản sao sẽ mang key khác
+// nên hàng đợi ôn tập coi chúng là câu khác và bảng xếp hạng đếm hai lần cùng
+// một kiến thức. Giống hệt lý do của QuizBank, chỉ khác là danh sách câu cố
+// định thay vì gộp theo tiền tố rồi rút ngẫu nhiên.
 import {ref, watch} from "vue";
 import QuizRunner from "./QuizRunner.vue";
 import {useSession} from "../lib/session";
-import {loadByIds, gradeReview, gradeOneRemote} from "../lib/quiz";
+import {loadByKeys, gradeReview, gradeOneRemote} from "../lib/quiz";
 
 const props = defineProps({
-  ids: {type: Array, required: true},
+  keys: {type: Array, required: true},
   title: {type: String, required: true},
   pass: {type: Number, default: 70}
 });
@@ -26,7 +27,7 @@ async function load() {
   loading.value = true;
   failure.value = "";
   try {
-    questions.value = await loadByIds(props.ids);
+    questions.value = await loadByKeys(props.keys);
   } catch (e) {
     failure.value = String(e?.message || e);
   } finally {
@@ -34,7 +35,7 @@ async function load() {
   }
 }
 
-watch([ready, () => props.ids], () => ready.value && load(), {immediate: true});
+watch([ready, () => props.keys], () => ready.value && load(), {immediate: true});
 </script>
 
 <template>
@@ -45,8 +46,8 @@ watch([ready, () => props.ids], () => ready.value && load(), {immediate: true});
         <p v-else-if="loading" class="pick-dim">Đang nạp đề…</p>
         <p v-else-if="!questions.length" class="pick-dim">Chưa nạp được câu nào.</p>
         <template v-else>
-          <p v-if="questions.length < ids.length" class="pick-warn">
-            Thiếu {{ ids.length - questions.length }}/{{ ids.length }} câu — có thể vài câu
+          <p v-if="questions.length < keys.length" class="pick-warn">
+            Thiếu {{ keys.length - questions.length }}/{{ keys.length }} câu — có thể vài câu
             trong đề chưa được nạp vào cơ sở dữ liệu.
           </p>
           <QuizRunner

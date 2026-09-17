@@ -295,25 +295,29 @@ export async function loadBank(slugPrefix: string): Promise<QuizQuestion[]> {
 }
 
 /**
- * Đọc lại đúng những câu có id cho trước, theo đúng thứ tự truyền vào — dùng
- * để dựng một đề "trích" (ví dụ đề giữa kỳ) từ các câu đã có trong ngân hàng,
- * không tạo bản sao. Lý do giống hệt loadBank ở trên.
+ * Đọc lại đúng những câu có `key` cho trước (id ổn định trong YAML, ví dụ
+ * "ktct-002"), theo đúng thứ tự truyền vào — dùng để dựng một đề "trích" (ví
+ * dụ đề giữa kỳ) từ các câu đã có trong ngân hàng, không tạo bản sao. Lý do
+ * giống hệt loadBank ở trên.
+ *
+ * `key` khác với cột `id` thật (uuid) của questions_public — id do DB sinh ra
+ * lúc import, còn key là thứ duy nhất còn giữ nguyên giữa YAML và DB.
  */
-export async function loadByIds(ids: string[]): Promise<QuizQuestion[]> {
+export async function loadByKeys(keys: string[]): Promise<QuizQuestion[]> {
   const sb = await getSupabase();
-  if (!sb || !ids.length) return [];
+  if (!sb || !keys.length) return [];
 
   const {data: qs, error} = await sb
     .from("questions_public")
-    .select("id, type, prompt, options, case_sensitive")
-    .in("id", ids);
+    .select("id, key, type, prompt, options, case_sensitive")
+    .in("key", keys);
   if (error) throw error;
 
-  const byId = new Map((qs ?? []).map((q: any) => [q.id, q]));
-  return ids
-    .filter((id) => byId.has(id))
-    .map((id) => {
-      const q = byId.get(id);
+  const byKey = new Map((qs ?? []).map((q: any) => [q.key, q]));
+  return keys
+    .filter((key) => byKey.has(key))
+    .map((key) => {
+      const q = byKey.get(key);
       return {
         id: q.id,
         type: q.type,
