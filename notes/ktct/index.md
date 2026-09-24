@@ -16,4 +16,7 @@ Ngân hàng 303 câu trắc nghiệm, chia theo chương của giáo trình.
 Muốn làm liền một mạch thì vào [Làm cả bộ đề](/notes/ktct/toan-bo) — cũng ở đó
 rút ngẫu nhiên 30/50/100 câu để thi thử.
 
+Ôn theo bản phát tay 5+6.xls thì vào [Bộ đề chương 5 + 6](/notes/ktct/de-chuong-5-6)
+— 121 câu của hai chương cuối, đúng thứ tự câu trong bản phát tay.
+
 Điểm, hàng đợi ôn tập và bảng xếp hạng nằm ở [trang Quiz](/notes/quiz/).

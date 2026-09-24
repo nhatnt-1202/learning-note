@@ -165,8 +165,10 @@ fs.mkdirSync(OUT_DIR, {recursive: true});
 
 // Dọn sạch trước khi ghi. Không dọn thì một chương bị gộp đi vẫn để lại
 // .quiz.yml mồ côi, và quiz:import sẽ đẩy nguyên nó lên DB thành đề trùng.
+// Chỉ dọn file chương (NN-slug): trang viết tay như giua-ky.md hay
+// de-chuong-5-6.md không do script này sinh ra, xoá đi là mất hẳn.
 for (const f of fs.readdirSync(OUT_DIR)) {
-  if (f.endsWith(".quiz.yml") || f.endsWith(".md")) fs.rmSync(path.join(OUT_DIR, f));
+  if (/^\d\d-.*\.(quiz\.yml|md)$/.test(f)) fs.rmSync(path.join(OUT_DIR, f));
 }
 
 const summary = [];
@@ -269,6 +271,9 @@ ${summary
 
 Muốn làm liền một mạch thì vào [Làm cả bộ đề](/notes/ktct/toan-bo) — cũng ở đó
 rút ngẫu nhiên 30/50/100 câu để thi thử.
+
+Ôn theo bản phát tay 5+6.xls thì vào [Bộ đề chương 5 + 6](/notes/ktct/de-chuong-5-6)
+— 121 câu của hai chương cuối, đúng thứ tự câu trong bản phát tay.
 
 Điểm, hàng đợi ôn tập và bảng xếp hạng nằm ở [trang Quiz](/notes/quiz/).
 `;
