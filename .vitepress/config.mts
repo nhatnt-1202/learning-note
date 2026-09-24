@@ -418,6 +418,7 @@ export default defineConfig({
             {text: "Mục lục", link: "/notes/ktct/"},
             {text: "Làm cả bộ đề", link: "/notes/ktct/toan-bo"},
             {text: "Đề giữa kỳ", link: "/notes/ktct/giua-ky"},
+            {text: "Bộ đề chương 5", link: "/notes/ktct/de-chuong-5"},
             {text: "Bộ đề chương 5 + 6", link: "/notes/ktct/de-chuong-5-6"}
           ]
         },
